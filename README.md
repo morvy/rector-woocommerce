@@ -1,0 +1,107 @@
+# Rector Rules for WooCommerce
+
+This package is a [Rector](https://github.com/rectorphp/rector) extension with upgrade rules for WooCommerce. It is based on [fsylum/rector-wordpress](https://github.com/fsylum/rector-wordpress) and works the same way.
+
+## Requirements
+
+- PHP 8.2 or higher
+- Rector 2.0 or higher
+
+## Install
+
+Install `rector-woocommerce` as a dev dependency:
+
+```bash
+composer require morvy/rector-woocommerce --dev
+```
+
+## Use Sets
+
+To add a set to your config, use the `Morvy\RectorWooCommerce\Set\WooCommerceSetList` class and pick one of its constants. For example, `WooCommerceSetList::WC_10_5` applies only the changes made in WooCommerce 10.5.
+
+```php
+use Morvy\RectorWooCommerce\Set\WooCommerceSetList;
+use Rector\Config\RectorConfig;
+
+return RectorConfig::configure()
+    ->withSets([
+        WooCommerceSetList::WC_10_5,
+    ]);
+```
+
+A level set includes every set from 3.0 up to the version you name. For example, `WooCommerceLevelSetList::UP_TO_WC_11_3` includes every rule from WooCommerce 3.0 to 11.3. Use a level set in most cases, because you only name the version once.
+
+```php
+use Morvy\RectorWooCommerce\Set\WooCommerceLevelSetList;
+use Rector\Config\RectorConfig;
+
+return RectorConfig::configure()
+    ->withSets([
+        WooCommerceLevelSetList::UP_TO_WC_11_3,
+    ]);
+```
+
+### Make WooCommerce classes known to Rector
+
+Many rules match a method or property on its *declaring* class. For example, `get_cart_url()` lives on `WC_Legacy_Cart` and `$order->id` is handled on `WC_Order`. Rector can only see that `WC()->cart` is a `WC_Legacy_Cart`, or that `wc_get_order()` returns a `WC_Order`, if it can load the WooCommerce class tree. Without the class tree, only function renames and calls on the exact class still apply.
+
+The simplest way is to load the stubs:
+
+```bash
+composer require --dev php-stubs/woocommerce-stubs
+```
+
+```php
+return RectorConfig::configure()
+    ->withBootstrapFiles([
+        __DIR__ . '/vendor/php-stubs/wordpress-stubs/wordpress-stubs.php',
+        __DIR__ . '/vendor/php-stubs/woocommerce-stubs/woocommerce-stubs.php',
+    ])
+    ->withSets([WooCommerceLevelSetList::UP_TO_WC_11_3]);
+```
+
+## Supported WooCommerce Versions
+
+There is one set for every minor release from 3.0 to 11.3:
+
+- WooCommerce 3.x through 10.x (x.0 to x.9)
+- WooCommerce 11.0 through 11.3
+
+Deprecations made before 3.0 are included in the 3.0 set. Versions with no applicable change still have an empty set, so each version's set constant always exists.
+
+## What gets changed
+
+Rules are only added when the change preserves behaviour. They are generated from what WooCommerce itself does inside each deprecated function: when a deprecated function just calls its replacement with the same arguments, the call is renamed.
+
+- Renamed functions, methods and static methods, for example `woocommerce_get_page_id()` → `wc_get_page_id()`, and `WC_Cache_Helper::incr_cache_prefix()` → `invalidate_cache_group()`.
+- Methods moved to functions, for example `$cart->get_cart_url()` → `wc_get_cart_url()`.
+- Reads of the legacy WooCommerce 3.0 CRUD properties become getters, for example `$order->id` → `$order->get_id()` and `$order->billing_email` → `$order->get_billing_email()`. This covers orders, products, coupons, customers and webhooks.
+  - Only plain reads change. Writes, `isset()`, `unset()`, by-reference use and `$this->prop` inside subclasses are left alone.
+  - Properties whose legacy value differs from the getter's value are skipped. Examples are product `id` on variations and the `'yes'`/`'no'` flags.
+- Class aliases and facades are replaced by the real class, for example `Automattic\WooCommerce\Blocks\StoreApi\*` → `Automattic\WooCommerce\StoreApi\*`, and the `WC_Gateway_Paypal_Constants` constants.
+- Calls to deprecated no-op functions and methods are removed.
+
+Some changes are deliberately skipped:
+
+- **Overrides.** Method rules only touch a call that resolves to WooCommerce's own deprecated method. If your subclass overrides that method (for example a gateway overriding `format_settings()`), its calls and its declaration are left alone.
+- **Code that would be dropped.** A call is not removed or replaced if its receiver or a dropped argument has side effects, such as `make_cart()->remove_taxes()`.
+- **Return values.** Some deprecated wrappers return nothing while their replacement returns a value (`woocommerce_mail()` → `wc_mail()`). These are only renamed where the result is unused, so `if (woocommerce_mail(...))` keeps its meaning.
+- **Property checks and writes.** Legacy properties are left alone inside `isset()`, `empty()` and `??`, because those go through the legacy `__isset()`. They are also left alone in any write position, including `$o->p[] = …`, destructuring, references and `foreach`. If a function writes `$order->billing_email`, its reads of `$order->billing_email` stay unchanged too.
+- **Pluggable functions.** Functions a theme can redefine, such as `woocommerce_hex_darker()`, are left for you to review.
+
+Rules never point your code at a class in `Automattic\WooCommerce\Internal\*`, because WooCommerce does not offer those classes to extensions.
+
+Action Scheduler function renames (`wc_schedule_single_action()` → `as_schedule_single_action()` and the others) are in the 3.5 set, the first release that bundles Action Scheduler 2.1.
+
+Anything that needs a human decision is listed at the bottom of each set file under `TODO: these are not handled currently`. Examples are deprecated hooks, arguments, and replacements with a different signature.
+
+## Updating for a new WooCommerce release
+
+The rule data lives in `tools/deprecations.json`. Each entry is one rule, or one `todo` or `skip`, assigned to a set.
+
+1. Run `php tools/extract.php <path-to-woocommerce> > raw.json` to list every deprecation call with its version and a guess of whether it delegates.
+2. Classify the new records into `tools/deprecations.json`.
+3. Run `composer generate`. It rewrites `config/sets`, the level sets, the set list classes and the set tests, including the up-to-latest level test, then runs Pint.
+4. Run `composer phpunit`.
+
+To add a new version, extend `LAST_MINOR` in `tools/generate.php`.

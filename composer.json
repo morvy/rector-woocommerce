@@ -1,0 +1,70 @@
+{
+    "name": "morvy/rector-woocommerce",
+    "description": "Rector upgrade rules for WooCommerce",
+    "license": "MIT",
+    "type": "rector-extension",
+    "keywords": [
+        "rector",
+        "woocommerce",
+        "upgrade",
+        "refactoring"
+    ],
+    "require": {
+        "php": ">=8.2",
+        "rector/rector": "^2.0",
+        "webmozart/assert": "^1.11"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.41",
+        "laravel/pint": "^1.25",
+        "phpstan/extension-installer": "^1.4",
+        "phpstan/phpstan": "^2.1",
+        "phpstan/phpstan-strict-rules": "^2.0",
+        "phpstan/phpstan-webmozart-assert": "^2.0",
+        "phpunit/phpunit": "^10.5"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Morvy\\RectorWooCommerce\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Morvy\\RectorWooCommerce\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "composer-normalize": {
+            "indent-size": 4,
+            "indent-style": "space"
+        }
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "@composer normalize"
+        ],
+        "code-quality": [
+            "@rector",
+            "@phpstan",
+            "@pint"
+        ],
+        "generate": [
+            "php tools/generate.php",
+            "vendor/bin/pint"
+        ],
+        "phpstan": "vendor/bin/phpstan analyse --ansi",
+        "phpunit": "vendor/bin/phpunit tests",
+        "pint": "vendor/bin/pint",
+        "pint-test": "vendor/bin/pint --test",
+        "rector": "vendor/bin/rector process --ansi",
+        "rector-dry-run": "vendor/bin/rector process --dry-run --ansi"
+    }
+}

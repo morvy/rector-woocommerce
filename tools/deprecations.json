@@ -1,0 +1,6728 @@
+[
+ {
+  "set": "3.0",
+  "rule": "RenameFunctionAsStatement",
+  "old": "woocommerce_show_messages",
+  "new": "wc_print_notices"
+ },
+ {
+  "set": "3.0",
+  "rule": "RemoveFuncCall",
+  "function": "woocommerce_weekend_area_js"
+ },
+ {
+  "set": "3.0",
+  "rule": "RemoveFuncCall",
+  "function": "woocommerce_tooltip_js"
+ },
+ {
+  "set": "3.0",
+  "rule": "RemoveFuncCall",
+  "function": "woocommerce_datepicker_js"
+ },
+ {
+  "set": "3.0",
+  "rule": "RemoveFuncCall",
+  "function": "woocommerce_admin_scripts"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_create_page",
+  "new": "wc_create_page"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "woocommerce_readfile_chunked"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "woocommerce_format_total"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "woocommerce_get_formatted_product_name"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "get_product",
+  "new": "wc_get_product"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_protected_product_add_to_cart",
+  "new": "wc_protected_product_add_to_cart"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunctionAsStatement",
+  "old": "woocommerce_empty_cart",
+  "new": "wc_empty_cart"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "woocommerce_load_persistent_cart"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunctionAsStatement",
+  "old": "woocommerce_add_to_cart_message",
+  "new": "wc_add_to_cart_message"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunctionAsStatement",
+  "old": "woocommerce_clear_cart_after_payment",
+  "new": "wc_clear_cart_after_payment"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunctionAsStatement",
+  "old": "woocommerce_cart_totals_subtotal_html",
+  "new": "wc_cart_totals_subtotal_html"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunctionAsStatement",
+  "old": "woocommerce_cart_totals_shipping_html",
+  "new": "wc_cart_totals_shipping_html"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunctionAsStatement",
+  "old": "woocommerce_cart_totals_coupon_html",
+  "new": "wc_cart_totals_coupon_html"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunctionAsStatement",
+  "old": "woocommerce_cart_totals_order_total_html",
+  "new": "wc_cart_totals_order_total_html"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunctionAsStatement",
+  "old": "woocommerce_cart_totals_fee_html",
+  "new": "wc_cart_totals_fee_html"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_cart_totals_shipping_method_label",
+  "new": "wc_cart_totals_shipping_method_label"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunctionAsStatement",
+  "old": "woocommerce_get_template_part",
+  "new": "wc_get_template_part"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunctionAsStatement",
+  "old": "woocommerce_get_template",
+  "new": "wc_get_template"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_locate_template",
+  "new": "wc_locate_template"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunctionAsStatement",
+  "old": "woocommerce_mail",
+  "new": "wc_mail"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_disable_admin_bar",
+  "new": "wc_disable_admin_bar"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_create_new_customer",
+  "new": "wc_create_new_customer"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunctionAsStatement",
+  "old": "woocommerce_set_customer_auth_cookie",
+  "new": "wc_set_customer_auth_cookie"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_update_new_customer_past_orders",
+  "new": "wc_update_new_customer_past_orders"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunctionAsStatement",
+  "old": "woocommerce_paying_customer",
+  "new": "wc_paying_customer"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_customer_bought_product",
+  "new": "wc_customer_bought_product"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_customer_has_capability",
+  "new": "wc_customer_has_capability"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_sanitize_taxonomy_name",
+  "new": "wc_sanitize_taxonomy_name"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_get_filename_from_url",
+  "new": "wc_get_filename_from_url"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_get_dimension",
+  "new": "wc_get_dimension"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_get_weight",
+  "new": "wc_get_weight"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_trim_zeros",
+  "new": "wc_trim_zeros"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_round_tax_total",
+  "new": "wc_round_tax_total"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_format_decimal",
+  "new": "wc_format_decimal"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_clean",
+  "new": "wc_clean"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_array_overlay",
+  "new": "wc_array_overlay"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_price",
+  "new": "wc_price"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_let_to_num",
+  "new": "wc_let_to_num"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_date_format",
+  "new": "wc_date_format"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_time_format",
+  "new": "wc_time_format"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_timezone_string",
+  "new": "wc_timezone_string"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "woocommerce_rgb_from_hex (pluggable)"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "woocommerce_hex_darker (pluggable)"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "woocommerce_hex_lighter (pluggable)"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "woocommerce_light_or_dark (pluggable)"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "woocommerce_format_hex (pluggable)"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_get_order_id_by_order_key",
+  "new": "wc_get_order_id_by_order_key"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_downloadable_file_permission",
+  "new": "wc_downloadable_file_permission"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunctionAsStatement",
+  "old": "woocommerce_downloadable_product_permissions",
+  "new": "wc_downloadable_product_permissions"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_add_order_item",
+  "new": "wc_add_order_item"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_delete_order_item",
+  "new": "wc_delete_order_item"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_update_order_item_meta",
+  "new": "wc_update_order_item_meta"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_add_order_item_meta",
+  "new": "wc_add_order_item_meta"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_delete_order_item_meta",
+  "new": "wc_delete_order_item_meta"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_get_order_item_meta",
+  "new": "wc_get_order_item_meta"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunctionAsStatement",
+  "old": "woocommerce_cancel_unpaid_orders",
+  "new": "wc_cancel_unpaid_orders"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_processing_order_count",
+  "new": "wc_processing_order_count"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_get_page_id",
+  "new": "wc_get_page_id"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_get_endpoint_url",
+  "new": "wc_get_endpoint_url"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_lostpassword_url",
+  "new": "wc_lostpassword_url"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_customer_edit_account_url",
+  "new": "wc_customer_edit_account_url"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "woocommerce_nav_menu_items"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "woocommerce_nav_menu_item_classes"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_list_pages",
+  "new": "wc_list_pages"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_product_dropdown_categories",
+  "new": "wc_product_dropdown_categories"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_walk_category_dropdown_tree",
+  "new": "wc_walk_category_dropdown_tree"
+ },
+ {
+  "set": "3.0",
+  "rule": "RemoveFuncCall",
+  "function": "woocommerce_taxonomy_metadata_wpdbfix"
+ },
+ {
+  "set": "3.0",
+  "rule": "RemoveFuncCall",
+  "function": "wc_taxonomy_metadata_wpdbfix"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_order_terms",
+  "new": "wc_reorder_terms"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_set_term_order",
+  "new": "wc_set_term_order"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_terms_clauses",
+  "new": "wc_terms_clauses"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunctionAsStatement",
+  "old": "_woocommerce_term_recount",
+  "new": "_wc_term_recount"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunctionAsStatement",
+  "old": "woocommerce_recount_after_stock_change",
+  "new": "wc_recount_after_stock_change"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "woocommerce_change_term_counts"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_get_product_ids_on_sale",
+  "new": "wc_get_product_ids_on_sale"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_get_featured_product_ids",
+  "new": "wc_get_featured_product_ids"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "woocommerce_get_product_terms"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_product_post_type_link",
+  "new": "wc_product_post_type_link"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_placeholder_img_src",
+  "new": "wc_placeholder_img_src"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_placeholder_img",
+  "new": "wc_placeholder_img"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_get_formatted_variation",
+  "new": "wc_get_formatted_variation"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunctionAsStatement",
+  "old": "woocommerce_scheduled_sales",
+  "new": "wc_scheduled_sales"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_get_attachment_image_attributes",
+  "new": "wc_get_attachment_image_attributes"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunction",
+  "old": "woocommerce_prepare_attachment_for_js",
+  "new": "wc_prepare_attachment_for_js"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameFunctionAsStatement",
+  "old": "woocommerce_track_product_view",
+  "new": "wc_track_product_view"
+ },
+ {
+  "set": "3.0",
+  "rule": "RemoveFuncCall",
+  "function": "woocommerce_compile_less_styles"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "woocommerce_get_product_schema"
+ },
+ {
+  "set": "3.0",
+  "rule": "RemoveFuncCall",
+  "function": "wc_products_rss_feed"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "woocommerce_product_reviews_tab (pluggable)"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Legacy_Shipping_Zone",
+  "old": "get_zone_id",
+  "new": "get_id"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Legacy_Shipping_Zone::read"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Legacy_Shipping_Zone::update"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Legacy_Shipping_Zone::create"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Legacy_Customer::get_default_country"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Legacy_Customer::get_default_state"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Legacy_Customer",
+  "old": "set_to_base",
+  "new": "set_billing_address_to_base"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Legacy_Customer",
+  "old": "set_shipping_to_base",
+  "new": "set_shipping_address_to_base"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Legacy_Customer",
+  "old": "calculated_shipping",
+  "new": "set_calculated_shipping"
+ },
+ {
+  "set": "3.0",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Legacy_Customer",
+  "method": "set_default_data"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Legacy_Customer::is_paying_customer"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Legacy_Customer",
+  "old": "get_address",
+  "new": "get_billing_address_1"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Legacy_Customer",
+  "old": "get_address_2",
+  "new": "get_billing_address_2"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Legacy_Customer",
+  "old": "get_country",
+  "new": "get_billing_country"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Legacy_Customer",
+  "old": "get_state",
+  "new": "get_billing_state"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Legacy_Customer",
+  "old": "get_postcode",
+  "new": "get_billing_postcode"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Legacy_Customer",
+  "old": "get_city",
+  "new": "get_billing_city"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Legacy_Customer",
+  "old": "set_country",
+  "new": "set_billing_country"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Legacy_Customer",
+  "old": "set_state",
+  "new": "set_billing_state"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Legacy_Customer",
+  "old": "set_postcode",
+  "new": "set_billing_postcode"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Legacy_Customer",
+  "old": "set_city",
+  "new": "set_billing_city"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Legacy_Customer",
+  "old": "set_address",
+  "new": "set_billing_address"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Legacy_Customer",
+  "old": "set_address_2",
+  "new": "set_billing_address_2"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Legacy_Coupon::format_array"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Legacy_Coupon::apply_before_tax"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Legacy_Coupon",
+  "old": "enable_free_shipping",
+  "new": "get_free_shipping"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Legacy_Coupon",
+  "old": "exclude_sale_items",
+  "new": "get_exclude_sale_items"
+ },
+ {
+  "set": "3.0",
+  "rule": "MethodCallToFuncCall",
+  "class": "WC_Legacy_Cart",
+  "method": "get_cart_url",
+  "function": "wc_get_cart_url"
+ },
+ {
+  "set": "3.0",
+  "rule": "MethodCallToFuncCall",
+  "class": "WC_Legacy_Cart",
+  "method": "get_checkout_url",
+  "function": "wc_get_checkout_url"
+ },
+ {
+  "set": "3.0",
+  "rule": "MethodCallToFuncCall",
+  "class": "WC_Legacy_Cart",
+  "method": "ship_to_billing_address_only",
+  "function": "wc_ship_to_billing_address_only"
+ },
+ {
+  "set": "3.0",
+  "rule": "MethodCallToFuncCall",
+  "class": "WC_Legacy_Cart",
+  "method": "coupons_enabled",
+  "function": "wc_coupons_enabled"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Legacy_Cart::get_discounts_before_tax"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Legacy_Cart::get_order_discount_total"
+ },
+ {
+  "set": "3.0",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Legacy_Cart",
+  "method": "apply_cart_discounts_after_tax"
+ },
+ {
+  "set": "3.0",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Legacy_Cart",
+  "method": "apply_product_discounts_after_tax"
+ },
+ {
+  "set": "3.0",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Legacy_Cart",
+  "method": "get_discounts_after_tax"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::get_variation_default_attributes"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Abstract_Legacy_Product",
+  "old": "get_gallery_attachment_ids",
+  "new": "get_gallery_image_ids"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::set_stock"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::reduce_stock"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::increase_stock"
+ },
+ {
+  "set": "3.0",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Abstract_Legacy_Product",
+  "method": "check_stock_status"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::get_related"
+ },
+ {
+  "set": "3.0",
+  "rule": "skip",
+  "name": "WC_Abstract_Legacy_Product::get_related_terms",
+  "reason": "protected/private"
+ },
+ {
+  "set": "3.0",
+  "rule": "skip",
+  "name": "WC_Abstract_Legacy_Product::build_related_query",
+  "reason": "protected/private"
+ },
+ {
+  "set": "3.0",
+  "rule": "MethodCallToFuncCall",
+  "class": "WC_Abstract_Legacy_Product",
+  "method": "get_child",
+  "function": "wc_get_product"
+ },
+ {
+  "set": "3.0",
+  "rule": "MethodCallToFuncCall",
+  "class": "WC_Abstract_Legacy_Product",
+  "method": "get_price_html_from_text",
+  "function": "wc_get_price_html_from_text"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::get_price_html_from_to"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::list_attributes"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::get_price_including_tax"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::get_display_price"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::get_price_excluding_tax"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::adjust_price"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::get_categories"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::get_tags"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::get_post_data"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::get_parent"
+ },
+ {
+  "set": "3.0",
+  "rule": "skip",
+  "name": "WC_Abstract_Legacy_Product::get_upsells",
+  "reason": "wraps the result in apply_filters for a deprecated filter"
+ },
+ {
+  "set": "3.0",
+  "rule": "skip",
+  "name": "WC_Abstract_Legacy_Product::get_cross_sells",
+  "reason": "wraps the result in apply_filters for a deprecated filter"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::has_default_attributes"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Abstract_Legacy_Product",
+  "old": "get_variation_id",
+  "new": "get_id"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Abstract_Legacy_Product",
+  "old": "get_variation_description",
+  "new": "get_description"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::has_all_attributes_set"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Abstract_Legacy_Product",
+  "old": "parent_is_visible",
+  "new": "is_visible"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::get_total_stock"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::get_formatted_variation_attributes"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::variable_product_sync"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::get_matching_variation"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::enable_dimensions_display"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::get_rating_html"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::sync_average_rating"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Product::sync_rating_count"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Abstract_Legacy_Product",
+  "old": "get_files",
+  "new": "get_downloads"
+ },
+ {
+  "set": "3.0",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Abstract_Legacy_Product",
+  "method": "grouped_product_sync"
+ },
+ {
+  "set": "3.0",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Legacy_Payment_Token",
+  "method": "set_type"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Legacy_Payment_Token::read"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Legacy_Payment_Token::update"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Legacy_Payment_Token::create"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::add_coupon"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::add_tax"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::add_shipping"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::add_fee"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::update_product"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::update_coupon"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::update_shipping"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::update_fee"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::update_tax"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::has_meta"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::display_item_meta"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::display_item_downloads"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::get_download_url"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::get_item_downloads"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::get_item_meta"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::get_item_meta_array"
+ },
+ {
+  "set": "3.0",
+  "rule": "ReturnFirstArgMethod",
+  "class": "WC_Abstract_Legacy_Order",
+  "method": "expand_item_meta"
+ },
+ {
+  "set": "3.0",
+  "rule": "skip",
+  "name": "WC_Abstract_Legacy_Order::init",
+  "reason": "protected/private"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::get_order"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::populate"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::cancel_order"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::record_product_sales"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::increase_coupon_usage_counts"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::decrease_coupon_usage_counts"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::reduce_order_stock"
+ },
+ {
+  "set": "3.0",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Abstract_Legacy_Order",
+  "method": "send_stock_notifications"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::email_order_items_table"
+ },
+ {
+  "set": "3.0",
+  "rule": "skip",
+  "name": "WC_Abstract_Legacy_Order::get_order_currency",
+  "reason": "wraps the result in apply_filters for a deprecated filter"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Shipping::sort_shipping_methods"
+ },
+ {
+  "set": "3.0",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Query",
+  "method": "layered_nav_init"
+ },
+ {
+  "set": "3.0",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Query",
+  "method": "get_products_in_view"
+ },
+ {
+  "set": "3.0",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Query",
+  "method": "layered_nav_query"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Order_Refund::get_refund"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Order_Refund",
+  "old": "get_refund_amount",
+  "new": "get_amount"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameMethod",
+  "class": "WC_Order_Refund",
+  "old": "get_refund_reason",
+  "new": "get_reason"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Emails::order_schema_markup"
+ },
+ {
+  "set": "3.0",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Settings_API",
+  "method": "validate_settings_fields"
+ },
+ {
+  "set": "3.0",
+  "rule": "ReturnFirstArgMethod",
+  "class": "WC_Settings_API",
+  "method": "format_settings"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Payment_Gateway::credit_card_form"
+ },
+ {
+  "set": "3.0",
+  "rule": "skip",
+  "name": "WC_Query::order_by_rating_post_clauses",
+  "reason": "deprecated hook callback invoked only by WC; no replacement"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Logger::clear"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Cart::get_discounts_before_tax"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Cart::get_order_discount_total"
+ },
+ {
+  "set": "3.5",
+  "rule": "RenameFunction",
+  "old": "wc_schedule_single_action",
+  "new": "as_schedule_single_action"
+ },
+ {
+  "set": "3.5",
+  "rule": "RenameFunction",
+  "old": "wc_schedule_recurring_action",
+  "new": "as_schedule_recurring_action"
+ },
+ {
+  "set": "3.5",
+  "rule": "RenameFunction",
+  "old": "wc_schedule_cron_action",
+  "new": "as_schedule_cron_action"
+ },
+ {
+  "set": "3.5",
+  "rule": "RenameFunctionAsStatement",
+  "old": "wc_unschedule_action",
+  "new": "as_unschedule_action"
+ },
+ {
+  "set": "3.5",
+  "rule": "RenameFunction",
+  "old": "wc_next_scheduled_action",
+  "new": "as_next_scheduled_action"
+ },
+ {
+  "set": "3.5",
+  "rule": "RenameFunction",
+  "old": "wc_get_scheduled_actions",
+  "new": "as_get_scheduled_actions"
+ },
+ {
+  "set": "3.0",
+  "rule": "skip",
+  "name": "ActionScheduler_AdminView_Deprecated::action_scheduler_post_type_args",
+  "reason": "deprecated hook callback invoked only by Action Scheduler"
+ },
+ {
+  "set": "3.0",
+  "rule": "skip",
+  "name": "ActionScheduler_AdminView_Deprecated::list_table_views",
+  "reason": "deprecated hook callback invoked only by Action Scheduler"
+ },
+ {
+  "set": "3.0",
+  "rule": "skip",
+  "name": "ActionScheduler_AdminView_Deprecated::bulk_actions",
+  "reason": "deprecated hook callback invoked only by Action Scheduler"
+ },
+ {
+  "set": "3.0",
+  "rule": "skip",
+  "name": "ActionScheduler_AdminView_Deprecated::list_table_columns",
+  "reason": "deprecated hook callback invoked only by Action Scheduler"
+ },
+ {
+  "set": "3.0",
+  "rule": "skip",
+  "name": "ActionScheduler_AdminView_Deprecated::list_table_sortable_columns",
+  "reason": "deprecated hook callback invoked only by Action Scheduler"
+ },
+ {
+  "set": "3.0",
+  "rule": "skip",
+  "name": "ActionScheduler_AdminView_Deprecated::list_table_column_content",
+  "reason": "deprecated hook callback invoked only by Action Scheduler"
+ },
+ {
+  "set": "3.0",
+  "rule": "skip",
+  "name": "ActionScheduler_AdminView_Deprecated::row_actions",
+  "reason": "deprecated hook callback invoked only by Action Scheduler"
+ },
+ {
+  "set": "3.0",
+  "rule": "skip",
+  "name": "ActionScheduler_AdminView_Deprecated::maybe_execute_action",
+  "reason": "deprecated hook callback invoked only by Action Scheduler"
+ },
+ {
+  "set": "3.0",
+  "rule": "skip",
+  "name": "ActionScheduler_AdminView_Deprecated::admin_notices",
+  "reason": "deprecated hook callback invoked only by Action Scheduler"
+ },
+ {
+  "set": "3.0",
+  "rule": "skip",
+  "name": "ActionScheduler_AdminView_Deprecated::custom_orderby",
+  "reason": "deprecated hook callback invoked only by Action Scheduler"
+ },
+ {
+  "set": "3.0",
+  "rule": "skip",
+  "name": "ActionScheduler_AdminView_Deprecated::search_post_password",
+  "reason": "deprecated hook callback invoked only by Action Scheduler"
+ },
+ {
+  "set": "3.0",
+  "rule": "skip",
+  "name": "ActionScheduler_AdminView_Deprecated::post_updated_messages",
+  "reason": "deprecated hook callback invoked only by Action Scheduler"
+ },
+ {
+  "set": "3.0",
+  "rule": "skip",
+  "name": "ActionScheduler_Abstract_QueueRunner_Deprecated::get_maximum_execution_time",
+  "reason": "protected/private"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "ActionScheduler_TimezoneHelper::get_local_timezone"
+ },
+ {
+  "set": "3.0",
+  "rule": "skip",
+  "name": "ActionScheduler_Store::get_local_timezone",
+  "reason": "protected/private"
+ },
+ {
+  "set": "3.5",
+  "rule": "StaticCallToFuncCall",
+  "class": "ActionScheduler",
+  "method": "get_datetime_object",
+  "function": "as_get_datetime_object"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Coupon",
+  "property": "id",
+  "getMethod": "get_id"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Coupon",
+  "property": "type",
+  "getMethod": "get_discount_type"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Coupon",
+  "property": "discount_type",
+  "getMethod": "get_discount_type"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Coupon",
+  "property": "amount",
+  "getMethod": "get_amount"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Coupon",
+  "property": "coupon_amount",
+  "getMethod": "get_amount"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Coupon",
+  "property": "code",
+  "getMethod": "get_code"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Coupon",
+  "property": "product_ids",
+  "getMethod": "get_product_ids"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Coupon",
+  "property": "exclude_product_ids",
+  "getMethod": "get_excluded_product_ids"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Coupon",
+  "property": "usage_limit",
+  "getMethod": "get_usage_limit"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Coupon",
+  "property": "usage_limit_per_user",
+  "getMethod": "get_usage_limit_per_user"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Coupon",
+  "property": "limit_usage_to_x_items",
+  "getMethod": "get_limit_usage_to_x_items"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Coupon",
+  "property": "usage_count",
+  "getMethod": "get_usage_count"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Coupon",
+  "property": "product_categories",
+  "getMethod": "get_product_categories"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Coupon",
+  "property": "exclude_product_categories",
+  "getMethod": "get_excluded_product_categories"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Coupon",
+  "property": "minimum_amount",
+  "getMethod": "get_minimum_amount"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Coupon",
+  "property": "maximum_amount",
+  "getMethod": "get_maximum_amount"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Coupon",
+  "property": "customer_email",
+  "getMethod": "get_email_restrictions"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "product_type",
+  "getMethod": "get_type"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "visibility",
+  "getMethod": "get_catalog_visibility"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "product_image_gallery",
+  "getMethod": "get_gallery_image_ids"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "shipping_class",
+  "getMethod": "get_shipping_class"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "crosssell_ids",
+  "getMethod": "get_cross_sell_ids"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "upsell_ids",
+  "getMethod": "get_upsell_ids"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "sku",
+  "getMethod": "get_sku"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "price",
+  "getMethod": "get_price"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "regular_price",
+  "getMethod": "get_regular_price"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "sale_price",
+  "getMethod": "get_sale_price"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "stock_status",
+  "getMethod": "get_stock_status"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "stock_quantity",
+  "getMethod": "get_stock_quantity"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "total_sales",
+  "getMethod": "get_total_sales"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "tax_status",
+  "getMethod": "get_tax_status"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "tax_class",
+  "getMethod": "get_tax_class"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "backorders",
+  "getMethod": "get_backorders"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "weight",
+  "getMethod": "get_weight"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "length",
+  "getMethod": "get_length"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "width",
+  "getMethod": "get_width"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "height",
+  "getMethod": "get_height"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "purchase_note",
+  "getMethod": "get_purchase_note"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "reviews_allowed",
+  "getMethod": "get_reviews_allowed"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "download_limit",
+  "getMethod": "get_download_limit"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Product",
+  "property": "download_expiry",
+  "getMethod": "get_download_expiry"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "id",
+  "getMethod": "get_id"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "status",
+  "getMethod": "get_status"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "customer_message",
+  "getMethod": "get_customer_note"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "customer_note",
+  "getMethod": "get_customer_note"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "user_id",
+  "getMethod": "get_customer_id"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "customer_user",
+  "getMethod": "get_customer_id"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "cart_discount",
+  "getMethod": "get_total_discount"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "cart_discount_tax",
+  "getMethod": "get_discount_tax"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "order_tax",
+  "getMethod": "get_cart_tax"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "order_shipping_tax",
+  "getMethod": "get_shipping_tax"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "order_shipping",
+  "getMethod": "get_shipping_total"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "order_total",
+  "getMethod": "get_total"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "order_type",
+  "getMethod": "get_type"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "order_currency",
+  "getMethod": "get_currency"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "order_version",
+  "getMethod": "get_version"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "billing_first_name",
+  "getMethod": "get_billing_first_name"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "billing_last_name",
+  "getMethod": "get_billing_last_name"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "billing_company",
+  "getMethod": "get_billing_company"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "billing_address_1",
+  "getMethod": "get_billing_address_1"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "billing_address_2",
+  "getMethod": "get_billing_address_2"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "billing_city",
+  "getMethod": "get_billing_city"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "billing_state",
+  "getMethod": "get_billing_state"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "billing_postcode",
+  "getMethod": "get_billing_postcode"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "billing_country",
+  "getMethod": "get_billing_country"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "billing_email",
+  "getMethod": "get_billing_email"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "billing_phone",
+  "getMethod": "get_billing_phone"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "shipping_first_name",
+  "getMethod": "get_shipping_first_name"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "shipping_last_name",
+  "getMethod": "get_shipping_last_name"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "shipping_company",
+  "getMethod": "get_shipping_company"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "shipping_address_1",
+  "getMethod": "get_shipping_address_1"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "shipping_address_2",
+  "getMethod": "get_shipping_address_2"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "shipping_city",
+  "getMethod": "get_shipping_city"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "shipping_state",
+  "getMethod": "get_shipping_state"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "shipping_postcode",
+  "getMethod": "get_shipping_postcode"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "shipping_country",
+  "getMethod": "get_shipping_country"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "payment_method",
+  "getMethod": "get_payment_method"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "payment_method_title",
+  "getMethod": "get_payment_method_title"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "customer_ip_address",
+  "getMethod": "get_customer_ip_address"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "customer_user_agent",
+  "getMethod": "get_customer_user_agent"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "order_key",
+  "getMethod": "get_order_key"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "created_via",
+  "getMethod": "get_created_via"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "transaction_id",
+  "getMethod": "get_transaction_id"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "cart_hash",
+  "getMethod": "get_cart_hash"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Order",
+  "property": "prices_include_tax",
+  "getMethod": "get_prices_include_tax"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "id",
+  "getMethod": "get_id"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "country",
+  "getMethod": "get_billing_country"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "state",
+  "getMethod": "get_billing_state"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "postcode",
+  "getMethod": "get_billing_postcode"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "city",
+  "getMethod": "get_billing_city"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "address_2",
+  "getMethod": "get_billing_address_2"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "address_1",
+  "getMethod": "get_billing_address_1"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "address",
+  "getMethod": "get_billing_address_1"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "shipping_address",
+  "getMethod": "get_shipping_address_1"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "is_vat_exempt",
+  "getMethod": "get_is_vat_exempt"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "calculated_shipping",
+  "getMethod": "get_calculated_shipping"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "billing_first_name",
+  "getMethod": "get_billing_first_name"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "billing_last_name",
+  "getMethod": "get_billing_last_name"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "billing_company",
+  "getMethod": "get_billing_company"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "billing_address_1",
+  "getMethod": "get_billing_address_1"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "billing_address_2",
+  "getMethod": "get_billing_address_2"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "billing_city",
+  "getMethod": "get_billing_city"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "billing_state",
+  "getMethod": "get_billing_state"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "billing_postcode",
+  "getMethod": "get_billing_postcode"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "billing_country",
+  "getMethod": "get_billing_country"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "billing_email",
+  "getMethod": "get_billing_email"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "billing_phone",
+  "getMethod": "get_billing_phone"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "shipping_first_name",
+  "getMethod": "get_shipping_first_name"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "shipping_last_name",
+  "getMethod": "get_shipping_last_name"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "shipping_company",
+  "getMethod": "get_shipping_company"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "shipping_address_1",
+  "getMethod": "get_shipping_address_1"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "shipping_address_2",
+  "getMethod": "get_shipping_address_2"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "shipping_city",
+  "getMethod": "get_shipping_city"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "shipping_state",
+  "getMethod": "get_shipping_state"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "shipping_postcode",
+  "getMethod": "get_shipping_postcode"
+ },
+ {
+  "set": "3.0",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Customer",
+  "property": "shipping_country",
+  "getMethod": "get_shipping_country"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_add_order_fee_meta \u2192 woocommerce_new_order_item"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_add_order_item_meta \u2192 woocommerce_new_order_item"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_add_shipping_order_item \u2192 woocommerce_new_order_item"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_create_product_variation \u2192 woocommerce_new_product_variation"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_duplicate_product \u2192 woocommerce_product_duplicate"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_log_add"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_order_add_coupon \u2192 woocommerce_new_order_item"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_order_add_fee \u2192 woocommerce_new_order_item"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_order_add_product \u2192 woocommerce_new_order_item"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_order_add_shipping \u2192 woocommerce_new_order_item"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_order_add_tax \u2192 woocommerce_new_order_item"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_order_edit_product \u2192 woocommerce_update_order_item"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_order_items_table \u2192 woocommerce_order_details_after_order_table_items"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_order_update_coupon \u2192 woocommerce_update_order_item"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_order_update_fee \u2192 woocommerce_update_order_item"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_order_update_shipping \u2192 woocommerce_update_order_item"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_order_update_tax \u2192 woocommerce_update_order_item"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_payment_token_created \u2192 woocommerce_new_payment_token"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_product_write_panels \u2192 woocommerce_product_data_panels"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_variable_product_sync \u2192 woocommerce_variable_product_sync_data, woocommerce_new_product or woocommerce_update_product"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "add_to_cart_fragments \u2192 woocommerce_add_to_cart_fragments"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "add_to_cart_redirect \u2192 woocommerce_add_to_cart_redirect"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "default_checkout_country \u2192 default_checkout_billing_country"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "default_checkout_postcode \u2192 default_checkout_billing_postcode"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "default_checkout_state \u2192 default_checkout_billing_state"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "wocommerce_credit_card_type_labels \u2192 woocommerce_credit_card_type_labels"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_debug_posting \u2192 woocommerce_system_status_environment_rows"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_email_order_schema_markup \u2192 woocommerce_structured_data_order"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_get_currency \u2192 woocommerce_order_get_currency"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_get_price \u2192 woocommerce_product_get_price"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_get_product_attributes \u2192 woocommerce_product_get_attributes"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_get_regular_price \u2192 woocommerce_product_get_regular_price"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_get_sale_price \u2192 woocommerce_product_get_sale_price"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_get_sku \u2192 woocommerce_product_get_sku"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_get_stock_quantity \u2192 woocommerce_product_get_stock_quantity"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_my_account_my_orders_columns \u2192 woocommerce_account_orders_columns"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_order_amount_cart_tax \u2192 woocommerce_order_get_cart_tax"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_order_amount_discount_tax \u2192 woocommerce_order_get_discount_tax"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_order_amount_discount_total \u2192 woocommerce_order_get_discount_total"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_order_amount_shipping_tax \u2192 woocommerce_order_get_shipping_tax"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_order_amount_shipping_total \u2192 woocommerce_order_get_shipping_total"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_order_amount_subtotal \u2192 woocommerce_order_get_subtotal"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_order_amount_total \u2192 woocommerce_order_get_total"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_order_amount_total_discount \u2192 woocommerce_order_get_total_discount"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_order_amount_total_tax \u2192 woocommerce_order_get_total_tax"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_order_tax_totals \u2192 woocommerce_order_get_tax_totals"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_product_files \u2192 woocommerce_product_get_downloads"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_product_gallery_attachment_ids \u2192 woocommerce_product_get_gallery_image_ids"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_product_height \u2192 woocommerce_product_get_height"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_product_length \u2192 woocommerce_product_get_length"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_product_review_count \u2192 woocommerce_product_get_review_count"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_product_tax_class \u2192 woocommerce_product_get_tax_class"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_product_weight \u2192 woocommerce_product_get_weight"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_product_width \u2192 woocommerce_product_get_width"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_refund_amount \u2192 woocommerce_order_refund_get_amount"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_refund_reason \u2192 woocommerce_order_refund_get_reason"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "{handle}_params \u2192 woocommerce_get_script_data"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Blocks\\Utils\\BlocksWpQuery"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Shipping_Legacy_Local_Pickup"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Shipping_Legacy_Local_Delivery"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Shipping_Legacy_International_Delivery"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Shipping_Legacy_Free_Shipping"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Shipping_Legacy_Flat_Rate"
+ },
+ {
+  "set": "3.0",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Order_Item_Meta"
+ },
+ {
+  "set": "3.1",
+  "rule": "MethodCallToFuncCall",
+  "class": "Automattic\\WooCommerce\\Internal\\DataStores\\Orders\\OrdersTableDataStore",
+  "method": "get_orders",
+  "function": "wc_get_orders"
+ },
+ {
+  "set": "3.1",
+  "rule": "RenameFunction",
+  "old": "wc_get_customer_avatar_url",
+  "new": "get_avatar_url"
+ },
+ {
+  "set": "3.1",
+  "rule": "MethodCallToFuncCall",
+  "class": "WC_Order_Data_Store_CPT",
+  "method": "get_orders",
+  "function": "wc_get_orders"
+ },
+ {
+  "set": "3.1",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Order_Item_Meta::__construct"
+ },
+ {
+  "set": "3.1",
+  "rule": "skip",
+  "name": "WC_Comments::exclude_order_comments_from_feed_join",
+  "reason": "static no-op hook callback invoked only by WC; RemoveMethodCall cannot match static calls"
+ },
+ {
+  "set": "3.1",
+  "rule": "skip",
+  "name": "WC_Comments::exclude_webhook_comments_from_feed_join",
+  "reason": "static no-op hook callback invoked only by WC; RemoveMethodCall cannot match static calls"
+ },
+ {
+  "set": "3.2",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Legacy_Webhook::get_post_data"
+ },
+ {
+  "set": "3.2",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Legacy_Webhook::update_status"
+ },
+ {
+  "set": "3.2",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Legacy_Cart",
+  "method": "remove_taxes"
+ },
+ {
+  "set": "3.2",
+  "rule": "RenameMethod",
+  "class": "WC_Legacy_Cart",
+  "old": "init",
+  "new": "get_cart_from_session"
+ },
+ {
+  "set": "3.2",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Legacy_Cart::get_discounted_price"
+ },
+ {
+  "set": "3.2",
+  "rule": "ReturnFirstArgMethod",
+  "class": "WC_Query",
+  "method": "search_post_excerpt"
+ },
+ {
+  "set": "3.2",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Query",
+  "method": "remove_posts_where"
+ },
+ {
+  "set": "3.3",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "wc_get_core_supported_themes"
+ },
+ {
+  "set": "3.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Customer_Download_Data_Store::update_download_id"
+ },
+ {
+  "set": "3.3",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Webhook",
+  "method": "get_delivery_log"
+ },
+ {
+  "set": "3.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Product_Download::set_previous_hash"
+ },
+ {
+  "set": "3.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Product_Download::get_previous_hash"
+ },
+ {
+  "set": "3.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Post_Data::process_product_file_download_paths"
+ },
+ {
+  "set": "3.3",
+  "rule": "MethodCallToFuncCall",
+  "class": "WC_Cart",
+  "method": "get_item_data",
+  "function": "wc_get_formatted_cart_item_data"
+ },
+ {
+  "set": "3.3",
+  "rule": "MethodCallToFuncCall",
+  "class": "WC_Cart",
+  "method": "get_remove_url",
+  "function": "wc_get_cart_remove_url"
+ },
+ {
+  "set": "3.3",
+  "rule": "MethodCallToFuncCall",
+  "class": "WC_Cart",
+  "method": "get_undo_url",
+  "function": "wc_get_cart_undo_url"
+ },
+ {
+  "set": "3.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Admin_Webhooks::logs_output"
+ },
+ {
+  "set": "3.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Admin_Webhooks::get_logs_navigation"
+ },
+ {
+  "set": "3.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Admin_Post_Types::process_product_file_download_paths"
+ },
+ {
+  "set": "3.3",
+  "rule": "skip",
+  "name": "WC_Admin_Notices::theme_check_notice",
+  "reason": "static no-op hook callback invoked only by WC; RemoveMethodCall cannot match static calls"
+ },
+ {
+  "set": "3.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_REST_Webhook_Deliveries_V2_Controller"
+ },
+ {
+  "set": "3.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_REST_Webhook_Deliveries_V1_Controller"
+ },
+ {
+  "set": "3.4",
+  "rule": "RenameMethod",
+  "class": "WC_Widget_Product_Tag_Cloud",
+  "old": "_get_current_taxonomy",
+  "new": "get_current_taxonomy"
+ },
+ {
+  "set": "3.4",
+  "rule": "RenameMethod",
+  "class": "WC_Widget_Product_Tag_Cloud",
+  "old": "_topic_count_text",
+  "new": "topic_count_text"
+ },
+ {
+  "set": "3.4",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_settings_account_page_options \u2192 woocommerce_settings_advanced_page_options"
+ },
+ {
+  "set": "3.4",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_settings_account_page_options_after \u2192 woocommerce_settings_advanced_page_options_after"
+ },
+ {
+  "set": "3.4",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_settings_account_page_options_end \u2192 woocommerce_settings_advanced_page_options_end"
+ },
+ {
+  "set": "3.4",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_settings_checkout_page_options \u2192 woocommerce_settings_advanced_page_options"
+ },
+ {
+  "set": "3.4",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_settings_checkout_page_options_after \u2192 woocommerce_settings_advanced_page_options_after"
+ },
+ {
+  "set": "3.4",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_settings_checkout_page_options_end \u2192 woocommerce_settings_advanced_page_options_end"
+ },
+ {
+  "set": "3.4",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_settings_api \u2192 woocommerce_settings_advanced"
+ },
+ {
+  "set": "3.4",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_settings_tabs_api \u2192 woocommerce_settings_tabs_advanced"
+ },
+ {
+  "set": "3.4",
+  "rule": "RenameClass",
+  "old": "WC_Settings_Rest_API",
+  "new": "WC_Settings_Advanced"
+ },
+ {
+  "set": "3.4",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Geo_IP"
+ },
+ {
+  "set": "3.5",
+  "rule": "skip",
+  "name": "WC_Form_Handler::order_again",
+  "reason": "static no-op hook callback invoked only by WC; RemoveMethodCall cannot match static calls"
+ },
+ {
+  "set": "3.6",
+  "rule": "RemoveFuncCall",
+  "function": "wc_taxonomy_metadata_update_content_for_split_terms"
+ },
+ {
+  "set": "3.6",
+  "rule": "RenameFunction",
+  "old": "update_woocommerce_term_meta",
+  "new": "update_term_meta"
+ },
+ {
+  "set": "3.6",
+  "rule": "RenameFunction",
+  "old": "add_woocommerce_term_meta",
+  "new": "add_term_meta"
+ },
+ {
+  "set": "3.6",
+  "rule": "RenameFunction",
+  "old": "delete_woocommerce_term_meta",
+  "new": "delete_term_meta"
+ },
+ {
+  "set": "3.6",
+  "rule": "RenameFunction",
+  "old": "get_woocommerce_term_meta",
+  "new": "get_term_meta"
+ },
+ {
+  "set": "3.6",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Admin_Taxonomies",
+  "method": "delete_term"
+ },
+ {
+  "set": "3.6",
+  "rule": "skip",
+  "name": "WC_Admin_Notices::simplify_commerce_notice",
+  "reason": "static no-op hook callback invoked only by WC; RemoveMethodCall cannot match static calls"
+ },
+ {
+  "set": "3.6",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "wc_get_min_max_price_meta_query"
+ },
+ {
+  "set": "3.6",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_add_to_cart_hash \u2192 woocommerce_cart_hash"
+ },
+ {
+  "set": "3.7",
+  "rule": "RenameMethod",
+  "class": "WC_Abstract_Legacy_Order",
+  "old": "get_used_coupons",
+  "new": "get_coupon_codes"
+ },
+ {
+  "set": "3.7",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Tax::maybe_remove_tax_class_rates"
+ },
+ {
+  "set": "3.7",
+  "rule": "RenameMethod",
+  "class": "WC_Emails",
+  "old": "email_footer_replace_site_title",
+  "new": "replace_placeholders"
+ },
+ {
+  "set": "3.7",
+  "rule": "skip",
+  "name": "WC_Legacy_API::register_rest_routes",
+  "reason": "internal rest_api_init callback invoked only by WC"
+ },
+ {
+  "set": "3.7",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_before_cart_item_quantity_zero \u2192 woocommerce_remove_cart_item"
+ },
+ {
+  "set": "3.9",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Caching\\CacheNameSpaceTrait::incr_cache_prefix",
+  "reason": "trait copy of WC_Cache_Helper::incr_cache_prefix; covered by the RenameStaticMethod rule from the 3.9.5 class"
+ },
+ {
+  "set": "3.9",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Geolocation::get_local_database_path"
+ },
+ {
+  "set": "3.9",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Geolocation::update_database"
+ },
+ {
+  "set": "3.9",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Geolocation::init"
+ },
+ {
+  "set": "3.9",
+  "rule": "skip",
+  "name": "WC_Geolocation::disable_geolocation_on_legacy_php",
+  "reason": "internal hook callback invoked only by WC"
+ },
+ {
+  "set": "3.9",
+  "rule": "skip",
+  "name": "WC_Geolocation::maybe_update_database",
+  "reason": "internal hook callback invoked only by WC"
+ },
+ {
+  "set": "3.9",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Geolite_Integration::get_country_iso"
+ },
+ {
+  "set": "3.9",
+  "rule": "RenameStaticMethod",
+  "class": "WC_Cache_Helper",
+  "old": "incr_cache_prefix",
+  "newClass": "WC_Cache_Helper",
+  "new": "invalidate_cache_group"
+ },
+ {
+  "set": "3.9",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_geolocation_local_database_path \u2192 woocommerce_maxmind_geolocation_database_path"
+ },
+ {
+  "set": "3.9",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_geolocation_update_database_periodically \u2192 woocommerce_maxmind_geolocation_update_database_periodically"
+ },
+ {
+  "set": "3.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Geolite_Integration"
+ },
+ {
+  "set": "4.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Countries::countries_using_vat"
+ },
+ {
+  "set": "4.3",
+  "rule": "RemoveMethodCall",
+  "class": "Automattic\\WooCommerce\\Admin\\Notes\\Note",
+  "method": "set_icon"
+ },
+ {
+  "set": "4.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Plugins::install_plugin"
+ },
+ {
+  "set": "4.4",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Abstract_Legacy_Order::get_product_from_item"
+ },
+ {
+  "set": "4.4",
+  "rule": "skip",
+  "name": "WC_Order_Item_Tax::offsetSet",
+  "reason": "ArrayAccess legacy key-mapping (offsetGet/offsetSet) with no call-site form to rewrite"
+ },
+ {
+  "set": "4.4",
+  "rule": "skip",
+  "name": "WC_Order_Item_Shipping::offsetSet",
+  "reason": "ArrayAccess legacy key-mapping (offsetGet/offsetSet) with no call-site form to rewrite"
+ },
+ {
+  "set": "4.4",
+  "rule": "skip",
+  "name": "WC_Order_Item_Product::offsetSet",
+  "reason": "ArrayAccess legacy key-mapping (offsetGet/offsetSet) with no call-site form to rewrite"
+ },
+ {
+  "set": "4.4",
+  "rule": "skip",
+  "name": "WC_Order_Item_Fee::offsetSet",
+  "reason": "ArrayAccess legacy key-mapping (offsetGet/offsetSet) with no call-site form to rewrite"
+ },
+ {
+  "set": "4.4",
+  "rule": "skip",
+  "name": "WC_Order_Item_Coupon::offsetGet",
+  "reason": "ArrayAccess legacy key-mapping (offsetGet/offsetSet) with no call-site form to rewrite"
+ },
+ {
+  "set": "4.4",
+  "rule": "skip",
+  "name": "WC_Order_Item_Coupon::offsetSet",
+  "reason": "ArrayAccess legacy key-mapping (offsetGet/offsetSet) with no call-site form to rewrite"
+ },
+ {
+  "set": "4.4",
+  "rule": "skip",
+  "name": "WC_Download_Handler::count_download",
+  "reason": "static no-op hook callback invoked only by WC; RemoveMethodCall cannot match static calls"
+ },
+ {
+  "set": "4.4",
+  "rule": "ReturnFirstArgMethod",
+  "class": "WC_Admin_List_Table_Products",
+  "method": "sku_search"
+ },
+ {
+  "set": "4.5",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Blocks\\Assets::register_block_script"
+ },
+ {
+  "set": "4.5",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\RestApi\\Package::init"
+ },
+ {
+  "set": "4.5",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\RestApi\\Package::get_version"
+ },
+ {
+  "set": "4.5",
+  "rule": "RenameStaticMethod",
+  "class": "Automattic\\WooCommerce\\RestApi\\Package",
+  "old": "get_path",
+  "newClass": "Automattic\\WooCommerce\\RestApi\\Server",
+  "new": "get_path"
+ },
+ {
+  "set": "4.5",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\RestApi\\Package"
+ },
+ {
+  "set": "4.6",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Admin_Setup_Wizard_Tracking",
+  "method": "init"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard_Tracking::get_current_step",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Admin_Setup_Wizard_Tracking",
+  "method": "add_footer_scripts"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard_Tracking::dequeue_non_allowed_scripts",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Admin_Setup_Wizard_Tracking",
+  "method": "track_start"
+ },
+ {
+  "set": "4.6",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Admin_Setup_Wizard_Tracking",
+  "method": "track_ready_next_steps"
+ },
+ {
+  "set": "4.6",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Admin_Setup_Wizard_Tracking",
+  "method": "add_step_save_events"
+ },
+ {
+  "set": "4.6",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Admin_Setup_Wizard_Tracking",
+  "method": "track_store_setup"
+ },
+ {
+  "set": "4.6",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Admin_Setup_Wizard_Tracking",
+  "method": "track_payments"
+ },
+ {
+  "set": "4.6",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Admin_Setup_Wizard_Tracking",
+  "method": "track_shipping"
+ },
+ {
+  "set": "4.6",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Admin_Setup_Wizard_Tracking",
+  "method": "track_recommended"
+ },
+ {
+  "set": "4.6",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Admin_Setup_Wizard_Tracking",
+  "method": "track_jetpack_activate"
+ },
+ {
+  "set": "4.6",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Admin_Setup_Wizard_Tracking",
+  "method": "track_next_steps"
+ },
+ {
+  "set": "4.6",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Admin_Setup_Wizard_Tracking",
+  "method": "track_skip_step"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard_Tracking::set_obw_steps",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::__construct",
+  "reason": "deprecated class constructor (whole wizard removed); see CLASSES todo"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::admin_menus",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::should_show_theme",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::should_show_automated_tax",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::should_show_mailchimp",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::should_show_facebook",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::is_wc_admin_active",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::should_show_wc_admin",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::should_show_wc_admin_onboarding",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::should_show_recommended_step",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Admin_Setup_Wizard",
+  "method": "enqueue_scripts"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::setup_wizard",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::get_next_step_link",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::setup_wizard_header",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::setup_wizard_footer",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::setup_wizard_steps",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::setup_wizard_content",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::wc_setup_new_onboarding",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Admin_Setup_Wizard",
+  "method": "wc_setup_new_onboarding_save"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::wc_setup_store_setup",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::tracking_modal",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Admin_Setup_Wizard",
+  "method": "wc_setup_store_setup_save"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::close_http_connection",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::run_deferred_actions",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::install_plugin",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::install_theme",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::install_jetpack",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::install_woocommerce_services",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::get_wcs_requisite_plugins",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::plugin_install_info",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::get_wizard_shipping_methods",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::shipping_method_selection_form",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::get_product_weight_selection",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::get_product_dimension_selection",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::wc_setup_shipping",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Admin_Setup_Wizard",
+  "method": "wc_setup_shipping_save"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::is_stripe_supported_country",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::is_paypal_supported_currency",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::is_klarna_checkout_supported_country",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::is_klarna_payments_supported_country",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::is_square_supported_country",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::is_eway_payments_supported_country",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::is_shipstation_supported_country",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::is_wcs_shipping_labels_supported_country",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::get_current_user_email",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::get_wizard_available_in_cart_payment_gateways",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::get_wizard_in_cart_payment_gateways",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::get_wizard_manual_payment_gateways",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::display_service_item",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::is_featured_service",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::is_not_featured_service",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::wc_setup_payment",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Admin_Setup_Wizard",
+  "method": "wc_setup_payment_save"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::display_recommended_item",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::wc_setup_recommended",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Admin_Setup_Wizard",
+  "method": "wc_setup_recommended_save"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::wc_setup_activate_actions",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::wc_setup_activate_get_feature_list_str",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::wc_setup_activate",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::get_all_activate_errors",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::get_activate_error_message",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Admin_Setup_Wizard",
+  "method": "wc_setup_activate_save"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Setup_Wizard::wc_setup_ready",
+  "reason": "internal setup-wizard method; wizard removed in 4.6, no replacement"
+ },
+ {
+  "set": "4.6",
+  "rule": "skip",
+  "name": "WC_Admin_Notices::install_notice",
+  "reason": "static no-op hook callback invoked only by WC; RemoveMethodCall cannot match static calls"
+ },
+ {
+  "set": "4.6",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Admin_Setup_Wizard"
+ },
+ {
+  "set": "4.6",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Admin_Setup_Wizard_Tracking"
+ },
+ {
+  "set": "4.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Note",
+  "new": "Automattic\\WooCommerce\\Admin\\Notes\\Note"
+ },
+ {
+  "set": "4.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes",
+  "new": "Automattic\\WooCommerce\\Admin\\Notes\\Notes"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_Customize_Store_With_Blocks"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_Edit_Products_On_The_Move"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_EU_VAT_Number"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_Facebook_Marketing_Expert \u2192 Automattic\\WooCommerce\\Admin\\Notes\\FacebookMarketingExpert"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_First_Product"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_Giving_Feedback_Notes"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_Install_JP_And_WCS_Plugins"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_Launch_Checklist"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_Migrate_From_Shopify"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_Mobile_App"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_New_Sales_Record"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_Onboarding_Email_Marketing \u2192 Automattic\\WooCommerce\\Admin\\Notes\\OnboardingEmailMarketing"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_Onboarding_Payments"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_Online_Clothing_Store"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_Order_Milestones"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_Performance_On_Mobile"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_Personalize_Store"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_Real_Time_Order_Alerts"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_Selling_Online_Courses"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_Tracking_Opt_In"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_Woo_Subscriptions_Notes"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_WooCommerce_Payments"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_WooCommerce_Subscriptions"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_Coupon_Page_Moved"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_Insight_First_Sale"
+ },
+ {
+  "set": "4.8",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\WC_Admin_Notes_Test_Checkout"
+ },
+ {
+  "set": "5.0",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Blocks\\Library"
+ },
+ {
+  "set": "5.0",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Blocks\\Assets"
+ },
+ {
+  "set": "6.2",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Options"
+ },
+ {
+  "set": "6.3",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_rest_api_option_permissions"
+ },
+ {
+  "set": "6.3",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Loader"
+ },
+ {
+  "set": "6.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\Onboarding"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "__experimental_woocommerce_blocks_checkout_order_processed \u2192 woocommerce_store_api_checkout_order_processed"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "__experimental_woocommerce_blocks_checkout_update_order_from_request \u2192 woocommerce_store_api_checkout_update_order_from_request"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "__experimental_woocommerce_blocks_checkout_update_order_meta \u2192 woocommerce_store_api_checkout_update_order_meta"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_blocks_cart_update_customer_from_request \u2192 woocommerce_store_api_cart_update_customer_from_request"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_blocks_cart_update_order_from_request \u2192 woocommerce_store_api_cart_update_order_from_request"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_blocks_checkout_order_processed \u2192 woocommerce_store_api_checkout_order_processed"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_blocks_checkout_update_order_from_request \u2192 woocommerce_store_api_checkout_update_order_from_request"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_blocks_checkout_update_order_meta \u2192 woocommerce_store_api_checkout_update_order_meta"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "wooocommerce_store_api_validate_add_to_cart \u2192 woocommerce_store_api_validate_add_to_cart"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "wooocommerce_store_api_validate_cart_item \u2192 woocommerce_store_api_validate_cart_item"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\RouteException",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Exceptions\\RouteException"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\Domain\\Services\\ExtendRestApi",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Schemas\\ExtendSchema"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\SchemaController",
+  "new": "Automattic\\WooCommerce\\StoreApi\\SchemaController"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\RoutesController",
+  "new": "Automattic\\WooCommerce\\StoreApi\\RoutesController"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Formatters",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Formatters"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\Payments\\PaymentResult",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Payments\\PaymentResult"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\Payments\\PaymentContext",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Payments\\PaymentContext"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Schemas\\AbstractAddressSchema",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Schemas\\V1\\AbstractAddressSchema"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Schemas\\AbstractSchema",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Schemas\\V1\\AbstractSchema"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Schemas\\BillingAddressSchema",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Schemas\\V1\\BillingAddressSchema"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Schemas\\CartCouponSchema",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Schemas\\V1\\CartCouponSchema"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Schemas\\CartExtensionsSchema",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Schemas\\V1\\CartExtensionsSchema"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Schemas\\CartFeeSchema",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Schemas\\V1\\CartFeeSchema"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Schemas\\CartItemSchema",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Schemas\\V1\\CartItemSchema"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Schemas\\CartSchema",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Schemas\\V1\\CartSchema"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Schemas\\CartShippingRateSchema",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Schemas\\V1\\CartShippingRateSchema"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Schemas\\CheckoutSchema",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Schemas\\V1\\CheckoutSchema"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Schemas\\ErrorSchema",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Schemas\\V1\\ErrorSchema"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Schemas\\ImageAttachmentSchema",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Schemas\\V1\\ImageAttachmentSchema"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Schemas\\OrderCouponSchema",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Schemas\\V1\\OrderCouponSchema"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Schemas\\ProductAttributeSchema",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Schemas\\V1\\ProductAttributeSchema"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Schemas\\ProductCategorySchema",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Schemas\\V1\\ProductCategorySchema"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Schemas\\ProductCollectionDataSchema",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Schemas\\V1\\ProductCollectionDataSchema"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Schemas\\ProductReviewSchema",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Schemas\\V1\\ProductReviewSchema"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Schemas\\ProductSchema",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Schemas\\V1\\ProductSchema"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Schemas\\ShippingAddressSchema",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Schemas\\V1\\ShippingAddressSchema"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Schemas\\TermSchema",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Schemas\\V1\\TermSchema"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\AbstractCartRoute",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\AbstractCartRoute"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\AbstractRoute",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\AbstractRoute"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\AbstractTermsRoute",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\AbstractTermsRoute"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\Batch",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\Batch"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\Cart",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\Cart"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\CartAddItem",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\CartAddItem"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\CartApplyCoupon",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\CartApplyCoupon"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\CartCoupons",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\CartCoupons"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\CartCouponsByCode",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\CartCouponsByCode"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\CartExtensions",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\CartExtensions"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\CartItems",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\CartItems"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\CartItemsByKey",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\CartItemsByKey"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\CartRemoveCoupon",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\CartRemoveCoupon"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\CartRemoveItem",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\CartRemoveItem"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\CartSelectShippingRate",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\CartSelectShippingRate"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\CartUpdateCustomer",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\CartUpdateCustomer"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\CartUpdateItem",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\CartUpdateItem"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\Checkout",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\Checkout"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\ProductAttributes",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\ProductAttributes"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\ProductAttributesById",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\ProductAttributesById"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\ProductAttributeTerms",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\ProductAttributeTerms"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\ProductCategories",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\ProductCategories"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\ProductCategoriesById",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\ProductCategoriesById"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\ProductCollectionData",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\ProductCollectionData"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\ProductReviews",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\ProductReviews"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\Products",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\Products"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\ProductsById",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\ProductsById"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Blocks\\StoreApi\\Routes\\ProductTags",
+  "new": "Automattic\\WooCommerce\\StoreApi\\Routes\\V1\\ProductTags"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\WcPayPromotion\\Init"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\RemoteFreeExtensions\\Init"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\ActivityPanels"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\Analytics"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\Coupons"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\CouponsMovedTrait"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\CustomerEffortScoreTracks"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\Homescreen"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\Marketing"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\MobileAppBanner"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\RemoteInboxNotifications"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\ShippingLabelBanner"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\ShippingLabelBannerDisplayRules"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\WcPayWelcomePage"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "Automattic\\WooCommerce\\Admin\\FeaturePlugin"
+ },
+ {
+  "set": "6.5",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_admin_newly_installed \u2192 woocommerce_newly_installed"
+ },
+ {
+  "set": "6.5",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_admin_updated \u2192 woocommerce_updated"
+ },
+ {
+  "set": "6.5",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_product_csv_importer_check_import_file_path \u2192 woocommerce_csv_importer_check_import_file_path"
+ },
+ {
+  "set": "7.2",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\OnboardingTasks\\TaskListSection"
+ },
+ {
+  "set": "8.3",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_cart_shortcode_tag \u2192 woocommerce_create_pages"
+ },
+ {
+  "set": "8.3",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_checkout_shortcode_tag \u2192 woocommerce_create_pages"
+ },
+ {
+  "set": "8.6",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_block_template_register \u2192 woocommerce_layout_template_after_instantiation"
+ },
+ {
+  "set": "8.7",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "__experimental_woocommerce_blocks_validate_additional_field \u2192 woocommerce_validate_additional_field"
+ },
+ {
+  "set": "8.7",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "__experimental_woocommerce_blocks_sanitize_additional_field \u2192 woocommerce_sanitize_additional_field"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\WooCommerceAdminUpdatedRuleProcessor",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\WooCommerceAdminUpdatedRuleProcessor"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\WCAdminActiveForRuleProcessor",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\WCAdminActiveForRuleProcessor"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\WCAdminActiveForProvider",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\WCAdminActiveForProvider"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\TransformerService",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\Transformers\\TransformerService"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\TotalPaymentsVolumeProcessor",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\TotalPaymentsVolumeProcessor"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\StoredStateSetupForProducts",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\StoredStateSetupForProducts"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\StoredStateRuleProcessor",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\StoredStateRuleProcessor"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\RuleEvaluator",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\RuleEvaluator"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\PublishBeforeTimeRuleProcessor",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\PublishBeforeTimeRuleProcessor"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\PublishAfterTimeRuleProcessor",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\PublishAfterTimeRuleProcessor"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\ProductCountRuleProcessor",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\ProductCountRuleProcessor"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\PluginVersionRuleProcessor",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\PluginVersionRuleProcessor"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\PluginsActivatedRuleProcessor",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\PluginsActivatedRuleProcessor"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\PassRuleProcessor",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\PassRuleProcessor"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\OrRuleProcessor",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\OrRuleProcessor"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\OrdersProvider",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\OrdersProvider"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\OrderCountRuleProcessor",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\OrderCountRuleProcessor"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\OptionRuleProcessor",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\OptionRuleProcessor"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\OnboardingProfileRuleProcessor",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\OnboardingProfileRuleProcessor"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\NotRuleProcessor",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\NotRuleProcessor"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\NoteStatusRuleProcessor",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\NoteStatusRuleProcessor"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\IsWooExpressRuleProcessor",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\IsWooExpressRuleProcessor"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\IsEcommerceRuleProcessor",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\IsEcommerceRuleProcessor"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\GetRuleProcessor",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\GetRuleProcessor"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\FailRuleProcessor",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\FailRuleProcessor"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\EvaluationLogger",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\EvaluationLogger"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\EvaluateAndGetStatus",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\EvaluateAndGetStatus"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\ComparisonOperation",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\ComparisonOperation"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\BaseLocationStateRuleProcessor",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\BaseLocationStateRuleProcessor"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\BaseLocationCountryRuleProcessor",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\BaseLocationCountryRuleProcessor"
+ },
+ {
+  "set": "8.8",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\Transformers\\PrepareUrl (WC facade wrongly points to ArrayColumn)"
+ },
+ {
+  "set": "8.8",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\Transformers\\DotNotation (WC facade wrongly points to ArrayColumn)"
+ },
+ {
+  "set": "8.8",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\Transformers\\Count (WC facade wrongly points to ArrayColumn)"
+ },
+ {
+  "set": "8.8",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\Transformers\\ArrayValues (WC facade wrongly points to ArrayColumn)"
+ },
+ {
+  "set": "8.8",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\Transformers\\ArraySearch (WC facade wrongly points to ArrayColumn)"
+ },
+ {
+  "set": "8.8",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\Transformers\\ArrayKeys (WC facade wrongly points to ArrayColumn)"
+ },
+ {
+  "set": "8.8",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\Transformers\\ArrayFlatten (WC facade wrongly points to ArrayColumn)"
+ },
+ {
+  "set": "8.8",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\Transformers\\ArrayColumn",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\Transformers\\ArrayColumn"
+ },
+ {
+  "set": "8.8",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\DataSourcePoller"
+ },
+ {
+  "set": "8.9",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "__experimental_woocommerce_blocks_validate_location_{location}_fields \u2192 woocommerce_blocks_validate_location_{location}_fields"
+ },
+ {
+  "set": "8.9",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_blocks_validate_location_additional_fields"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\Navigation\\Screen"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\Navigation\\Menu"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\Navigation\\CoreMenu"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Variations\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Variations\\Stats\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Taxes\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Taxes\\Stats\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Products\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Products\\Stats\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Downloads\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Downloads\\Stats\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Customers\\Stats\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Coupons\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Coupons\\Stats\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Categories\\Query"
+ },
+ {
+  "set": "9.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\RuleProcessorInterface",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\RuleProcessorInterface"
+ },
+ {
+  "set": "9.4",
+  "rule": "RenameClass",
+  "old": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\TransformerInterface",
+  "new": "Automattic\\WooCommerce\\Admin\\RemoteSpecs\\RuleProcessors\\Transformers\\TransformerInterface"
+ },
+ {
+  "set": "9.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Internal\\Admin\\WcPayWelcomePage"
+ },
+ {
+  "set": "9.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Internal\\Admin\\WCPayPromotion\\Init"
+ },
+ {
+  "set": "9.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\OnboardingTasks\\Tasks\\WooCommercePayments"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Gateway_Paypal_Buttons \u2192 Automattic\\WooCommerce\\Gateways\\PayPal\\Buttons"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Gateway_Paypal_Webhook_Handler"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Gateway_Paypal_Transact_Account_Manager \u2192 Automattic\\WooCommerce\\Gateways\\PayPal\\TransactAccountManager"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Gateway_Paypal_Notices \u2192 Automattic\\WooCommerce\\Gateways\\PayPal\\Notices"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Gateway_Paypal_Helper \u2192 Automattic\\WooCommerce\\Gateways\\PayPal\\Helper"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Gateway_Paypal_Constants \u2192 Automattic\\WooCommerce\\Gateways\\PayPal\\Constants"
+ },
+ {
+  "set": "10.8",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Background_Emailer"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_block_template_after_add_block"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_block_template_after_add_block_error"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_block_template_after_add_hide_condition"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_block_template_after_remove_block"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_block_template_after_remove_block_error"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_block_template_after_remove_hide_condition"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\LayoutTemplates\\LayoutTemplateRegistry"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\ProductBlockEditor\\ProductTemplate"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\ProductBlockEditor\\BlockRegistry"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Settings"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\ProductBlockEditor\\Tracks"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\ProductBlockEditor\\RedirectionController"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\ProductBlockEditor\\ProductFormsController"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\ProductBlockEditor\\Init"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\ProductBlockEditor\\BlockTemplateUtils"
+ },
+ {
+  "set": "11.0",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Blocks\\QueryFilters"
+ },
+ {
+  "set": "11.0",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_REST_Products_Catalog_Controller"
+ },
+ {
+  "set": "11.0",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_REST_Layout_Templates_Controller"
+ },
+ {
+  "set": "11.1",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_coupon_object_updated_props \u2192 woocommerce_coupon_updated_props"
+ },
+ {
+  "set": "11.1",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\OnboardingProducts"
+ },
+ {
+  "set": "11.2",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Internal\\Api\\Autogenerated\\GraphQLController"
+ },
+ {
+  "set": "11.2",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\Blueprint\\Exporters\\ExportWCPaymentGateways"
+ },
+ {
+  "set": "11.3",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_variable_product_taxes_influence_price"
+ },
+ {
+  "set": "11.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Internal\\MCP\\MCPAdapterProvider"
+ },
+ {
+  "set": "11.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Internal\\MCP\\Transport\\WooCommerceRestTransport"
+ },
+ {
+  "set": "11.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Internal\\Abilities\\AbilitiesRestBridge"
+ },
+ {
+  "set": "11.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Internal\\Abilities\\REST\\RestAbilityFactory"
+ },
+ {
+  "set": "11.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Internal\\Abilities\\REST\\RestAbility"
+ },
+ {
+  "set": "11.1",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Internal\\VariationGallery\\Package::is_in_canary_cohort",
+  "reason": "Internal namespace, not public API"
+ },
+ {
+  "set": "11.2",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Internal\\StockNotifications\\StockNotifications::init_hooks",
+  "reason": "Internal namespace, not public API"
+ },
+ {
+  "set": "11.2",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Internal\\StockNotifications\\Config::creates_account_on_signup",
+  "reason": "Internal namespace, not public API"
+ },
+ {
+  "set": "11.3",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Internal\\ProductFeed\\Feed\\ProductWalker::walk_batches",
+  "reason": "Internal namespace, not public API"
+ },
+ {
+  "set": "10.5",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Internal\\Orders\\OrderAttributionController::stamp_checkout_html_element_once",
+  "reason": "Internal namespace, not public API"
+ },
+ {
+  "set": "11.1",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Internal\\EmailEditor\\WCTransactionalEmails\\WCTransactionalEmails::init_email_templates",
+  "reason": "Internal namespace, not public API"
+ },
+ {
+  "set": "11.1",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Internal\\EmailEditor\\WCTransactionalEmails\\WCTransactionalEmailPostsGenerator::initialize",
+  "reason": "Internal namespace, not public API"
+ },
+ {
+  "set": "11.1",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Internal\\EmailEditor\\WCTransactionalEmails\\WCTransactionalEmailPostsGenerator::init_default_transactional_emails",
+  "reason": "Internal namespace, not public API"
+ },
+ {
+  "set": "11.1",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Internal\\EmailEditor\\WCTransactionalEmails\\WCTransactionalEmailPostsGenerator::generate_initial_email_templates",
+  "reason": "Internal namespace, not public API"
+ },
+ {
+  "set": "11.1",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Internal\\EmailEditor\\WCTransactionalEmails\\WCTransactionalEmailPostsGenerator::generate_email_templates",
+  "reason": "Internal namespace, not public API"
+ },
+ {
+  "set": "11.1",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Internal\\EmailEditor\\WCTransactionalEmails\\WCTransactionalEmailPostsGenerator::generate_email_template_if_not_exists",
+  "reason": "Internal namespace, not public API"
+ },
+ {
+  "set": "9.0",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Internal\\DataStores\\Orders\\DataSynchronizer::get_sync_status",
+  "reason": "Internal namespace, not public API"
+ },
+ {
+  "set": "11.1",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Internal\\Admin\\Settings\\PaymentsProviders::reset_memo",
+  "reason": "Internal namespace, not public API"
+ },
+ {
+  "set": "9.9",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Internal\\Admin\\Orders\\ListTable::get_and_maybe_update_months_filter_cache",
+  "reason": "Internal namespace, not public API"
+ },
+ {
+  "set": "9.9",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Internal\\Admin\\Loader::get_order_statuses",
+  "reason": "Internal namespace, not public API"
+ },
+ {
+  "set": "9.9",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Internal\\Admin\\Loader::get_unregistered_order_statuses",
+  "reason": "Internal namespace, not public API"
+ },
+ {
+  "set": "9.9",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Internal\\Admin\\Loader::add_settings_group",
+  "reason": "Internal namespace, not public API"
+ },
+ {
+  "set": "9.9",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Internal\\Admin\\Loader::add_settings",
+  "reason": "Internal namespace, not public API"
+ },
+ {
+  "set": "9.9",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Internal\\Admin\\Loader::get_custom_settings",
+  "reason": "Internal namespace, not public API"
+ },
+ {
+  "set": "9.9",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Internal\\Admin\\Loader::get_currency_settings",
+  "reason": "Internal namespace, not public API"
+ },
+ {
+  "set": "11.1",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Internal\\Admin\\Emails\\EmailListingRestController::initialize_template_generator",
+  "reason": "Internal namespace, not public API"
+ },
+ {
+  "set": "11.1",
+  "rule": "RenameStaticMethod",
+  "class": "Automattic\\WooCommerce\\Blocks\\Utils\\ProductGalleryUtils",
+  "old": "get_product_gallery_image_count",
+  "newClass": "Automattic\\WooCommerce\\Blocks\\Utils\\ProductGalleryUtils",
+  "new": "get_product_gallery_media_count"
+ },
+ {
+  "set": "10.9",
+  "rule": "RenameStaticMethod",
+  "class": "Automattic\\WooCommerce\\Blocks\\Utils\\CartCheckoutUtils",
+  "old": "is_overriden_by_custom_template_content",
+  "newClass": "Automattic\\WooCommerce\\Blocks\\Utils\\CartCheckoutUtils",
+  "new": "is_overridden_by_custom_template_content"
+ },
+ {
+  "set": "11.3",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Blocks\\Templates\\ProductCatalogTemplate::remove_block_template_support_for_shop_page",
+  "reason": "hook callback / init invoked by WC itself"
+ },
+ {
+  "set": "11.0",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Blocks\\Shipping\\ShippingController::track_local_pickup",
+  "reason": "hook callback / init invoked by WC itself"
+ },
+ {
+  "set": "11.0",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Blocks\\QueryFilters"
+ },
+ {
+  "set": "11.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Blocks\\QueryFilters::init"
+ },
+ {
+  "set": "11.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Blocks\\QueryFilters::main_query_filter"
+ },
+ {
+  "set": "11.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Blocks\\QueryFilters::add_query_clauses"
+ },
+ {
+  "set": "11.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Blocks\\QueryFilters::get_filtered_price"
+ },
+ {
+  "set": "11.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Blocks\\QueryFilters::get_stock_status_counts"
+ },
+ {
+  "set": "11.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Blocks\\QueryFilters::get_rating_counts"
+ },
+ {
+  "set": "11.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Blocks\\QueryFilters::get_attribute_counts"
+ },
+ {
+  "set": "9.6",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Blocks\\Package::feature"
+ },
+ {
+  "set": "5.0",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Blocks\\Library::init",
+  "reason": "hook callback / init invoked by WC itself"
+ },
+ {
+  "set": "5.0",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Blocks\\Library::define_tables",
+  "reason": "hook callback / init invoked by WC itself"
+ },
+ {
+  "set": "5.0",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Blocks\\Library::register_blocks",
+  "reason": "hook callback / init invoked by WC itself"
+ },
+ {
+  "set": "8.9",
+  "rule": "RenameFunctionAsStatement",
+  "old": "__experimental_woocommerce_blocks_register_checkout_field",
+  "new": "woocommerce_register_additional_checkout_field"
+ },
+ {
+  "set": "8.9",
+  "rule": "RenameMethod",
+  "class": "Automattic\\WooCommerce\\Blocks\\Domain\\Services\\CheckoutFields",
+  "old": "get_additional_fields_keys",
+  "new": "get_order_fields_keys"
+ },
+ {
+  "set": "10.6",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Blocks\\BlockTypesController::delete_product_transients",
+  "reason": "hook callback / init invoked by WC itself"
+ },
+ {
+  "set": "10.9",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Blocks\\BlockTypes\\AbstractBlock::get_block_type",
+  "reason": "protected method"
+ },
+ {
+  "set": "11.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Blocks\\Assets\\Api::get_block_metadata_path"
+ },
+ {
+  "set": "5.0",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Blocks\\Assets::init",
+  "reason": "hook callback / init invoked by WC itself"
+ },
+ {
+  "set": "5.0",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Blocks\\Assets::register_assets",
+  "reason": "hook callback / init invoked by WC itself"
+ },
+ {
+  "set": "5.0",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Blocks\\Assets::enqueue_scripts",
+  "reason": "hook callback / init invoked by WC itself"
+ },
+ {
+  "set": "5.0",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Blocks\\Assets::add_theme_body_class",
+  "reason": "hook callback / init invoked by WC itself"
+ },
+ {
+  "set": "5.0",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Blocks\\Assets::add_theme_admin_body_class",
+  "reason": "hook callback / init invoked by WC itself"
+ },
+ {
+  "set": "5.0",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Blocks\\Assets::redirect_to_field",
+  "reason": "hook callback / init invoked by WC itself"
+ },
+ {
+  "set": "9.8",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\WCAdminHelper::is_store_page"
+ },
+ {
+  "set": "10.8",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\Note::get_layout"
+ },
+ {
+  "set": "10.8",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\Note::get_image"
+ },
+ {
+  "set": "10.8",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\Note::set_layout"
+ },
+ {
+  "set": "10.8",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Notes\\Note::set_image"
+ },
+ {
+  "set": "5.0",
+  "rule": "RenameStaticMethod",
+  "class": "Automattic\\WooCommerce\\Admin\\Loader",
+  "old": "is_feature_enabled",
+  "newClass": "Automattic\\WooCommerce\\Admin\\Features\\Features",
+  "new": "is_enabled"
+ },
+ {
+  "set": "6.3",
+  "rule": "RenameStaticMethod",
+  "class": "Automattic\\WooCommerce\\Admin\\Loader",
+  "old": "is_admin_or_embed_page",
+  "newClass": "Automattic\\WooCommerce\\Admin\\PageController",
+  "new": "is_admin_or_embed_page"
+ },
+ {
+  "set": "6.3",
+  "rule": "RenameStaticMethod",
+  "class": "Automattic\\WooCommerce\\Admin\\Loader",
+  "old": "is_admin_page",
+  "newClass": "Automattic\\WooCommerce\\Admin\\PageController",
+  "new": "is_admin_page"
+ },
+ {
+  "set": "6.3",
+  "rule": "RenameStaticMethod",
+  "class": "Automattic\\WooCommerce\\Admin\\Loader",
+  "old": "is_embed_page",
+  "newClass": "Automattic\\WooCommerce\\Admin\\PageController",
+  "new": "is_embed_page"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\OnboardingTasks\\Tasks\\Marketing::get_plugins"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\OnboardingTasks\\Tasks\\Marketing::has_installed_extensions"
+ },
+ {
+  "set": "7.2",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\OnboardingTasks\\TaskList::get_sections"
+ },
+ {
+  "set": "10.9",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\OnboardingTasks\\TaskList::possibly_remove_reminder_bar",
+  "reason": "hook callback / init invoked by WC itself"
+ },
+ {
+  "set": "7.2",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\OnboardingTasks\\Task::get_level"
+ },
+ {
+  "set": "7.2",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\OnboardingTasks\\Task::is_snoozeable"
+ },
+ {
+  "set": "7.2",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\OnboardingTasks\\Task::get_snoozed_until"
+ },
+ {
+  "set": "7.2",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\OnboardingTasks\\Task::is_snoozed"
+ },
+ {
+  "set": "7.2",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\OnboardingTasks\\Task::snooze"
+ },
+ {
+  "set": "7.2",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\OnboardingTasks\\Task::undo_snooze"
+ },
+ {
+  "set": "7.2",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\OnboardingTasks\\Task::is_disabled"
+ },
+ {
+  "set": "6.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\Onboarding::get_allowed_industries"
+ },
+ {
+  "set": "6.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\Onboarding::get_allowed_product_types"
+ },
+ {
+  "set": "6.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\Onboarding::get_themes"
+ },
+ {
+  "set": "6.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\Onboarding::get_theme_data"
+ },
+ {
+  "set": "6.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\Onboarding::get_allowed_themes"
+ },
+ {
+  "set": "6.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\Onboarding::get_product_data"
+ },
+ {
+  "set": "11.1",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\Features::get_optional_feature_options"
+ },
+ {
+  "set": "11.1",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\Features::enable"
+ },
+ {
+  "set": "11.1",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\Features::disable"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Variations\\Stats\\Query::get_default_query_vars"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Variations\\Stats\\Query::get_data"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Variations\\Query::get_default_query_vars"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Variations\\Query::get_data"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Taxes\\Stats\\Query::get_default_query_vars"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Taxes\\Stats\\Query::get_data"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Taxes\\Query::get_default_query_vars"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Taxes\\Query::get_data"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Query::__construct"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Query::get_data"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Products\\Stats\\Query::get_default_query_vars"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Products\\Stats\\Query::get_data"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Products\\Query::get_default_query_vars"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Products\\Query::get_data"
+ },
+ {
+  "set": "10.3",
+  "rule": "RenameStaticMethod",
+  "class": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Orders\\DataStore",
+  "old": "maybe_update_order_statuses_transient",
+  "newClass": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Orders\\DataStore",
+  "new": "maybe_update_order_statuses_cache"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Downloads\\Stats\\Query::get_default_query_vars"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Downloads\\Stats\\Query::get_data"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Downloads\\Query::get_default_query_vars"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Downloads\\Query::get_data"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Customers\\Stats\\Query::get_default_query_vars"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Coupons\\Stats\\Query::get_default_query_vars"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Coupons\\Stats\\Query::get_data"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Coupons\\Query::get_default_query_vars"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Coupons\\Query::get_data"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Categories\\Query::get_default_query_vars"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Categories\\Query::get_data"
+ },
+ {
+  "set": "6.3",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Options::user_has_permission",
+  "reason": "REST route/permission callback invoked by WC itself"
+ },
+ {
+  "set": "7.8",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\OnboardingTasks::snooze_task_permissions_check",
+  "reason": "REST route/permission callback invoked by WC itself"
+ },
+ {
+  "set": "7.8",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\OnboardingTasks::snooze_task",
+  "reason": "REST route/permission callback invoked by WC itself"
+ },
+ {
+  "set": "7.8",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\OnboardingTasks::undo_snooze_task",
+  "reason": "REST route/permission callback invoked by WC itself"
+ },
+ {
+  "set": "11.1",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\OnboardingProducts::create_products",
+  "reason": "REST route/permission callback invoked by WC itself"
+ },
+ {
+  "set": "10.6",
+  "rule": "skip",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Notes::track_opened_email",
+  "reason": "REST route/permission callback invoked by WC itself"
+ },
+ {
+  "set": "10.1",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "wc_delete_related_product_transients"
+ },
+ {
+  "set": "8.6",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "wc_register_default_log_handler"
+ },
+ {
+  "set": "8.6",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "wc_get_log_file_path"
+ },
+ {
+  "set": "8.6",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "wc_get_log_file_name"
+ },
+ {
+  "set": "10.4",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "wc_enqueue_js"
+ },
+ {
+  "set": "9.9",
+  "rule": "RenameFunction",
+  "old": "wc_current_theme_is_fse_theme",
+  "new": "wp_is_block_theme"
+ },
+ {
+  "set": "8.6",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Orders_Tracking::track_order_search"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Gateway_Paypal_Webhook_Handler::process_webhook"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Gateway_Paypal_Transact_Account_Manager::do_onboarding"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Gateway_Paypal_Transact_Account_Manager::get_transact_account_data"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Gateway_Paypal_Request::create_paypal_order"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Gateway_Paypal_Request::get_paypal_order_details"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Gateway_Paypal_Request::authorize_or_capture_payment"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Gateway_Paypal_Request::capture_authorized_payment"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Gateway_Paypal_Request::get_paypal_order_purchase_unit_amount"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Gateway_Paypal_Request::fetch_paypal_client_id"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Gateway_Paypal_Notices::add_paypal_notices"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Gateway_Paypal_Notices::add_paypal_notices_on_payments_settings_page"
+ },
+ {
+  "set": "10.4",
+  "rule": "RenameMethod",
+  "class": "WC_Gateway_Paypal_Notices",
+  "old": "add_paypal_migration_notice_on_payments_settings_page",
+  "new": "add_paypal_notices_on_payments_settings_page"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Gateway_Paypal_Notices::add_paypal_migration_notice"
+ },
+ {
+  "set": "10.4",
+  "rule": "skip",
+  "name": "WC_Gateway_Paypal_Notices::paypal_migration_notice_dismissed",
+  "reason": "protected static in trunk; internal"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameStaticMethod",
+  "class": "WC_Gateway_Paypal_Notices",
+  "old": "set_account_restriction_flag",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Notices",
+  "new": "set_account_restriction_flag"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameStaticMethod",
+  "class": "WC_Gateway_Paypal_Notices",
+  "old": "clear_account_restriction_flag",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Notices",
+  "new": "clear_account_restriction_flag"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameStaticMethod",
+  "class": "WC_Gateway_Paypal_Notices",
+  "old": "manage_account_restriction_flag_for_notice",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Notices",
+  "new": "manage_account_restriction_flag_for_notice"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameStaticMethod",
+  "class": "WC_Gateway_Paypal_Helper",
+  "old": "is_paypal_gateway_available",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Helper",
+  "new": "is_paypal_gateway_available"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameStaticMethod",
+  "class": "WC_Gateway_Paypal_Helper",
+  "old": "is_orders_v2_migration_eligible",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Helper",
+  "new": "is_orders_v2_migration_eligible"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Gateway_Paypal_Helper::get_wc_order_from_paypal_custom_id"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameStaticMethod",
+  "class": "WC_Gateway_Paypal_Helper",
+  "old": "redact_data",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Helper",
+  "new": "redact_data"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Gateway_Paypal_Helper::mask_email"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameStaticMethod",
+  "class": "WC_Gateway_Paypal_Helper",
+  "old": "update_addresses_in_order",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Helper",
+  "new": "update_addresses_in_order"
+ },
+ {
+  "set": "10.6",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Gateway_Paypal::get_icon_image"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Gateway_Paypal_Buttons::get_options"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Gateway_Paypal_Buttons::get_common_options"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Gateway_Paypal_Buttons::get_client_id"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Gateway_Paypal_Buttons::get_page_type"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Gateway_Paypal_Buttons::is_enabled"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Gateway_Paypal_Buttons::get_current_page_for_app_switch"
+ },
+ {
+  "set": "11.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Product_Variable_Data_Store_CPT::taxes_influence_price"
+ },
+ {
+  "set": "10.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Customer_Data_Store::get_user_ids_for_billing_email"
+ },
+ {
+  "set": "11.0",
+  "rule": "skip",
+  "name": "WC_Regenerate_Images::regenerating_notice",
+  "reason": "hook/scheduler callback invoked by WC itself"
+ },
+ {
+  "set": "11.2",
+  "rule": "skip",
+  "name": "WC_Post_Data::recount_terms_for_product_visibility_change",
+  "reason": "hook/scheduler callback invoked by WC itself"
+ },
+ {
+  "set": "11.1",
+  "rule": "skip",
+  "name": "WC_Install::background_installer",
+  "reason": "hook/scheduler callback invoked by WC itself"
+ },
+ {
+  "set": "11.1",
+  "rule": "skip",
+  "name": "WC_Install::theme_background_installer",
+  "reason": "hook/scheduler callback invoked by WC itself"
+ },
+ {
+  "set": "10.5",
+  "rule": "skip",
+  "name": "WC_Install::add_admin_note_after_page_created",
+  "reason": "hook/scheduler callback invoked by WC itself"
+ },
+ {
+  "set": "11.2",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Brands::recount_after_stock_change (void wrapper of a function that returns a value)"
+ },
+ {
+  "set": "11.2",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Brands::recount_all_brands (void wrapper of a function that returns a value)"
+ },
+ {
+  "set": "10.9",
+  "rule": "skip",
+  "name": "WC_AJAX::json_search_categories_tree",
+  "reason": "hook/AJAX/admin callback invoked by WC itself"
+ },
+ {
+  "set": "11.1",
+  "rule": "skip",
+  "name": "WC_Admin_List_Table_Products::add_sample_product_badge",
+  "reason": "hook/AJAX/admin callback invoked by WC itself"
+ },
+ {
+  "set": "10.8",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Admin_Webhooks_Table_List::get_legacy_api_webhooks_count"
+ },
+ {
+  "set": "5.4",
+  "rule": "skip",
+  "name": "WC_Admin_Notices::prepare_note_with_nonce",
+  "reason": "hook/AJAX/admin callback invoked by WC itself"
+ },
+ {
+  "set": "10.5",
+  "rule": "skip",
+  "name": "WC_Admin_Menus::addons_menu",
+  "reason": "hook/AJAX/admin callback invoked by WC itself"
+ },
+ {
+  "set": "10.1",
+  "rule": "skip",
+  "name": "WC_Admin_Importers::post_importer_compatibility",
+  "reason": "hook/AJAX/admin callback invoked by WC itself"
+ },
+ {
+  "set": "5.3",
+  "rule": "skip",
+  "name": "WC_Session_Handler::nonce_user_logged_out",
+  "reason": "hook/AJAX/admin callback invoked by WC itself"
+ },
+ {
+  "set": "8.6",
+  "rule": "RenameMethod",
+  "class": "Automattic\\WooCommerce\\Internal\\Features\\ProductBlockEditor\\ProductTemplates\\Section",
+  "old": "add_section",
+  "new": "add_subsection"
+ },
+ {
+  "set": "7.8",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Blocks\\BlockTemplatesController::get_block_templates_from_db"
+ },
+ {
+  "set": "9.0",
+  "rule": "todo",
+  "category": "ARGUMENTS",
+  "name": "WC_Webhook::build_payload (legacy REST API version payload)"
+ },
+ {
+  "set": "9.9",
+  "rule": "todo",
+  "category": "ARGUMENTS",
+  "name": "WC_Emails::wrap_message"
+ },
+ {
+  "set": "8.1",
+  "rule": "todo",
+  "category": "ARGUMENTS",
+  "name": "WC_REST_Product_Variations_Controller::prepare_objects_query (local_attributes)"
+ },
+ {
+  "set": "10.3",
+  "rule": "todo",
+  "category": "ARGUMENTS",
+  "name": "Automattic\\WooCommerce\\Blocks\\Utils\\CartCheckoutUtils::find_express_checkout_attributes (post_content as array)"
+ },
+ {
+  "set": "9.6",
+  "rule": "todo",
+  "category": "ARGUMENTS",
+  "name": "Automattic\\WooCommerce\\Blocks\\Domain\\Package::__construct (FeatureGating)"
+ },
+ {
+  "set": "8.9",
+  "rule": "todo",
+  "category": "ARGUMENTS",
+  "name": "Automattic\\WooCommerce\\Blocks\\Domain\\Services\\CheckoutFields::validate_options (location \"additional\")"
+ },
+ {
+  "set": "8.9",
+  "rule": "todo",
+  "category": "ARGUMENTS",
+  "name": "Automattic\\WooCommerce\\Blocks\\Domain\\Services\\CheckoutFields::get_group_key (group \"additional\")"
+ },
+ {
+  "set": "8.9",
+  "rule": "todo",
+  "category": "ARGUMENTS",
+  "name": "Automattic\\WooCommerce\\Blocks\\Domain\\Services\\CheckoutFields::get_group_name (group key \"_wc_additional\")"
+ },
+ {
+  "set": "8.9",
+  "rule": "todo",
+  "category": "ARGUMENTS",
+  "name": "Automattic\\WooCommerce\\Blocks\\Assets\\AssetDataRegistry::add ($check_key_exists)"
+ },
+ {
+  "set": "8.9",
+  "rule": "todo",
+  "category": "ARGUMENTS",
+  "name": "Automattic\\WooCommerce\\Blocks\\Assets\\AssetDataRegistry::hydrate_data_from_api_request ($check_key_exists)"
+ },
+ {
+  "set": "9.0",
+  "rule": "todo",
+  "category": "FUNCTIONS",
+  "name": "get_woocommerce_api_url"
+ },
+ {
+  "set": "9.7",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Order_Item_Shipping::set_tax_status"
+ },
+ {
+  "set": "9.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Cart::is_coupon_emails_allowed"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Gateway_Paypal_PDT_Handler::check_response"
+ },
+ {
+  "set": "11.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Admin_Notices::add_min_version_notice"
+ },
+ {
+  "set": "8.2",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Admin_Notices::wp_php_min_requirements_notice"
+ },
+ {
+  "set": "5.4",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Settings_Page::get_settings"
+ },
+ {
+  "set": "10.3",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "WC_Notes_Run_Db_Update::show_reminder"
+ },
+ {
+  "set": "8.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Database\\Migrations\\TableMigrator::process_migration_batch_for_ids"
+ },
+ {
+  "set": "11.1",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Caches\\ProductCountCacheService::update_on_new_product"
+ },
+ {
+  "set": "11.1",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Caches\\ProductCountCache::set_multiple"
+ },
+ {
+  "set": "10.1",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Caches\\OrderCountCache::get_default_statuses"
+ },
+ {
+  "set": "11.2",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Blocks\\Domain\\Services\\CheckoutFields::default_sanitize_callback"
+ },
+ {
+  "set": "11.2",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Blocks\\Domain\\Services\\CheckoutFields::default_validate_callback"
+ },
+ {
+  "set": "6.4",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\FeaturePlugin::init"
+ },
+ {
+  "set": "8.8",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\DataSourcePoller::get_specs_from_data_sources"
+ },
+ {
+  "set": "8.8",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\DataSourcePoller::read_specs_from_data_sources"
+ },
+ {
+  "set": "8.8",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\DataSourcePoller::delete_specs_transient"
+ },
+ {
+  "set": "8.8",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\DataSourcePoller::set_specs_transient"
+ },
+ {
+  "set": "7.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\Features::add_features_section"
+ },
+ {
+  "set": "7.0",
+  "rule": "todo",
+  "category": "METHODS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\Features::add_features_settings"
+ },
+ {
+  "set": "11.2",
+  "rule": "todo",
+  "category": "CONSTANTS",
+  "name": "Automattic\\WooCommerce\\Enums\\PaymentGatewayFeature::AGENTIC_COMMERCE"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "CONSTANTS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\OnboardingTasks\\TaskList::REMINDER_BAR_HIDDEN_OPTION"
+ },
+ {
+  "set": "7.2",
+  "rule": "todo",
+  "category": "CONSTANTS",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\OnboardingTasks\\Task::SNOOZED_OPTION"
+ },
+ {
+  "set": "8.9",
+  "rule": "todo",
+  "category": "CONSTANTS",
+  "name": "Automattic\\WooCommerce\\Blocks\\Domain\\Services\\CheckoutFields::ADDITIONAL_FIELDS_PREFIX"
+ },
+ {
+  "set": "7.2",
+  "rule": "todo",
+  "category": "PROPERTIES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\OnboardingTasks\\TaskList::$task_class_id_map"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "WPCOM_PROXY_REQUEST_TIMEOUT",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "WPCOM_PROXY_REQUEST_TIMEOUT"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "STATUS_COMPLETED",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "STATUS_COMPLETED"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "STATUS_APPROVED",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "STATUS_APPROVED"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "STATUS_CAPTURED",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "STATUS_CAPTURED"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "STATUS_AUTHORIZED",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "STATUS_AUTHORIZED"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "STATUS_PAYER_ACTION_REQUIRED",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "STATUS_PAYER_ACTION_REQUIRED"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "VOIDED",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "VOIDED"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "INTENT_CAPTURE",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "INTENT_CAPTURE"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "INTENT_AUTHORIZE",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "INTENT_AUTHORIZE"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "PAYMENT_ACTION_CAPTURE",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "PAYMENT_ACTION_CAPTURE"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "PAYMENT_ACTION_AUTHORIZE",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "PAYMENT_ACTION_AUTHORIZE"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "SHIPPING_NO_SHIPPING",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "SHIPPING_NO_SHIPPING"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "SHIPPING_GET_FROM_FILE",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "SHIPPING_GET_FROM_FILE"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "SHIPPING_SET_PROVIDED_ADDRESS",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "SHIPPING_SET_PROVIDED_ADDRESS"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "USER_ACTION_PAY_NOW",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "USER_ACTION_PAY_NOW"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "PAYPAL_ORDER_ITEM_NAME_MAX_LENGTH",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "PAYPAL_ORDER_ITEM_NAME_MAX_LENGTH"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "PAYPAL_INVOICE_ID_MAX_LENGTH",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "PAYPAL_INVOICE_ID_MAX_LENGTH"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "PAYPAL_ADDRESS_LINE_MAX_LENGTH",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "PAYPAL_ADDRESS_LINE_MAX_LENGTH"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "PAYPAL_COUNTRY_CODE_LENGTH",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "PAYPAL_COUNTRY_CODE_LENGTH"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "PAYPAL_STATE_MAX_LENGTH",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "PAYPAL_STATE_MAX_LENGTH"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "PAYPAL_CITY_MAX_LENGTH",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "PAYPAL_CITY_MAX_LENGTH"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "PAYPAL_POSTAL_CODE_MAX_LENGTH",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "PAYPAL_POSTAL_CODE_MAX_LENGTH"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "PAYPAL_LOCALE_MAX_LENGTH",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "PAYPAL_LOCALE_MAX_LENGTH"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "PAYMENT_SOURCE_PAYPAL",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "PAYMENT_SOURCE_PAYPAL"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "PAYMENT_SOURCE_VENMO",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "PAYMENT_SOURCE_VENMO"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "PAYMENT_SOURCE_PAYLATER",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "PAYMENT_SOURCE_PAYLATER"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "SUPPORTED_PAYMENT_SOURCES",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "SUPPORTED_PAYMENT_SOURCES"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "FIELDS_TO_REDACT",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "FIELDS_TO_REDACT"
+ },
+ {
+  "set": "10.5",
+  "rule": "RenameClassConstFetch",
+  "class": "WC_Gateway_Paypal_Constants",
+  "old": "SUPPORTED_CURRENCIES",
+  "newClass": "Automattic\\WooCommerce\\Gateways\\PayPal\\Constants",
+  "new": "SUPPORTED_CURRENCIES"
+ },
+ {
+  "set": "10.8",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Background_Emailer"
+ },
+ {
+  "set": "11.0",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_REST_Products_Catalog_Controller"
+ },
+ {
+  "set": "11.0",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_REST_Layout_Templates_Controller"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Gateway_Paypal_Buttons"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Gateway_Paypal_Webhook_Handler"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Gateway_Paypal_Transact_Account_Manager"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Gateway_Paypal_Notices"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Gateway_Paypal_Helper"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "WC_Gateway_Paypal_Constants"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\LayoutTemplates\\LayoutTemplateRegistry"
+ },
+ {
+  "set": "9.4",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\TransformerInterface"
+ },
+ {
+  "set": "9.4",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\RemoteInboxNotifications\\RuleProcessorInterface"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\ProductBlockEditor\\ProductTemplate"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\ProductBlockEditor\\BlockRegistry"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\ProductBlockEditor\\ProductTemplates\\SubsectionInterface"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\ProductBlockEditor\\ProductTemplates\\SectionInterface"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\ProductBlockEditor\\ProductTemplates\\ProductFormTemplateInterface"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\ProductBlockEditor\\ProductTemplates\\GroupInterface"
+ },
+ {
+  "set": "7.2",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\OnboardingTasks\\TaskListSection"
+ },
+ {
+  "set": "9.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\OnboardingTasks\\Tasks\\WooCommercePayments"
+ },
+ {
+  "set": "11.2",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\Features\\Blueprint\\Exporters\\ExportWCPaymentGateways"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\BlockTemplates\\ContainerInterface"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\BlockTemplates\\BlockTemplateInterface"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\BlockTemplates\\BlockInterface"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\BlockTemplates\\BlockContainerInterface"
+ },
+ {
+  "set": "10.9",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Settings"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Variations\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Variations\\Stats\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Taxes\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Taxes\\Stats\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Products\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Products\\Stats\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Downloads\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Downloads\\Stats\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Customers\\Stats\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Coupons\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Coupons\\Stats\\Query"
+ },
+ {
+  "set": "9.3",
+  "rule": "todo",
+  "category": "CLASSES",
+  "name": "Automattic\\WooCommerce\\Admin\\API\\Reports\\Categories\\Query"
+ },
+ {
+  "set": "3.2",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Webhook",
+  "property": "id",
+  "getMethod": "get_id"
+ },
+ {
+  "set": "3.2",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Webhook",
+  "property": "status",
+  "getMethod": "get_status"
+ },
+ {
+  "set": "3.2",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Webhook",
+  "property": "delivery_url",
+  "getMethod": "get_delivery_url"
+ },
+ {
+  "set": "3.2",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Webhook",
+  "property": "secret",
+  "getMethod": "get_secret"
+ },
+ {
+  "set": "3.2",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Webhook",
+  "property": "topic",
+  "getMethod": "get_topic"
+ },
+ {
+  "set": "3.2",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Webhook",
+  "property": "hooks",
+  "getMethod": "get_hooks"
+ },
+ {
+  "set": "3.2",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Webhook",
+  "property": "resource",
+  "getMethod": "get_resource"
+ },
+ {
+  "set": "3.2",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Webhook",
+  "property": "event",
+  "getMethod": "get_event"
+ },
+ {
+  "set": "3.2",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Webhook",
+  "property": "failure_count",
+  "getMethod": "get_failure_count"
+ },
+ {
+  "set": "3.2",
+  "rule": "PropertyFetchToMethodCall",
+  "class": "WC_Webhook",
+  "property": "api_version",
+  "getMethod": "get_api_version"
+ }
+]
