@@ -100,6 +100,55 @@ Action Scheduler function renames (`wc_schedule_single_action()` → `as_schedul
 
 Anything that needs a human decision is listed at the bottom of each set file under `TODO: these are not handled currently`. Examples are deprecated hooks, arguments, and replacements with a different signature.
 
+## Feature compatibility checks (PHPStan)
+
+Some WooCommerce changes are not deprecations. A feature that replaces an older mechanism becomes the default, and code written for the old one silently stops working. The package ships a PHPStan extension that reports this code with an explanation and a fix. Rector can't safely rewrite most of these cases, so they are reported rather than changed.
+
+| Feature | Default since | What gets reported |
+|---|---|---|
+| HPOS (High-Performance Order Storage) | 8.2 (new stores) | `get_post_meta()`/`update_post_meta()`/`get_post()` and related functions on order ids, `WP_Query`/`get_posts()`/`wp_insert_post()` with `post_type => 'shop_order'`, `$wpdb` SQL on orders in `wp_posts`/`wp_postmeta`, meta boxes and screen checks for the `shop_order` screen, order-list and `save_post_shop_order` hooks, legacy order admin URLs, and a missing `custom_order_tables` compatibility declaration |
+| Cart and Checkout blocks | 8.3 (new stores) | classic cart and checkout template hooks and `WC_Checkout` hooks (84 hooks, each checked as not fired by the Store API or blocks), payment gateways without a blocks integration, `[woocommerce_checkout]`/`[woocommerce_cart]` shortcode detection, and a missing `cart_checkout_blocks` declaration |
+| Legacy REST API removed from core | 9.0 | `WC_API*` classes, `WC()->api` (except `get_endpoint_data()`), `wc-api/v1–v3` URLs, `get_woocommerce_api_url()`, and Legacy-API-only hooks |
+| Brands in core | 9.6 | unguarded declarations of `WC_Brands*` classes and Brands functions (fatal redeclare) |
+| Product block editor removed | 11.0 | the `product_block_editor` / `new_product_management_experience` feature flags |
+
+Code that already handles both paths isn't reported:
+
+- branches on `OrderUtil::custom_orders_table_usage_is_enabled()`, any `*hpos*` helper, flag variable or property, or the `woocommerce_custom_orders_table_enabled` option, including `elseif`, `match` and the early-`return` form;
+- conditions that also check `wc-orders` or `wc_get_page_screen_id()`;
+- legacy order-screen hooks and meta boxes registered next to their HPOS counterpart, and `shop_order` arrays that end up in `wc_get_orders()`;
+- shortcode checks next to `has_block()`, and Legacy REST API code behind `class_exists( 'WC_API' )`;
+- classic checkout hooks in a plugin that also integrates with the blocks through the Store API or `IntegrationInterface`.
+
+With `phpstan/extension-installer` the extension is registered automatically (the package declares it in `extra.phpstan`). Otherwise include it:
+
+```neon
+includes:
+    - vendor/morvy/rector-woocommerce/extension.neon
+
+parameters:
+    woocommerce:
+        # The WooCommerce version you run or upgrade to; checks start once their feature is the default.
+        targetVersion: '11.3'
+```
+
+Each check has its own identifier (`woocommerce.hpos.post`, `woocommerce.blocks.classicHook`, `woocommerce.legacyApi`, …), so you can ignore or baseline a whole group. Load the WordPress and WooCommerce stubs (`php-stubs/woocommerce-stubs`) so order types resolve.
+
+### HPOS migration set (Rector, opt-in)
+
+Two rewrites are exactly equivalent with legacy order storage and correct with HPOS. They live in a separate set, not in the level sets:
+
+```php
+use Morvy\RectorWooCommerce\Set\WooCommerceFeatureSetList;
+
+return RectorConfig::configure()->withSets([WooCommerceFeatureSetList::HPOS]);
+```
+
+- `get_post_type($id) === 'shop_order'` → `OrderUtil::get_order_type($id) === 'shop_order'`
+- `$screen->id === 'shop_order'` → `in_array($screen->id, ['shop_order', wc_get_page_screen_id('shop-order')], true)`. Under HPOS one screen id covers both the order list and the edit screen. `'edit-shop_order'` (the list) is left alone; pairing it would also match the legacy edit screen.
+
+Both assume WooCommerce 6.9 or newer is loaded where the code runs.
+
 ## Updating for a new WooCommerce release
 
 The rule data lives in `tools/deprecations.json`. Each entry is one rule, or one `todo` or `skip`, assigned to a set.

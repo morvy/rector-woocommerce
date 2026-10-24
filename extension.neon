@@ -1,0 +1,41 @@
+parameters:
+    woocommerce:
+        # WooCommerce version the project runs on (or upgrades to). Feature checks only report
+        # once the feature is the default in that version, e.g. HPOS from 8.2.
+        targetVersion: '11.3'
+
+parametersSchema:
+    woocommerce: structure([
+        targetVersion: string()
+    ])
+
+services:
+    -
+        class: Morvy\RectorWooCommerce\PHPStan\FeatureGate
+        arguments:
+            targetVersion: %woocommerce.targetVersion%
+    -
+        class: Morvy\RectorWooCommerce\PHPStan\NodeVisitor\CompatibilityGuardVisitor
+        tags:
+            - phpstan.parser.richParserNodeVisitor
+    -
+        class: Morvy\RectorWooCommerce\PHPStan\Collectors\PluginFileCollector
+        tags:
+            - phpstan.collector
+    -
+        class: Morvy\RectorWooCommerce\PHPStan\Collectors\ClassFactCollector
+        tags:
+            - phpstan.collector
+    -
+        class: Morvy\RectorWooCommerce\PHPStan\Collectors\CallFactCollector
+        tags:
+            - phpstan.collector
+
+rules:
+    - Morvy\RectorWooCommerce\PHPStan\Rules\HposPostFunctionRule
+    - Morvy\RectorWooCommerce\PHPStan\Rules\HposOrderPostTypeRule
+    - Morvy\RectorWooCommerce\PHPStan\Rules\HposSqlRule
+    - Morvy\RectorWooCommerce\PHPStan\Rules\HposScreenRule
+    - Morvy\RectorWooCommerce\PHPStan\Rules\LegacyApiRule
+    - Morvy\RectorWooCommerce\PHPStan\Rules\FeatureMiscRule
+    - Morvy\RectorWooCommerce\PHPStan\Rules\ProjectCompatibilityRule

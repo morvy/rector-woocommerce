@@ -4,10 +4,13 @@
     "license": "MIT",
     "type": "rector-extension",
     "keywords": [
+        "hpos",
+        "phpstan",
+        "phpstan-extension",
         "rector",
-        "woocommerce",
+        "refactoring",
         "upgrade",
-        "refactoring"
+        "woocommerce"
     ],
     "require": {
         "php": ">=8.2",
@@ -45,6 +48,11 @@
         "composer-normalize": {
             "indent-size": 4,
             "indent-style": "space"
+        },
+        "phpstan": {
+            "includes": [
+                "extension.neon"
+            ]
         }
     },
     "scripts": {

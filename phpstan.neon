@@ -8,6 +8,7 @@ parameters:
 
     excludePaths:
         - tests/Stubs
+        - tests/PHPStan/data
 
     reportUnmatchedIgnoredErrors: false
     treatPhpDocTypesAsCertain: false

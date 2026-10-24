@@ -460,8 +460,8 @@ foreach ($versions as $version) {
 
     if ($fixture !== '') {
         [$fixtureBefore, $fixtureAfter] = explode("\n?>\n-----\n<?php\n", $fixture);
-        $allBefore[]                    = mb_trim(mb_substr($fixtureBefore, 5));
-        $allAfter[]                     = mb_trim(mb_substr($fixtureAfter, 0, -4));
+        $allBefore[]                    = trim(mb_substr($fixtureBefore, 5));
+        $allAfter[]                     = trim(mb_substr($fixtureAfter, 0, -4));
         @mkdir($dir, 0o777, true);
         file_put_contents("{$dir}/test_fixture.php.inc", $fixture);
         file_put_contents("{$dir}/Wc" . className($version) . 'Test.php', testClass('Wc' . className($version), 'Wc' . className($version) . 'Test', "wc-{$version}.php", '/../../../../'));
