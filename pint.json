@@ -89,7 +89,7 @@
         "logical_operators": true,
         "magic_constant_casing": true,
         "magic_method_casing": true,
-        "mb_str_functions": true,
+        "mb_str_functions": false,
         "method_chaining_indentation": true,
         "modernize_strpos": true,
         "modernize_types_casting": true,
@@ -260,5 +260,9 @@
             "identical": false,
             "less_and_greater": false
         }
-    }
+    },
+    "exclude": [
+        "tests/PHPStan/data",
+        "tests/Stubs"
+    ]
 }
