@@ -12,8 +12,6 @@ return RectorConfig::configure()
         __DIR__ . '/tests',
     ])
     ->withSkip([
-        // Mirrors WooCommerce's untyped API; adding types would change what the tests resolve.
-        __DIR__ . '/tests/Stubs',
         // PHPStan rule fixtures: their code is the input under test.
         __DIR__ . '/tests/PHPStan/data',
     ])

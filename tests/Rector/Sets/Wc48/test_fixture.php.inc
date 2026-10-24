@@ -1,13 +1,13 @@
 <?php
 
-$wc0 = new \Automattic\WooCommerce\Admin\Notes\WC_Admin_Note();
-$wc1 = new \Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes();
+$wc0 = $value instanceof \Automattic\WooCommerce\Admin\Notes\WC_Admin_Note;
+$wc1 = $value instanceof \Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes;
 
 ?>
 -----
 <?php
 
-$wc0 = new \Automattic\WooCommerce\Admin\Notes\Note();
-$wc1 = new \Automattic\WooCommerce\Admin\Notes\Notes();
+$wc0 = $value instanceof \Automattic\WooCommerce\Admin\Notes\Note;
+$wc1 = $value instanceof \Automattic\WooCommerce\Admin\Notes\Notes;
 
 ?>

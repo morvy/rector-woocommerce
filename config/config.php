@@ -12,6 +12,10 @@ use Morvy\RectorWooCommerce\ValueObject\PropertyFetchToMethodCall;
 use Rector\Config\RectorConfig;
 
 return static function (RectorConfig $rectorConfig): void {
+    // The WordPress/WooCommerce stubs, scanned (never executed), so they cannot clash with a real install or with
+    // stubs the project loads itself.
+    $rectorConfig->phpstanConfig(__DIR__ . '/phpstan-for-rector.neon');
+
     /*
      * Register the package's own rules before any set adds Rector's generic renaming rules.
      *

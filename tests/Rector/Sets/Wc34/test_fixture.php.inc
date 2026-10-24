@@ -1,6 +1,6 @@
 <?php
 
-$wc0 = new \WC_Settings_Rest_API();
+$wc0 = $value instanceof \WC_Settings_Rest_API;
 add_filter('woocommerce_settings_account_page_options', 'my_callback');
 add_filter('woocommerce_settings_account_page_options_after', 'my_callback');
 add_filter('woocommerce_settings_account_page_options_end', 'my_callback');
@@ -18,7 +18,7 @@ $wc10->_topic_count_text('foo');
 -----
 <?php
 
-$wc0 = new \WC_Settings_Advanced();
+$wc0 = $value instanceof \WC_Settings_Advanced;
 add_filter('woocommerce_settings_advanced_page_options', 'my_callback');
 add_filter('woocommerce_settings_advanced_page_options_after', 'my_callback');
 add_filter('woocommerce_settings_advanced_page_options_end', 'my_callback');

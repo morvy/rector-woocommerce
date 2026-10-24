@@ -12,6 +12,10 @@ use Rector\Config\RectorConfig;
  * Everything else HPOS-related is reported by the PHPStan extension (extension.neon).
  */
 return static function (RectorConfig $rectorConfig): void {
+    // The WordPress/WooCommerce stubs, scanned (never executed), so they cannot clash with a real install or with
+    // stubs the project loads itself.
+    $rectorConfig->phpstanConfig(__DIR__ . '/../../phpstan-for-rector.neon');
+
     $rectorConfig->rule(OrderTypeComparisonRector::class);
     $rectorConfig->rule(ScreenIdComparisonRector::class);
 };

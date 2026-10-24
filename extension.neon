@@ -1,3 +1,6 @@
+includes:
+    - phpstan-stubs.php
+
 parameters:
     woocommerce:
         # WooCommerce version the project runs on (or upgrades to). Feature checks only report

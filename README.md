@@ -41,24 +41,11 @@ return RectorConfig::configure()
     ]);
 ```
 
-### Make WooCommerce classes known to Rector
+### WooCommerce class tree
 
-Many rules match a method or property on its *declaring* class. For example, `get_cart_url()` lives on `WC_Legacy_Cart` and `$order->id` is handled on `WC_Order`. Rector can only see that `WC()->cart` is a `WC_Legacy_Cart`, or that `wc_get_order()` returns a `WC_Order`, if it can load the WooCommerce class tree. Without the class tree, only function renames and calls on the exact class still apply.
+Many rules match a method or property on its *declaring* class. For example, `get_cart_url()` lives on `WC_Legacy_Cart` and `$order->id` is handled on `WC_Order`. Rector can only see that `WC()->cart` is a `WC_Legacy_Cart`, or that `wc_get_order()` returns a `WC_Order`, if it knows the WooCommerce class tree.
 
-The simplest way is to load the stubs:
-
-```bash
-composer require --dev php-stubs/woocommerce-stubs
-```
-
-```php
-return RectorConfig::configure()
-    ->withBootstrapFiles([
-        __DIR__ . '/vendor/php-stubs/wordpress-stubs/wordpress-stubs.php',
-        __DIR__ . '/vendor/php-stubs/woocommerce-stubs/woocommerce-stubs.php',
-    ])
-    ->withSets([WooCommerceLevelSetList::UP_TO_WC_11_3]);
-```
+The package depends on `php-stubs/woocommerce-stubs` (which pulls in `php-stubs/wordpress-stubs`) and hands both to Rector and PHPStan as scanned files. Scanned files are only read, never executed, so nothing needs configuring. They also can't clash with a real WooCommerce install or with stubs your project already loads through `bootstrapFiles`.
 
 ## Supported WooCommerce Versions
 
@@ -132,7 +119,7 @@ parameters:
         targetVersion: '11.3'
 ```
 
-Each check has its own identifier (`woocommerce.hpos.post`, `woocommerce.blocks.classicHook`, `woocommerce.legacyApi`, …), so you can ignore or baseline a whole group. Load the WordPress and WooCommerce stubs (`php-stubs/woocommerce-stubs`) so order types resolve.
+Each check has its own identifier (`woocommerce.hpos.post`, `woocommerce.blocks.classicHook`, `woocommerce.legacyApi`, …), so you can ignore or baseline a whole group. The WordPress and WooCommerce stubs are scanned automatically, so order and gateway types resolve without extra setup.
 
 ### HPOS migration set (Rector, opt-in)
 

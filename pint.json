@@ -262,7 +262,6 @@
         }
     },
     "exclude": [
-        "tests/PHPStan/data",
-        "tests/Stubs"
+        "tests/PHPStan/data"
     ]
 }

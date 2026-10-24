@@ -6,6 +6,7 @@ use Morvy\RectorWooCommerce\Rules\MethodCall\ReturnFirstArgumentRector;
 use Rector\Config\RectorConfig;
 
 return static function (RectorConfig $rectorConfig): void {
+    $rectorConfig->phpstanConfig(__DIR__ . '/../../../../../config/phpstan-for-rector.neon');
     $rectorConfig->ruleWithConfiguration(ReturnFirstArgumentRector::class, [
         'get'             => 'WP_Query',
         'format_settings' => 'WC_Settings_API',

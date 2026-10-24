@@ -281,8 +281,8 @@ function render(array $entries): array
                 case 'RenameClass':
                     $uses['Rector\Renaming\Rector\Name\RenameClassRector'] = true;
                     $lines[]                                               = q($e['old']) . ' => ' . q($e['new']) . ',';
-                    $before[]                                              = "{$var} = new " . fq($e['old']) . '();';
-                    $after[]                                               = "{$var} = new " . fq($e['new']) . '();';
+                    $before[]                                              = $var . ' = $value instanceof ' . fq($e['old']) . ';';
+                    $after[]                                               = $var . ' = $value instanceof ' . fq($e['new']) . ';';
 
                     break;
 

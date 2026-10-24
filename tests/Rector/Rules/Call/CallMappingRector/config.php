@@ -7,6 +7,7 @@ use Morvy\RectorWooCommerce\ValueObject\CallMapping;
 use Rector\Config\RectorConfig;
 
 return static function (RectorConfig $rectorConfig): void {
+    $rectorConfig->phpstanConfig(__DIR__ . '/../../../../../config/phpstan-for-rector.neon');
     $rectorConfig->ruleWithConfiguration(CallMappingRector::class, [
         new CallMapping(null, 'woocommerce_change_term_counts', null, 'wc_change_term_counts', [0, 1]),
         new CallMapping(null, 'woocommerce_readfile_chunked', 'WC_Download_Handler', 'readfile_chunked', [0]),
