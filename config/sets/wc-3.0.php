@@ -292,7 +292,6 @@ return static function (RectorConfig $rectorConfig): void {
         'woocommerce_get_sale_price'                 => 'woocommerce_product_get_sale_price',
         'woocommerce_get_sku'                        => 'woocommerce_product_get_sku',
         'woocommerce_get_stock_quantity'             => 'woocommerce_product_get_stock_quantity',
-        'woocommerce_my_account_my_orders_columns'   => 'woocommerce_account_orders_columns',
         'woocommerce_order_amount_cart_tax'          => 'woocommerce_order_get_cart_tax',
         'woocommerce_order_amount_discount_tax'      => 'woocommerce_order_get_discount_tax',
         'woocommerce_order_amount_discount_total'    => 'woocommerce_order_get_discount_total',
@@ -302,7 +301,6 @@ return static function (RectorConfig $rectorConfig): void {
         'woocommerce_order_amount_total'             => 'woocommerce_order_get_total',
         'woocommerce_order_amount_total_discount'    => 'woocommerce_order_get_total_discount',
         'woocommerce_order_amount_total_tax'         => 'woocommerce_order_get_total_tax',
-        'woocommerce_order_items_table'              => 'woocommerce_order_details_after_order_table_items',
         'woocommerce_order_tax_totals'               => 'woocommerce_order_get_tax_totals',
         'woocommerce_payment_token_created'          => 'woocommerce_new_payment_token',
         'woocommerce_product_files'                  => 'woocommerce_product_get_downloads',
@@ -364,6 +362,7 @@ return static function (RectorConfig $rectorConfig): void {
      * - woocommerce_order_add_shipping → woocommerce_new_order_item
      * - woocommerce_order_add_tax → woocommerce_new_order_item
      * - woocommerce_order_edit_product → woocommerce_update_order_item
+     * - woocommerce_order_items_table → woocommerce_order_details_after_order_table_items (fired directly by order-details.php template overrides older than 3.3)
      * - woocommerce_order_update_coupon → woocommerce_update_order_item
      * - woocommerce_order_update_fee → woocommerce_update_order_item
      * - woocommerce_order_update_shipping → woocommerce_update_order_item
@@ -380,6 +379,7 @@ return static function (RectorConfig $rectorConfig): void {
      * - WC_Shipping_Legacy_Local_Pickup
      *
      * FILTERS
+     * - woocommerce_my_account_my_orders_columns → woocommerce_account_orders_columns (still fired directly by templates/myaccount/my-orders.php)
      * - woocommerce_refund_amount → woocommerce_order_refund_get_amount
      * - woocommerce_refund_reason → woocommerce_order_refund_get_reason
      * - {handle}_params → woocommerce_get_script_data

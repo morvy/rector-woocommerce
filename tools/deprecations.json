@@ -6222,13 +6222,13 @@
   "new": "woocommerce_store_api_checkout_update_order_meta"
  },
  {
-  "set": "8.7",
+  "set": "8.9",
   "rule": "RenameHook",
   "old": "__experimental_woocommerce_blocks_sanitize_additional_field",
   "new": "woocommerce_sanitize_additional_field"
  },
  {
-  "set": "8.7",
+  "set": "8.9",
   "rule": "RenameHook",
   "old": "__experimental_woocommerce_blocks_validate_additional_field",
   "new": "woocommerce_validate_additional_field"
@@ -6397,9 +6397,9 @@
  },
  {
   "set": "3.0",
-  "rule": "RenameHook",
-  "old": "woocommerce_my_account_my_orders_columns",
-  "new": "woocommerce_account_orders_columns"
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_my_account_my_orders_columns \u2192 woocommerce_account_orders_columns (still fired directly by templates/myaccount/my-orders.php)"
  },
  {
   "set": "3.0",
@@ -6457,9 +6457,9 @@
  },
  {
   "set": "3.0",
-  "rule": "RenameHook",
-  "old": "woocommerce_order_items_table",
-  "new": "woocommerce_order_details_after_order_table_items"
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_order_items_table \u2192 woocommerce_order_details_after_order_table_items (fired directly by order-details.php template overrides older than 3.3)"
  },
  {
   "set": "3.0",

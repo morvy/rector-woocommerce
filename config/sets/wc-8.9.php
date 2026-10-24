@@ -14,6 +14,8 @@ return static function (RectorConfig $rectorConfig): void {
     ]);
 
     $rectorConfig->ruleWithConfiguration(RenameHookRector::class, [
+        '__experimental_woocommerce_blocks_sanitize_additional_field'        => 'woocommerce_sanitize_additional_field',
+        '__experimental_woocommerce_blocks_validate_additional_field'        => 'woocommerce_validate_additional_field',
         '__experimental_woocommerce_blocks_validate_location_address_fields' => 'woocommerce_blocks_validate_location_address_fields',
         '__experimental_woocommerce_blocks_validate_location_contact_fields' => 'woocommerce_blocks_validate_location_contact_fields',
         '__experimental_woocommerce_blocks_validate_location_order_fields'   => 'woocommerce_blocks_validate_location_order_fields',

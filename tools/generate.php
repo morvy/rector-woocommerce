@@ -43,6 +43,7 @@ $edges = [];
 foreach ($entries as $entry) {
     $key = match ($entry['rule']) {
         'RenameFunction', 'RenameFunctionAsStatement', 'RenameFunctionWithArguments', 'RemoveFuncCall', 'ReturnFirstArgFunc' => 'function:' . mb_strtolower($entry['old'] ?? $entry['function']),
+        'CallMapping'                                                                                                        => ($entry['class'] === null ? 'function:' : 'method:' . mb_strtolower($entry['class']) . '::') . mb_strtolower($entry['name']),
         'RemoveMethodCall', 'ReturnFirstArgMethod'                                                                           => $entry['rule'] . ':' . mb_strtolower($entry['method']),
         'RenameClass'                                                                                                        => 'class:' . mb_strtolower($entry['old']),
         'RenameHook'                                                                                                         => 'hook:' . $entry['old'],
@@ -160,7 +161,7 @@ function render(array $entries): array
                     $uses['Morvy\RectorWooCommerce\Rules\Call\CallMappingRector']  = true;
                     $uses['Morvy\RectorWooCommerce\ValueObject\CallMapping']       = true;
                     $lines[]                                                       = 'new CallMapping(' . lit($e['class']) . ', ' . q($e['name']) . ', ' . lit($e['newClass']) . ', ' . q($e['newName']) . ', ' . lit($e['arguments']) . '),';
-                    $oldArgs                                                       = array_map(static fn (int $n): string => "'a{$n}'", range(0, $e['params'] - 1));
+                    $oldArgs                                                       = array_map(static fn (int $n): string => "'a{$n}'", $e['params'] > 0 ? range(0, $e['params'] - 1) : []);
                     $newArgs                                                       = array_map(static fn ($a): string => mappedArg($a, $var), $e['arguments']);
                     $call                                                          = match (true) {
                         $e['class'] === null             => $e['name'],
