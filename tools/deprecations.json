@@ -784,33 +784,9 @@
  },
  {
   "set": "3.0",
-  "rule": "todo",
-  "category": "METHODS",
-  "name": "WC_Abstract_Legacy_Product::set_stock"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "METHODS",
-  "name": "WC_Abstract_Legacy_Product::reduce_stock"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "METHODS",
-  "name": "WC_Abstract_Legacy_Product::increase_stock"
- },
- {
-  "set": "3.0",
   "rule": "RemoveMethodCall",
   "class": "WC_Abstract_Legacy_Product",
   "method": "check_stock_status"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "METHODS",
-  "name": "WC_Abstract_Legacy_Product::get_related"
  },
  {
   "set": "3.0",
@@ -848,43 +824,7 @@
   "set": "3.0",
   "rule": "todo",
   "category": "METHODS",
-  "name": "WC_Abstract_Legacy_Product::list_attributes"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "METHODS",
-  "name": "WC_Abstract_Legacy_Product::get_price_including_tax"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "METHODS",
-  "name": "WC_Abstract_Legacy_Product::get_display_price"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "METHODS",
-  "name": "WC_Abstract_Legacy_Product::get_price_excluding_tax"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "METHODS",
   "name": "WC_Abstract_Legacy_Product::adjust_price"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "METHODS",
-  "name": "WC_Abstract_Legacy_Product::get_categories"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "METHODS",
-  "name": "WC_Abstract_Legacy_Product::get_tags"
  },
  {
   "set": "3.0",
@@ -953,12 +893,6 @@
   "set": "3.0",
   "rule": "todo",
   "category": "METHODS",
-  "name": "WC_Abstract_Legacy_Product::get_formatted_variation_attributes"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "METHODS",
   "name": "WC_Abstract_Legacy_Product::variable_product_sync"
  },
  {
@@ -972,12 +906,6 @@
   "rule": "todo",
   "category": "METHODS",
   "name": "WC_Abstract_Legacy_Product::enable_dimensions_display"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "METHODS",
-  "name": "WC_Abstract_Legacy_Product::get_rating_html"
  },
  {
   "set": "3.0",
@@ -1150,39 +1078,9 @@
  },
  {
   "set": "3.0",
-  "rule": "todo",
-  "category": "METHODS",
-  "name": "WC_Abstract_Legacy_Order::record_product_sales"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "METHODS",
-  "name": "WC_Abstract_Legacy_Order::increase_coupon_usage_counts"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "METHODS",
-  "name": "WC_Abstract_Legacy_Order::decrease_coupon_usage_counts"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "METHODS",
-  "name": "WC_Abstract_Legacy_Order::reduce_order_stock"
- },
- {
-  "set": "3.0",
   "rule": "RemoveMethodCall",
   "class": "WC_Abstract_Legacy_Order",
   "method": "send_stock_notifications"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "METHODS",
-  "name": "WC_Abstract_Legacy_Order::email_order_items_table"
  },
  {
   "set": "3.0",
@@ -6790,5 +6688,305 @@
   "rule": "RemoveMethodCall",
   "class": "WC_Admin_Post_Types",
   "method": "process_product_file_download_paths"
+ },
+ {
+  "set": "3.0",
+  "rule": "CallMapping",
+  "class": "WC_Abstract_Legacy_Product",
+  "name": "set_stock",
+  "newClass": null,
+  "newName": "wc_update_product_stock",
+  "arguments": [
+   {
+    "receiver": true
+   },
+   0,
+   1
+  ],
+  "params": 2
+ },
+ {
+  "set": "3.0",
+  "rule": "CallMapping",
+  "class": "WC_Abstract_Legacy_Product",
+  "name": "reduce_stock",
+  "newClass": null,
+  "newName": "wc_update_product_stock",
+  "arguments": [
+   {
+    "receiver": true
+   },
+   {
+    "param": 0,
+    "default": 1
+   },
+   {
+    "literal": "decrease"
+   }
+  ],
+  "params": 1
+ },
+ {
+  "set": "3.0",
+  "rule": "CallMapping",
+  "class": "WC_Abstract_Legacy_Product",
+  "name": "increase_stock",
+  "newClass": null,
+  "newName": "wc_update_product_stock",
+  "arguments": [
+   {
+    "receiver": true
+   },
+   {
+    "param": 0,
+    "default": 1
+   },
+   {
+    "literal": "increase"
+   }
+  ],
+  "params": 1
+ },
+ {
+  "set": "3.0",
+  "rule": "CallMapping",
+  "class": "WC_Abstract_Legacy_Product",
+  "name": "get_related",
+  "newClass": null,
+  "newName": "wc_get_related_products",
+  "arguments": [
+   {
+    "receiverCall": "get_id"
+   },
+   0
+  ],
+  "params": 1
+ },
+ {
+  "set": "3.0",
+  "rule": "CallMapping",
+  "class": "WC_Abstract_Legacy_Product",
+  "name": "list_attributes",
+  "newClass": null,
+  "newName": "wc_display_product_attributes",
+  "arguments": [
+   {
+    "receiver": true
+   }
+  ],
+  "params": 0
+ },
+ {
+  "set": "3.0",
+  "rule": "CallMapping",
+  "class": "WC_Abstract_Legacy_Product",
+  "name": "get_price_including_tax",
+  "newClass": null,
+  "newName": "wc_get_price_including_tax",
+  "arguments": [
+   {
+    "receiver": true
+   },
+   {
+    "array": {
+     "qty": {
+      "param": 0,
+      "default": 1
+     },
+     "price": {
+      "param": 1,
+      "default": ""
+     }
+    }
+   }
+  ],
+  "params": 2
+ },
+ {
+  "set": "3.0",
+  "rule": "CallMapping",
+  "class": "WC_Abstract_Legacy_Product",
+  "name": "get_display_price",
+  "newClass": null,
+  "newName": "wc_get_price_to_display",
+  "arguments": [
+   {
+    "receiver": true
+   },
+   {
+    "array": {
+     "qty": {
+      "param": 1,
+      "default": 1
+     },
+     "price": {
+      "param": 0,
+      "default": ""
+     }
+    }
+   }
+  ],
+  "params": 2
+ },
+ {
+  "set": "3.0",
+  "rule": "CallMapping",
+  "class": "WC_Abstract_Legacy_Product",
+  "name": "get_price_excluding_tax",
+  "newClass": null,
+  "newName": "wc_get_price_excluding_tax",
+  "arguments": [
+   {
+    "receiver": true
+   },
+   {
+    "array": {
+     "qty": {
+      "param": 0,
+      "default": 1
+     },
+     "price": {
+      "param": 1,
+      "default": ""
+     }
+    }
+   }
+  ],
+  "params": 2
+ },
+ {
+  "set": "3.0",
+  "rule": "CallMapping",
+  "class": "WC_Abstract_Legacy_Product",
+  "name": "get_categories",
+  "newClass": null,
+  "newName": "wc_get_product_category_list",
+  "arguments": [
+   {
+    "receiverCall": "get_id"
+   },
+   0,
+   1,
+   2
+  ],
+  "params": 3
+ },
+ {
+  "set": "3.0",
+  "rule": "CallMapping",
+  "class": "WC_Abstract_Legacy_Product",
+  "name": "get_tags",
+  "newClass": null,
+  "newName": "wc_get_product_tag_list",
+  "arguments": [
+   {
+    "receiverCall": "get_id"
+   },
+   0,
+   1,
+   2
+  ],
+  "params": 3
+ },
+ {
+  "set": "3.0",
+  "rule": "CallMapping",
+  "class": "WC_Abstract_Legacy_Product",
+  "name": "get_formatted_variation_attributes",
+  "newClass": null,
+  "newName": "wc_get_formatted_variation",
+  "arguments": [
+   {
+    "receiver": true
+   },
+   0
+  ],
+  "params": 1
+ },
+ {
+  "set": "3.0",
+  "rule": "CallMapping",
+  "class": "WC_Abstract_Legacy_Product",
+  "name": "get_rating_html",
+  "newClass": null,
+  "newName": "wc_get_rating_html",
+  "arguments": [
+   {
+    "param": 0,
+    "default": null
+   }
+  ],
+  "params": 1
+ },
+ {
+  "set": "3.0",
+  "rule": "CallMapping",
+  "class": "WC_Abstract_Legacy_Order",
+  "name": "record_product_sales",
+  "newClass": null,
+  "newName": "wc_update_total_sales_counts",
+  "arguments": [
+   {
+    "receiverCall": "get_id"
+   }
+  ],
+  "params": 0
+ },
+ {
+  "set": "3.0",
+  "rule": "CallMapping",
+  "class": "WC_Abstract_Legacy_Order",
+  "name": "increase_coupon_usage_counts",
+  "newClass": null,
+  "newName": "wc_update_coupon_usage_counts",
+  "arguments": [
+   {
+    "receiverCall": "get_id"
+   }
+  ],
+  "params": 0
+ },
+ {
+  "set": "3.0",
+  "rule": "CallMapping",
+  "class": "WC_Abstract_Legacy_Order",
+  "name": "decrease_coupon_usage_counts",
+  "newClass": null,
+  "newName": "wc_update_coupon_usage_counts",
+  "arguments": [
+   {
+    "receiverCall": "get_id"
+   }
+  ],
+  "params": 0
+ },
+ {
+  "set": "3.0",
+  "rule": "CallMapping",
+  "class": "WC_Abstract_Legacy_Order",
+  "name": "reduce_order_stock",
+  "newClass": null,
+  "newName": "wc_reduce_stock_levels",
+  "arguments": [
+   {
+    "receiverCall": "get_id"
+   }
+  ],
+  "params": 0
+ },
+ {
+  "set": "3.0",
+  "rule": "CallMapping",
+  "class": "WC_Abstract_Legacy_Order",
+  "name": "email_order_items_table",
+  "newClass": null,
+  "newName": "wc_get_email_order_items",
+  "arguments": [
+   {
+    "receiver": true
+   },
+   0
+  ],
+  "params": 1
  }
 ]

@@ -161,7 +161,7 @@ function render(array $entries): array
                     $uses['Morvy\RectorWooCommerce\ValueObject\CallMapping']       = true;
                     $lines[]                                                       = 'new CallMapping(' . lit($e['class']) . ', ' . q($e['name']) . ', ' . lit($e['newClass']) . ', ' . q($e['newName']) . ', ' . lit($e['arguments']) . '),';
                     $oldArgs                                                       = array_map(static fn (int $n): string => "'a{$n}'", range(0, $e['params'] - 1));
-                    $newArgs                                                       = array_map(static fn ($a): string => is_int($a) ? "'a{$a}'" : lit($a['literal']), $e['arguments']);
+                    $newArgs                                                       = array_map(static fn ($a): string => mappedArg($a, $var), $e['arguments']);
                     $call                                                          = match (true) {
                         $e['class'] === null             => $e['name'],
                         ($e['static'] ?? false) === true => fq($e['class']) . '::' . $e['name'],
@@ -370,6 +370,21 @@ function render(array $entries): array
     $fixture = $before === [] ? '' : "<?php\n\n" . implode("\n", $before) . "\n\n?>\n-----\n<?php\n\n" . implode("\n", $after) . ($after === [] ? '' : "\n") . "\n?>\n";
 
     return [$config, $fixture, ''];
+}
+
+/**
+ * Expected fixture text for one CallMapping argument item, given an old call with arguments 'a0', 'a1', ...
+ */
+function mappedArg(mixed $item, string $receiver): string
+{
+    return match (true) {
+        is_int($item)                      => "'a{$item}'",
+        isset($item['param'])              => "'a{$item['param']}'",
+        array_key_exists('literal', $item) => lit($item['literal']),
+        isset($item['receiverCall'])       => "{$receiver}->{$item['receiverCall']}()",
+        isset($item['receiver'])           => $receiver,
+        default                            => '[' . implode(', ', array_map(static fn ($k, $v): string => lit($k) . ' => ' . mappedArg($v, $receiver), array_keys($item['array']), $item['array'])) . ']',
+    };
 }
 
 function constName(string $version): string

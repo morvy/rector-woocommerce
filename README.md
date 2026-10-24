@@ -75,7 +75,7 @@ Rules are only added when the change preserves behaviour. They are generated fro
 
 - Renamed functions, methods and static methods, for example `woocommerce_get_page_id()` → `wc_get_page_id()`, and `WC_Cache_Helper::incr_cache_prefix()` → `invalidate_cache_group()`.
 - Methods moved to functions, for example `$cart->get_cart_url()` → `wc_get_cart_url()`.
-- Replacements that take different arguments, when the deprecated function only dropped or added some. For example, `woocommerce_nav_menu_items($items, $args)` → `wc_nav_menu_items($items)` and `$order->get_item_meta($id, $key)` → `get_metadata('order_item', $id, $key)`.
+- Replacements that take different arguments, when the deprecated function only dropped or added some. For example, `woocommerce_nav_menu_items($items, $args)` → `wc_nav_menu_items($items)` `$order->get_item_meta($id, $key)` → `get_metadata('order_item', $id, $key)` and `$product->get_price_including_tax(2)` → `wc_get_price_including_tax($product, ['qty' => 2, 'price' => ''])`.
 - Reads of the legacy WooCommerce 3.0 CRUD properties become getters, for example `$order->id` → `$order->get_id()` and `$order->billing_email` → `$order->get_billing_email()`. This covers orders, products, coupons, customers and webhooks.
   - Only plain reads change. Writes, `isset()`, `unset()`, by-reference use and `$this->prop` inside subclasses are left alone.
   - Properties whose legacy value differs from the getter's value are skipped. Examples are product `id` on variations and the `'yes'`/`'no'` flags.

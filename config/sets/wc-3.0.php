@@ -20,7 +20,24 @@ return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->import(__DIR__ . '/../config.php');
 
     $rectorConfig->ruleWithConfiguration(CallMappingRector::class, [
+        new CallMapping('WC_Abstract_Legacy_Order', 'decrease_coupon_usage_counts', null, 'wc_update_coupon_usage_counts', [['receiverCall' => 'get_id']]),
+        new CallMapping('WC_Abstract_Legacy_Order', 'email_order_items_table', null, 'wc_get_email_order_items', [['receiver' => true], 0]),
         new CallMapping('WC_Abstract_Legacy_Order', 'get_item_meta', null, 'get_metadata', [['literal' => 'order_item'], 0, 1, 2]),
+        new CallMapping('WC_Abstract_Legacy_Order', 'increase_coupon_usage_counts', null, 'wc_update_coupon_usage_counts', [['receiverCall' => 'get_id']]),
+        new CallMapping('WC_Abstract_Legacy_Order', 'record_product_sales', null, 'wc_update_total_sales_counts', [['receiverCall' => 'get_id']]),
+        new CallMapping('WC_Abstract_Legacy_Order', 'reduce_order_stock', null, 'wc_reduce_stock_levels', [['receiverCall' => 'get_id']]),
+        new CallMapping('WC_Abstract_Legacy_Product', 'get_categories', null, 'wc_get_product_category_list', [['receiverCall' => 'get_id'], 0, 1, 2]),
+        new CallMapping('WC_Abstract_Legacy_Product', 'get_display_price', null, 'wc_get_price_to_display', [['receiver' => true], ['array' => ['qty' => ['param' => 1, 'default' => 1], 'price' => ['param' => 0, 'default' => '']]]]),
+        new CallMapping('WC_Abstract_Legacy_Product', 'get_formatted_variation_attributes', null, 'wc_get_formatted_variation', [['receiver' => true], 0]),
+        new CallMapping('WC_Abstract_Legacy_Product', 'get_price_excluding_tax', null, 'wc_get_price_excluding_tax', [['receiver' => true], ['array' => ['qty' => ['param' => 0, 'default' => 1], 'price' => ['param' => 1, 'default' => '']]]]),
+        new CallMapping('WC_Abstract_Legacy_Product', 'get_price_including_tax', null, 'wc_get_price_including_tax', [['receiver' => true], ['array' => ['qty' => ['param' => 0, 'default' => 1], 'price' => ['param' => 1, 'default' => '']]]]),
+        new CallMapping('WC_Abstract_Legacy_Product', 'get_rating_html', null, 'wc_get_rating_html', [['param' => 0, 'default' => null]]),
+        new CallMapping('WC_Abstract_Legacy_Product', 'get_related', null, 'wc_get_related_products', [['receiverCall' => 'get_id'], 0]),
+        new CallMapping('WC_Abstract_Legacy_Product', 'get_tags', null, 'wc_get_product_tag_list', [['receiverCall' => 'get_id'], 0, 1, 2]),
+        new CallMapping('WC_Abstract_Legacy_Product', 'increase_stock', null, 'wc_update_product_stock', [['receiver' => true], ['param' => 0, 'default' => 1], ['literal' => 'increase']]),
+        new CallMapping('WC_Abstract_Legacy_Product', 'list_attributes', null, 'wc_display_product_attributes', [['receiver' => true]]),
+        new CallMapping('WC_Abstract_Legacy_Product', 'reduce_stock', null, 'wc_update_product_stock', [['receiver' => true], ['param' => 0, 'default' => 1], ['literal' => 'decrease']]),
+        new CallMapping('WC_Abstract_Legacy_Product', 'set_stock', null, 'wc_update_product_stock', [['receiver' => true], 0, 1]),
         new CallMapping(null, 'woocommerce_change_term_counts', null, 'wc_change_term_counts', [0, 1]),
         new CallMapping(null, 'woocommerce_nav_menu_item_classes', null, 'wc_nav_menu_item_classes', [0]),
         new CallMapping(null, 'woocommerce_nav_menu_items', null, 'wc_nav_menu_items', [0]),
@@ -387,19 +404,14 @@ return static function (RectorConfig $rectorConfig): void {
      * - WC_Abstract_Legacy_Order::add_shipping
      * - WC_Abstract_Legacy_Order::add_tax
      * - WC_Abstract_Legacy_Order::cancel_order
-     * - WC_Abstract_Legacy_Order::decrease_coupon_usage_counts
      * - WC_Abstract_Legacy_Order::display_item_downloads
      * - WC_Abstract_Legacy_Order::display_item_meta
-     * - WC_Abstract_Legacy_Order::email_order_items_table
      * - WC_Abstract_Legacy_Order::get_download_url
      * - WC_Abstract_Legacy_Order::get_item_downloads
      * - WC_Abstract_Legacy_Order::get_item_meta_array
      * - WC_Abstract_Legacy_Order::get_order
      * - WC_Abstract_Legacy_Order::has_meta
-     * - WC_Abstract_Legacy_Order::increase_coupon_usage_counts
      * - WC_Abstract_Legacy_Order::populate
-     * - WC_Abstract_Legacy_Order::record_product_sales
-     * - WC_Abstract_Legacy_Order::reduce_order_stock
      * - WC_Abstract_Legacy_Order::update_coupon
      * - WC_Abstract_Legacy_Order::update_fee
      * - WC_Abstract_Legacy_Order::update_product
@@ -407,26 +419,14 @@ return static function (RectorConfig $rectorConfig): void {
      * - WC_Abstract_Legacy_Order::update_tax
      * - WC_Abstract_Legacy_Product::adjust_price
      * - WC_Abstract_Legacy_Product::enable_dimensions_display
-     * - WC_Abstract_Legacy_Product::get_categories
-     * - WC_Abstract_Legacy_Product::get_display_price
-     * - WC_Abstract_Legacy_Product::get_formatted_variation_attributes
      * - WC_Abstract_Legacy_Product::get_matching_variation
      * - WC_Abstract_Legacy_Product::get_parent
      * - WC_Abstract_Legacy_Product::get_post_data
-     * - WC_Abstract_Legacy_Product::get_price_excluding_tax
      * - WC_Abstract_Legacy_Product::get_price_html_from_to
-     * - WC_Abstract_Legacy_Product::get_price_including_tax
-     * - WC_Abstract_Legacy_Product::get_rating_html
-     * - WC_Abstract_Legacy_Product::get_related
-     * - WC_Abstract_Legacy_Product::get_tags
      * - WC_Abstract_Legacy_Product::get_total_stock
      * - WC_Abstract_Legacy_Product::get_variation_default_attributes
      * - WC_Abstract_Legacy_Product::has_all_attributes_set
      * - WC_Abstract_Legacy_Product::has_default_attributes
-     * - WC_Abstract_Legacy_Product::increase_stock
-     * - WC_Abstract_Legacy_Product::list_attributes
-     * - WC_Abstract_Legacy_Product::reduce_stock
-     * - WC_Abstract_Legacy_Product::set_stock
      * - WC_Abstract_Legacy_Product::sync_average_rating
      * - WC_Abstract_Legacy_Product::sync_rating_count
      * - WC_Abstract_Legacy_Product::variable_product_sync

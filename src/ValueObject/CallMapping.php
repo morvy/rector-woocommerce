@@ -7,13 +7,18 @@ namespace Morvy\RectorWooCommerce\ValueObject;
 /**
  * Maps a deprecated function or method call onto its replacement with a different argument list.
  *
- * $arguments lists the new call's arguments in order: an int picks the old call's argument at that position,
- * ['literal' => value] inserts a constant. Old arguments not picked are dropped.
+ * $arguments lists the new call's arguments in order. Each item is one of:
+ * - int: the old call's argument at that position (may be left out at the end when the caller omitted it)
+ * - ['param' => int, 'default' => value]: that argument, or the default when the caller omitted it
+ * - ['literal' => value]: a constant
+ * - ['receiver' => true] / ['receiverCall' => 'get_id']: the old method call's object, or a method call on it
+ * - ['array' => ['key' => item, ...]]: an array literal built from items
+ * Old arguments not used are dropped.
  */
 final readonly class CallMapping
 {
     /**
-     * @param list<array{literal: null|array<mixed>|bool|float|int|string}|int> $arguments
+     * @param list<array<string, mixed>|int> $arguments
      */
     public function __construct(
         private ?string $class,
@@ -50,7 +55,7 @@ final readonly class CallMapping
     }
 
     /**
-     * @return list<array{literal: null|array<mixed>|bool|float|int|string}|int>
+     * @return list<array<string, mixed>|int>
      */
     public function getArguments(): array
     {

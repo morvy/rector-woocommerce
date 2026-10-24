@@ -53,3 +53,14 @@ abstract class WC_Abstract_Legacy_Order
 {
     public function get_item_meta($order_item_id, $key = '', $single = false): void {}
 }
+
+abstract class WC_Abstract_Legacy_Product
+{
+    public function get_price_including_tax($qty = 1, $price = ''): void {}
+
+    public function get_display_price($price = '', $qty = 1): void {}
+
+    public function get_related($limit = 5): void {}
+
+    public function reduce_stock($amount = 1): void {}
+}
