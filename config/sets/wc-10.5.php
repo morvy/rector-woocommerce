@@ -54,6 +54,9 @@ return static function (RectorConfig $rectorConfig): void {
     /*
      * TODO: these are not handled currently
      *
+     * ACTIONS
+     * - woocommerce_admin_dashboard_recent_reviews → dashboard-widget-reviews.php template
+     *
      * CLASSES
      * - WC_Gateway_Paypal_Buttons
      * - WC_Gateway_Paypal_Buttons → Automattic\WooCommerce\Gateways\PayPal\Buttons
@@ -66,6 +69,9 @@ return static function (RectorConfig $rectorConfig): void {
      * - WC_Gateway_Paypal_Transact_Account_Manager
      * - WC_Gateway_Paypal_Transact_Account_Manager → Automattic\WooCommerce\Gateways\PayPal\TransactAccountManager
      * - WC_Gateway_Paypal_Webhook_Handler
+     *
+     * FILTERS
+     * - woocommerce_report_recent_reviews_query_from (no replacement)
      *
      * METHODS
      * - WC_Gateway_Paypal_Buttons::get_client_id

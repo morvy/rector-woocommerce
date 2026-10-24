@@ -6988,5 +6988,29 @@
    0
   ],
   "params": 1
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "FILTERS",
+  "name": "woocommerce_report_recent_reviews_query_from (no replacement)"
+ },
+ {
+  "set": "10.5",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_admin_dashboard_recent_reviews \u2192 dashboard-widget-reviews.php template"
+ },
+ {
+  "set": "11.2",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_after_product_ordering (no replacement; forces the slow reordering path)"
+ },
+ {
+  "set": "11.2",
+  "rule": "todo",
+  "category": "ACTIONS",
+  "name": "woocommerce_after_single_product_ordering (no replacement; forces the slow reordering path)"
  }
 ]
