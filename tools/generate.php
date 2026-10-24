@@ -45,6 +45,7 @@ foreach ($entries as $entry) {
         'RenameFunction', 'RenameFunctionAsStatement', 'RenameFunctionWithArguments', 'RemoveFuncCall', 'ReturnFirstArgFunc' => 'function:' . mb_strtolower($entry['old'] ?? $entry['function']),
         'RemoveMethodCall', 'ReturnFirstArgMethod'                                                                           => $entry['rule'] . ':' . mb_strtolower($entry['method']),
         'RenameClass'                                                                                                        => 'class:' . mb_strtolower($entry['old']),
+        'RenameHook'                                                                                                         => 'hook:' . $entry['old'],
         'RenameConstant'                                                                                                     => 'constant:' . $entry['old'],
         default                                                                                                              => null,
     };
@@ -61,6 +62,10 @@ foreach ($entries as $entry) {
 
     if (in_array($entry['rule'], ['RenameFunction', 'RenameFunctionAsStatement', 'RenameClass'], true)) {
         $edges[mb_strtolower($entry['old'])] = mb_strtolower($entry['new']);
+    }
+
+    if ($entry['rule'] === 'RenameHook') {
+        $edges['hook:' . $entry['old']] = 'hook:' . $entry['new'];
     }
 
     if ($entry['rule'] === 'RenameMethod') {
@@ -146,6 +151,14 @@ function render(array $entries): array
                     $lines[]                                                                        = q($e['old']) . ' => ' . q($e['new']) . ',';
                     $before[]                                                                       = "{$e['old']}('foo');\nif ({$e['old']}('foo')) {\n    echo 'kept';\n}";
                     $after[]                                                                        = fq($e['new']) . "('foo');\nif ({$e['old']}('foo')) {\n    echo 'kept';\n}";
+
+                    break;
+
+                case 'RenameHook':
+                    $uses['Morvy\RectorWooCommerce\Rules\FuncCall\RenameHookRector'] = true;
+                    $lines[]                                                         = q($e['old']) . ' => ' . q($e['new']) . ',';
+                    $before[]                                                        = 'add_filter(' . q($e['old']) . ", 'my_callback');";
+                    $after[]                                                         = 'add_filter(' . q($e['new']) . ", 'my_callback');";
 
                     break;
 
@@ -292,6 +305,7 @@ function render(array $entries): array
             'RenameFunction'              => 'RenameFunctionRector',
             'RenameFunctionAsStatement'   => 'RenameFunctionAsStatementRector',
             'RenameFunctionWithArguments' => 'RenameFunctionWithArgumentsRector',
+            'RenameHook'                  => 'RenameHookRector',
             'RenameMethod'                => 'RenameMethodRector',
             'RenameStaticMethod'          => 'RenameStaticMethodRector',
             'FuncCallToStaticCall'        => 'FuncCallToStaticCallRector',

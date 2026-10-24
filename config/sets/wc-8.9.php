@@ -1,6 +1,7 @@
 <?php
 
 use Morvy\RectorWooCommerce\Rules\FuncCall\RenameFunctionAsStatementRector;
+use Morvy\RectorWooCommerce\Rules\FuncCall\RenameHookRector;
 use Morvy\RectorWooCommerce\Rules\MethodCall\RenameMethodRector;
 use Rector\Config\RectorConfig;
 use Rector\Renaming\ValueObject\MethodCallRename;
@@ -10,6 +11,12 @@ return static function (RectorConfig $rectorConfig): void {
 
     $rectorConfig->ruleWithConfiguration(RenameFunctionAsStatementRector::class, [
         '__experimental_woocommerce_blocks_register_checkout_field' => 'woocommerce_register_additional_checkout_field',
+    ]);
+
+    $rectorConfig->ruleWithConfiguration(RenameHookRector::class, [
+        '__experimental_woocommerce_blocks_validate_location_address_fields' => 'woocommerce_blocks_validate_location_address_fields',
+        '__experimental_woocommerce_blocks_validate_location_contact_fields' => 'woocommerce_blocks_validate_location_contact_fields',
+        '__experimental_woocommerce_blocks_validate_location_order_fields'   => 'woocommerce_blocks_validate_location_order_fields',
     ]);
 
     $rectorConfig->ruleWithConfiguration(RenameMethodRector::class, [

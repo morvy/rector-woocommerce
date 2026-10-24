@@ -2279,12 +2279,6 @@
   "set": "3.0",
   "rule": "todo",
   "category": "ACTIONS",
-  "name": "woocommerce_create_product_variation \u2192 woocommerce_new_product_variation"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "ACTIONS",
   "name": "woocommerce_duplicate_product \u2192 woocommerce_product_duplicate"
  },
  {
@@ -2333,12 +2327,6 @@
   "set": "3.0",
   "rule": "todo",
   "category": "ACTIONS",
-  "name": "woocommerce_order_items_table \u2192 woocommerce_order_details_after_order_table_items"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "ACTIONS",
   "name": "woocommerce_order_update_coupon \u2192 woocommerce_update_order_item"
  },
  {
@@ -2363,223 +2351,7 @@
   "set": "3.0",
   "rule": "todo",
   "category": "ACTIONS",
-  "name": "woocommerce_payment_token_created \u2192 woocommerce_new_payment_token"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "ACTIONS",
-  "name": "woocommerce_product_write_panels \u2192 woocommerce_product_data_panels"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "ACTIONS",
   "name": "woocommerce_variable_product_sync \u2192 woocommerce_variable_product_sync_data, woocommerce_new_product or woocommerce_update_product"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "add_to_cart_fragments \u2192 woocommerce_add_to_cart_fragments"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "add_to_cart_redirect \u2192 woocommerce_add_to_cart_redirect"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "default_checkout_country \u2192 default_checkout_billing_country"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "default_checkout_postcode \u2192 default_checkout_billing_postcode"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "default_checkout_state \u2192 default_checkout_billing_state"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "wocommerce_credit_card_type_labels \u2192 woocommerce_credit_card_type_labels"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_debug_posting \u2192 woocommerce_system_status_environment_rows"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_email_order_schema_markup \u2192 woocommerce_structured_data_order"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_get_currency \u2192 woocommerce_order_get_currency"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_get_price \u2192 woocommerce_product_get_price"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_get_product_attributes \u2192 woocommerce_product_get_attributes"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_get_regular_price \u2192 woocommerce_product_get_regular_price"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_get_sale_price \u2192 woocommerce_product_get_sale_price"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_get_sku \u2192 woocommerce_product_get_sku"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_get_stock_quantity \u2192 woocommerce_product_get_stock_quantity"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_my_account_my_orders_columns \u2192 woocommerce_account_orders_columns"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_order_amount_cart_tax \u2192 woocommerce_order_get_cart_tax"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_order_amount_discount_tax \u2192 woocommerce_order_get_discount_tax"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_order_amount_discount_total \u2192 woocommerce_order_get_discount_total"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_order_amount_shipping_tax \u2192 woocommerce_order_get_shipping_tax"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_order_amount_shipping_total \u2192 woocommerce_order_get_shipping_total"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_order_amount_subtotal \u2192 woocommerce_order_get_subtotal"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_order_amount_total \u2192 woocommerce_order_get_total"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_order_amount_total_discount \u2192 woocommerce_order_get_total_discount"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_order_amount_total_tax \u2192 woocommerce_order_get_total_tax"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_order_tax_totals \u2192 woocommerce_order_get_tax_totals"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_product_files \u2192 woocommerce_product_get_downloads"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_product_gallery_attachment_ids \u2192 woocommerce_product_get_gallery_image_ids"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_product_height \u2192 woocommerce_product_get_height"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_product_length \u2192 woocommerce_product_get_length"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_product_review_count \u2192 woocommerce_product_get_review_count"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_product_tax_class \u2192 woocommerce_product_get_tax_class"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_product_weight \u2192 woocommerce_product_get_weight"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_product_width \u2192 woocommerce_product_get_width"
  },
  {
   "set": "3.0",
@@ -2831,54 +2603,6 @@
  },
  {
   "set": "3.4",
-  "rule": "todo",
-  "category": "ACTIONS",
-  "name": "woocommerce_settings_account_page_options \u2192 woocommerce_settings_advanced_page_options"
- },
- {
-  "set": "3.4",
-  "rule": "todo",
-  "category": "ACTIONS",
-  "name": "woocommerce_settings_account_page_options_after \u2192 woocommerce_settings_advanced_page_options_after"
- },
- {
-  "set": "3.4",
-  "rule": "todo",
-  "category": "ACTIONS",
-  "name": "woocommerce_settings_account_page_options_end \u2192 woocommerce_settings_advanced_page_options_end"
- },
- {
-  "set": "3.4",
-  "rule": "todo",
-  "category": "ACTIONS",
-  "name": "woocommerce_settings_checkout_page_options \u2192 woocommerce_settings_advanced_page_options"
- },
- {
-  "set": "3.4",
-  "rule": "todo",
-  "category": "ACTIONS",
-  "name": "woocommerce_settings_checkout_page_options_after \u2192 woocommerce_settings_advanced_page_options_after"
- },
- {
-  "set": "3.4",
-  "rule": "todo",
-  "category": "ACTIONS",
-  "name": "woocommerce_settings_checkout_page_options_end \u2192 woocommerce_settings_advanced_page_options_end"
- },
- {
-  "set": "3.4",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_settings_api \u2192 woocommerce_settings_advanced"
- },
- {
-  "set": "3.4",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_settings_tabs_api \u2192 woocommerce_settings_tabs_advanced"
- },
- {
-  "set": "3.4",
   "rule": "RenameClass",
   "old": "WC_Settings_Rest_API",
   "new": "WC_Settings_Advanced"
@@ -2941,12 +2665,6 @@
   "rule": "todo",
   "category": "FUNCTIONS",
   "name": "wc_get_min_max_price_meta_query"
- },
- {
-  "set": "3.6",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_add_to_cart_hash \u2192 woocommerce_cart_hash"
  },
  {
   "set": "3.7",
@@ -3035,12 +2753,6 @@
   "rule": "todo",
   "category": "FILTERS",
   "name": "woocommerce_geolocation_local_database_path \u2192 woocommerce_maxmind_geolocation_database_path"
- },
- {
-  "set": "3.9",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_geolocation_update_database_periodically \u2192 woocommerce_maxmind_geolocation_update_database_periodically"
  },
  {
   "set": "3.9",
@@ -3852,55 +3564,7 @@
   "set": "6.4",
   "rule": "todo",
   "category": "ACTIONS",
-  "name": "__experimental_woocommerce_blocks_checkout_update_order_from_request \u2192 woocommerce_store_api_checkout_update_order_from_request"
- },
- {
-  "set": "6.4",
-  "rule": "todo",
-  "category": "ACTIONS",
-  "name": "__experimental_woocommerce_blocks_checkout_update_order_meta \u2192 woocommerce_store_api_checkout_update_order_meta"
- },
- {
-  "set": "6.4",
-  "rule": "todo",
-  "category": "ACTIONS",
-  "name": "woocommerce_blocks_cart_update_customer_from_request \u2192 woocommerce_store_api_cart_update_customer_from_request"
- },
- {
-  "set": "6.4",
-  "rule": "todo",
-  "category": "ACTIONS",
-  "name": "woocommerce_blocks_cart_update_order_from_request \u2192 woocommerce_store_api_cart_update_order_from_request"
- },
- {
-  "set": "6.4",
-  "rule": "todo",
-  "category": "ACTIONS",
   "name": "woocommerce_blocks_checkout_order_processed \u2192 woocommerce_store_api_checkout_order_processed"
- },
- {
-  "set": "6.4",
-  "rule": "todo",
-  "category": "ACTIONS",
-  "name": "woocommerce_blocks_checkout_update_order_from_request \u2192 woocommerce_store_api_checkout_update_order_from_request"
- },
- {
-  "set": "6.4",
-  "rule": "todo",
-  "category": "ACTIONS",
-  "name": "woocommerce_blocks_checkout_update_order_meta \u2192 woocommerce_store_api_checkout_update_order_meta"
- },
- {
-  "set": "6.4",
-  "rule": "todo",
-  "category": "ACTIONS",
-  "name": "wooocommerce_store_api_validate_add_to_cart \u2192 woocommerce_store_api_validate_add_to_cart"
- },
- {
-  "set": "6.4",
-  "rule": "todo",
-  "category": "ACTIONS",
-  "name": "wooocommerce_store_api_validate_cart_item \u2192 woocommerce_store_api_validate_cart_item"
  },
  {
   "set": "6.4",
@@ -4323,24 +3987,6 @@
   "name": "Automattic\\WooCommerce\\Admin\\FeaturePlugin"
  },
  {
-  "set": "6.5",
-  "rule": "todo",
-  "category": "ACTIONS",
-  "name": "woocommerce_admin_newly_installed \u2192 woocommerce_newly_installed"
- },
- {
-  "set": "6.5",
-  "rule": "todo",
-  "category": "ACTIONS",
-  "name": "woocommerce_admin_updated \u2192 woocommerce_updated"
- },
- {
-  "set": "6.5",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "woocommerce_product_csv_importer_check_import_file_path \u2192 woocommerce_csv_importer_check_import_file_path"
- },
- {
   "set": "7.2",
   "rule": "todo",
   "category": "CLASSES",
@@ -4363,18 +4009,6 @@
   "rule": "todo",
   "category": "ACTIONS",
   "name": "woocommerce_block_template_register \u2192 woocommerce_layout_template_after_instantiation"
- },
- {
-  "set": "8.7",
-  "rule": "todo",
-  "category": "ACTIONS",
-  "name": "__experimental_woocommerce_blocks_validate_additional_field \u2192 woocommerce_validate_additional_field"
- },
- {
-  "set": "8.7",
-  "rule": "todo",
-  "category": "FILTERS",
-  "name": "__experimental_woocommerce_blocks_sanitize_additional_field \u2192 woocommerce_sanitize_additional_field"
  },
  {
   "set": "8.8",
@@ -6724,5 +6358,389 @@
   "class": "WC_Webhook",
   "property": "api_version",
   "getMethod": "get_api_version"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameHook",
+  "old": "__experimental_woocommerce_blocks_checkout_update_order_from_request",
+  "new": "woocommerce_store_api_checkout_update_order_from_request"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameHook",
+  "old": "__experimental_woocommerce_blocks_checkout_update_order_meta",
+  "new": "woocommerce_store_api_checkout_update_order_meta"
+ },
+ {
+  "set": "8.7",
+  "rule": "RenameHook",
+  "old": "__experimental_woocommerce_blocks_sanitize_additional_field",
+  "new": "woocommerce_sanitize_additional_field"
+ },
+ {
+  "set": "8.7",
+  "rule": "RenameHook",
+  "old": "__experimental_woocommerce_blocks_validate_additional_field",
+  "new": "woocommerce_validate_additional_field"
+ },
+ {
+  "set": "8.9",
+  "rule": "RenameHook",
+  "old": "__experimental_woocommerce_blocks_validate_location_address_fields",
+  "new": "woocommerce_blocks_validate_location_address_fields"
+ },
+ {
+  "set": "8.9",
+  "rule": "RenameHook",
+  "old": "__experimental_woocommerce_blocks_validate_location_contact_fields",
+  "new": "woocommerce_blocks_validate_location_contact_fields"
+ },
+ {
+  "set": "8.9",
+  "rule": "RenameHook",
+  "old": "__experimental_woocommerce_blocks_validate_location_order_fields",
+  "new": "woocommerce_blocks_validate_location_order_fields"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "add_to_cart_fragments",
+  "new": "woocommerce_add_to_cart_fragments"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "add_to_cart_redirect",
+  "new": "woocommerce_add_to_cart_redirect"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "default_checkout_country",
+  "new": "default_checkout_billing_country"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "default_checkout_postcode",
+  "new": "default_checkout_billing_postcode"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "default_checkout_state",
+  "new": "default_checkout_billing_state"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "wocommerce_credit_card_type_labels",
+  "new": "woocommerce_credit_card_type_labels"
+ },
+ {
+  "set": "3.6",
+  "rule": "RenameHook",
+  "old": "woocommerce_add_to_cart_hash",
+  "new": "woocommerce_cart_hash"
+ },
+ {
+  "set": "6.5",
+  "rule": "RenameHook",
+  "old": "woocommerce_admin_newly_installed",
+  "new": "woocommerce_newly_installed"
+ },
+ {
+  "set": "6.5",
+  "rule": "RenameHook",
+  "old": "woocommerce_admin_updated",
+  "new": "woocommerce_updated"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameHook",
+  "old": "woocommerce_blocks_cart_update_customer_from_request",
+  "new": "woocommerce_store_api_cart_update_customer_from_request"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameHook",
+  "old": "woocommerce_blocks_cart_update_order_from_request",
+  "new": "woocommerce_store_api_cart_update_order_from_request"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameHook",
+  "old": "woocommerce_blocks_checkout_update_order_from_request",
+  "new": "woocommerce_store_api_checkout_update_order_from_request"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameHook",
+  "old": "woocommerce_blocks_checkout_update_order_meta",
+  "new": "woocommerce_store_api_checkout_update_order_meta"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_create_product_variation",
+  "new": "woocommerce_new_product_variation"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_debug_posting",
+  "new": "woocommerce_system_status_environment_rows"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_email_order_schema_markup",
+  "new": "woocommerce_structured_data_order"
+ },
+ {
+  "set": "3.9",
+  "rule": "RenameHook",
+  "old": "woocommerce_geolocation_update_database_periodically",
+  "new": "woocommerce_maxmind_geolocation_update_database_periodically"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_get_currency",
+  "new": "woocommerce_order_get_currency"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_get_price",
+  "new": "woocommerce_product_get_price"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_get_product_attributes",
+  "new": "woocommerce_product_get_attributes"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_get_regular_price",
+  "new": "woocommerce_product_get_regular_price"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_get_sale_price",
+  "new": "woocommerce_product_get_sale_price"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_get_sku",
+  "new": "woocommerce_product_get_sku"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_get_stock_quantity",
+  "new": "woocommerce_product_get_stock_quantity"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_my_account_my_orders_columns",
+  "new": "woocommerce_account_orders_columns"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_order_amount_cart_tax",
+  "new": "woocommerce_order_get_cart_tax"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_order_amount_discount_tax",
+  "new": "woocommerce_order_get_discount_tax"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_order_amount_discount_total",
+  "new": "woocommerce_order_get_discount_total"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_order_amount_shipping_tax",
+  "new": "woocommerce_order_get_shipping_tax"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_order_amount_shipping_total",
+  "new": "woocommerce_order_get_shipping_total"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_order_amount_subtotal",
+  "new": "woocommerce_order_get_subtotal"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_order_amount_total",
+  "new": "woocommerce_order_get_total"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_order_amount_total_discount",
+  "new": "woocommerce_order_get_total_discount"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_order_amount_total_tax",
+  "new": "woocommerce_order_get_total_tax"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_order_items_table",
+  "new": "woocommerce_order_details_after_order_table_items"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_order_tax_totals",
+  "new": "woocommerce_order_get_tax_totals"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_payment_token_created",
+  "new": "woocommerce_new_payment_token"
+ },
+ {
+  "set": "6.5",
+  "rule": "RenameHook",
+  "old": "woocommerce_product_csv_importer_check_import_file_path",
+  "new": "woocommerce_csv_importer_check_import_file_path"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_product_files",
+  "new": "woocommerce_product_get_downloads"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_product_gallery_attachment_ids",
+  "new": "woocommerce_product_get_gallery_image_ids"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_product_height",
+  "new": "woocommerce_product_get_height"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_product_length",
+  "new": "woocommerce_product_get_length"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_product_review_count",
+  "new": "woocommerce_product_get_review_count"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_product_tax_class",
+  "new": "woocommerce_product_get_tax_class"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_product_weight",
+  "new": "woocommerce_product_get_weight"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_product_width",
+  "new": "woocommerce_product_get_width"
+ },
+ {
+  "set": "3.0",
+  "rule": "RenameHook",
+  "old": "woocommerce_product_write_panels",
+  "new": "woocommerce_product_data_panels"
+ },
+ {
+  "set": "3.4",
+  "rule": "RenameHook",
+  "old": "woocommerce_settings_account_page_options",
+  "new": "woocommerce_settings_advanced_page_options"
+ },
+ {
+  "set": "3.4",
+  "rule": "RenameHook",
+  "old": "woocommerce_settings_account_page_options_after",
+  "new": "woocommerce_settings_advanced_page_options_after"
+ },
+ {
+  "set": "3.4",
+  "rule": "RenameHook",
+  "old": "woocommerce_settings_account_page_options_end",
+  "new": "woocommerce_settings_advanced_page_options_end"
+ },
+ {
+  "set": "3.4",
+  "rule": "RenameHook",
+  "old": "woocommerce_settings_api",
+  "new": "woocommerce_settings_advanced"
+ },
+ {
+  "set": "3.4",
+  "rule": "RenameHook",
+  "old": "woocommerce_settings_checkout_page_options",
+  "new": "woocommerce_settings_advanced_page_options"
+ },
+ {
+  "set": "3.4",
+  "rule": "RenameHook",
+  "old": "woocommerce_settings_checkout_page_options_after",
+  "new": "woocommerce_settings_advanced_page_options_after"
+ },
+ {
+  "set": "3.4",
+  "rule": "RenameHook",
+  "old": "woocommerce_settings_checkout_page_options_end",
+  "new": "woocommerce_settings_advanced_page_options_end"
+ },
+ {
+  "set": "3.4",
+  "rule": "RenameHook",
+  "old": "woocommerce_settings_tabs_api",
+  "new": "woocommerce_settings_tabs_advanced"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameHook",
+  "old": "wooocommerce_store_api_validate_add_to_cart",
+  "new": "woocommerce_store_api_validate_add_to_cart"
+ },
+ {
+  "set": "6.4",
+  "rule": "RenameHook",
+  "old": "wooocommerce_store_api_validate_cart_item",
+  "new": "woocommerce_store_api_validate_cart_item"
  }
 ]

@@ -1,5 +1,6 @@
 <?php
 
+use Morvy\RectorWooCommerce\Rules\FuncCall\RenameHookRector;
 use Morvy\RectorWooCommerce\Rules\MethodCall\RemoveMethodCallRector;
 use Rector\Config\RectorConfig;
 use Rector\Removing\Rector\FuncCall\RemoveFuncCallRector;
@@ -23,11 +24,12 @@ return static function (RectorConfig $rectorConfig): void {
         'update_woocommerce_term_meta' => 'update_term_meta',
     ]);
 
+    $rectorConfig->ruleWithConfiguration(RenameHookRector::class, [
+        'woocommerce_add_to_cart_hash' => 'woocommerce_cart_hash',
+    ]);
+
     /*
      * TODO: these are not handled currently
-     *
-     * FILTERS
-     * - woocommerce_add_to_cart_hash → woocommerce_cart_hash
      *
      * FUNCTIONS
      * - wc_get_min_max_price_meta_query

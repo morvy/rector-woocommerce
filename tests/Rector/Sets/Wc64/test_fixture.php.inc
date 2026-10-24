@@ -55,6 +55,14 @@ $wc51 = new \Automattic\WooCommerce\Blocks\StoreApi\Routes\ProductReviews();
 $wc52 = new \Automattic\WooCommerce\Blocks\StoreApi\Routes\Products();
 $wc53 = new \Automattic\WooCommerce\Blocks\StoreApi\Routes\ProductsById();
 $wc54 = new \Automattic\WooCommerce\Blocks\StoreApi\Routes\ProductTags();
+add_filter('__experimental_woocommerce_blocks_checkout_update_order_from_request', 'my_callback');
+add_filter('__experimental_woocommerce_blocks_checkout_update_order_meta', 'my_callback');
+add_filter('woocommerce_blocks_cart_update_customer_from_request', 'my_callback');
+add_filter('woocommerce_blocks_cart_update_order_from_request', 'my_callback');
+add_filter('woocommerce_blocks_checkout_update_order_from_request', 'my_callback');
+add_filter('woocommerce_blocks_checkout_update_order_meta', 'my_callback');
+add_filter('wooocommerce_store_api_validate_add_to_cart', 'my_callback');
+add_filter('wooocommerce_store_api_validate_cart_item', 'my_callback');
 
 ?>
 -----
@@ -115,5 +123,13 @@ $wc51 = new \Automattic\WooCommerce\StoreApi\Routes\V1\ProductReviews();
 $wc52 = new \Automattic\WooCommerce\StoreApi\Routes\V1\Products();
 $wc53 = new \Automattic\WooCommerce\StoreApi\Routes\V1\ProductsById();
 $wc54 = new \Automattic\WooCommerce\StoreApi\Routes\V1\ProductTags();
+add_filter('woocommerce_store_api_checkout_update_order_from_request', 'my_callback');
+add_filter('woocommerce_store_api_checkout_update_order_meta', 'my_callback');
+add_filter('woocommerce_store_api_cart_update_customer_from_request', 'my_callback');
+add_filter('woocommerce_store_api_cart_update_order_from_request', 'my_callback');
+add_filter('woocommerce_store_api_checkout_update_order_from_request', 'my_callback');
+add_filter('woocommerce_store_api_checkout_update_order_meta', 'my_callback');
+add_filter('woocommerce_store_api_validate_add_to_cart', 'my_callback');
+add_filter('woocommerce_store_api_validate_cart_item', 'my_callback');
 
 ?>

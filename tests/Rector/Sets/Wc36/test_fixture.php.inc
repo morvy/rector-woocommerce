@@ -7,6 +7,7 @@ $wc2 = update_woocommerce_term_meta('foo');
 $wc3 = add_woocommerce_term_meta('foo');
 $wc4 = delete_woocommerce_term_meta('foo');
 $wc5 = get_woocommerce_term_meta('foo');
+add_filter('woocommerce_add_to_cart_hash', 'my_callback');
 
 ?>
 -----
@@ -17,5 +18,6 @@ $wc2 = update_term_meta('foo');
 $wc3 = add_term_meta('foo');
 $wc4 = delete_term_meta('foo');
 $wc5 = get_term_meta('foo');
+add_filter('woocommerce_cart_hash', 'my_callback');
 
 ?>

@@ -1,5 +1,6 @@
 <?php
 
+use Morvy\RectorWooCommerce\Rules\FuncCall\RenameHookRector;
 use Rector\Config\RectorConfig;
 use Rector\Renaming\Rector\Name\RenameClassRector;
 
@@ -64,20 +65,23 @@ return static function (RectorConfig $rectorConfig): void {
         'Automattic\WooCommerce\Blocks\StoreApi\Schemas\TermSchema'                  => 'Automattic\WooCommerce\StoreApi\Schemas\V1\TermSchema',
     ]);
 
+    $rectorConfig->ruleWithConfiguration(RenameHookRector::class, [
+        '__experimental_woocommerce_blocks_checkout_update_order_from_request' => 'woocommerce_store_api_checkout_update_order_from_request',
+        '__experimental_woocommerce_blocks_checkout_update_order_meta'         => 'woocommerce_store_api_checkout_update_order_meta',
+        'woocommerce_blocks_cart_update_customer_from_request'                 => 'woocommerce_store_api_cart_update_customer_from_request',
+        'woocommerce_blocks_cart_update_order_from_request'                    => 'woocommerce_store_api_cart_update_order_from_request',
+        'woocommerce_blocks_checkout_update_order_from_request'                => 'woocommerce_store_api_checkout_update_order_from_request',
+        'woocommerce_blocks_checkout_update_order_meta'                        => 'woocommerce_store_api_checkout_update_order_meta',
+        'wooocommerce_store_api_validate_add_to_cart'                          => 'woocommerce_store_api_validate_add_to_cart',
+        'wooocommerce_store_api_validate_cart_item'                            => 'woocommerce_store_api_validate_cart_item',
+    ]);
+
     /*
      * TODO: these are not handled currently
      *
      * ACTIONS
      * - __experimental_woocommerce_blocks_checkout_order_processed → woocommerce_store_api_checkout_order_processed
-     * - __experimental_woocommerce_blocks_checkout_update_order_from_request → woocommerce_store_api_checkout_update_order_from_request
-     * - __experimental_woocommerce_blocks_checkout_update_order_meta → woocommerce_store_api_checkout_update_order_meta
-     * - woocommerce_blocks_cart_update_customer_from_request → woocommerce_store_api_cart_update_customer_from_request
-     * - woocommerce_blocks_cart_update_order_from_request → woocommerce_store_api_cart_update_order_from_request
      * - woocommerce_blocks_checkout_order_processed → woocommerce_store_api_checkout_order_processed
-     * - woocommerce_blocks_checkout_update_order_from_request → woocommerce_store_api_checkout_update_order_from_request
-     * - woocommerce_blocks_checkout_update_order_meta → woocommerce_store_api_checkout_update_order_meta
-     * - wooocommerce_store_api_validate_add_to_cart → woocommerce_store_api_validate_add_to_cart
-     * - wooocommerce_store_api_validate_cart_item → woocommerce_store_api_validate_cart_item
      *
      * FUNCTIONS
      * - Automattic\WooCommerce\Admin\FeaturePlugin

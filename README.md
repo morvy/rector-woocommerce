@@ -80,6 +80,10 @@ Rules are only added when the change preserves behaviour. They are generated fro
   - Properties whose legacy value differs from the getter's value are skipped. Examples are product `id` on variations and the `'yes'`/`'no'` flags.
 - Class aliases and facades are replaced by the real class, for example `Automattic\WooCommerce\Blocks\StoreApi\*` → `Automattic\WooCommerce\StoreApi\*`, and the `WC_Gateway_Paypal_Constants` constants.
 - Calls to deprecated no-op functions and methods are removed.
+- Callbacks on deprecated hooks move to the replacement hook, for example `add_filter('woocommerce_get_price', …)` → `add_filter('woocommerce_product_get_price', …)`. This applies to `add_*`, `remove_*` and `has_*` for actions and filters.
+  - A hook is only renamed when WooCommerce passes the old hook exactly the same arguments as the new one, at the same places, in every supported version. Hooks whose arguments or firing points differ stay in the TODO list, such as `woocommerce_order_add_*` → `woocommerce_new_order_item`.
+  - Code that fires a deprecated hook (`do_action`, `apply_filters`) and `remove_all_*()` calls are left alone, because changing them would also reach WooCommerce's own callbacks on the new hook.
+  - WooCommerce used to run old-hook callbacks at priority -1000 of the new hook. After the rename they run at their own priority, so their order relative to other callbacks on the new hook can change.
 
 Some changes are deliberately skipped:
 
