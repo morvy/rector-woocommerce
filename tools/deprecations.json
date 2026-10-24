@@ -35,12 +35,6 @@
   "set": "3.0",
   "rule": "todo",
   "category": "FUNCTIONS",
-  "name": "woocommerce_readfile_chunked"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FUNCTIONS",
   "name": "woocommerce_format_total"
  },
  {
@@ -393,18 +387,6 @@
  },
  {
   "set": "3.0",
-  "rule": "todo",
-  "category": "FUNCTIONS",
-  "name": "woocommerce_nav_menu_items"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FUNCTIONS",
-  "name": "woocommerce_nav_menu_item_classes"
- },
- {
-  "set": "3.0",
   "rule": "RenameFunction",
   "old": "woocommerce_list_pages",
   "new": "wc_list_pages"
@@ -460,12 +442,6 @@
   "rule": "RenameFunctionAsStatement",
   "old": "woocommerce_recount_after_stock_change",
   "new": "wc_recount_after_stock_change"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "FUNCTIONS",
-  "name": "woocommerce_change_term_counts"
  },
  {
   "set": "3.0",
@@ -1135,12 +1111,6 @@
   "rule": "todo",
   "category": "METHODS",
   "name": "WC_Abstract_Legacy_Order::get_item_downloads"
- },
- {
-  "set": "3.0",
-  "rule": "todo",
-  "category": "METHODS",
-  "name": "WC_Abstract_Legacy_Order::get_item_meta"
  },
  {
   "set": "3.0",
@@ -2562,12 +2532,6 @@
   "rule": "todo",
   "category": "METHODS",
   "name": "WC_Admin_Webhooks::get_logs_navigation"
- },
- {
-  "set": "3.3",
-  "rule": "todo",
-  "category": "METHODS",
-  "name": "WC_Admin_Post_Types::process_product_file_download_paths"
  },
  {
   "set": "3.3",
@@ -4886,12 +4850,6 @@
   "reason": "hook callback / init invoked by WC itself"
  },
  {
-  "set": "9.8",
-  "rule": "todo",
-  "category": "METHODS",
-  "name": "Automattic\\WooCommerce\\Admin\\WCAdminHelper::is_store_page"
- },
- {
   "set": "10.8",
   "rule": "todo",
   "category": "METHODS",
@@ -5600,12 +5558,6 @@
   "class": "Automattic\\WooCommerce\\Internal\\Features\\ProductBlockEditor\\ProductTemplates\\Section",
   "old": "add_section",
   "new": "add_subsection"
- },
- {
-  "set": "7.8",
-  "rule": "todo",
-  "category": "METHODS",
-  "name": "Automattic\\WooCommerce\\Blocks\\BlockTemplatesController::get_block_templates_from_db"
  },
  {
   "set": "9.0",
@@ -6742,5 +6694,101 @@
   "rule": "RenameHook",
   "old": "wooocommerce_store_api_validate_cart_item",
   "new": "woocommerce_store_api_validate_cart_item"
+ },
+ {
+  "set": "3.0",
+  "class": null,
+  "name": "woocommerce_readfile_chunked",
+  "newClass": "WC_Download_Handler",
+  "newName": "readfile_chunked",
+  "arguments": [
+   0
+  ],
+  "params": 2,
+  "rule": "CallMapping"
+ },
+ {
+  "set": "3.0",
+  "class": null,
+  "name": "woocommerce_nav_menu_items",
+  "newClass": null,
+  "newName": "wc_nav_menu_items",
+  "arguments": [
+   0
+  ],
+  "params": 2,
+  "rule": "CallMapping"
+ },
+ {
+  "set": "3.0",
+  "class": null,
+  "name": "woocommerce_nav_menu_item_classes",
+  "newClass": null,
+  "newName": "wc_nav_menu_item_classes",
+  "arguments": [
+   0
+  ],
+  "params": 2,
+  "rule": "CallMapping"
+ },
+ {
+  "set": "3.0",
+  "class": null,
+  "name": "woocommerce_change_term_counts",
+  "newClass": null,
+  "newName": "wc_change_term_counts",
+  "arguments": [
+   0,
+   1
+  ],
+  "params": 3,
+  "rule": "CallMapping"
+ },
+ {
+  "set": "3.0",
+  "class": "WC_Abstract_Legacy_Order",
+  "name": "get_item_meta",
+  "newClass": null,
+  "newName": "get_metadata",
+  "arguments": [
+   {
+    "literal": "order_item"
+   },
+   0,
+   1,
+   2
+  ],
+  "params": 3,
+  "rule": "CallMapping"
+ },
+ {
+  "set": "9.8",
+  "class": "Automattic\\WooCommerce\\Admin\\WCAdminHelper",
+  "name": "is_store_page",
+  "newClass": "Automattic\\WooCommerce\\Admin\\WCAdminHelper",
+  "newName": "is_current_page_store_page",
+  "arguments": [],
+  "params": 1,
+  "static": true,
+  "rule": "CallMapping"
+ },
+ {
+  "set": "7.8",
+  "class": "Automattic\\WooCommerce\\Blocks\\BlockTemplatesController",
+  "name": "get_block_templates_from_db",
+  "newClass": "Automattic\\WooCommerce\\Blocks\\Utils\\BlockTemplateUtils",
+  "newName": "get_block_templates_from_db",
+  "arguments": [
+   0,
+   1
+  ],
+  "params": 2,
+  "rule": "CallMapping"
+ },
+ {
+  "set": "3.3",
+  "rule": "RemoveMethodCall",
+  "class": "WC_Admin_Post_Types",
+  "method": "process_product_file_download_paths"
  }
 ]

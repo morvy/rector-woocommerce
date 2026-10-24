@@ -7,7 +7,7 @@ function cart(WC_Cart $cart)
     make_cart()->remove_taxes();
 }
 
-class My_Gateway extends WC_Settings_API
+class Remove_Gateway extends WC_Settings_API
 {
     public function validate_settings_fields($form_fields = [])
     {
@@ -20,7 +20,7 @@ class My_Gateway extends WC_Settings_API
     }
 }
 
-class Plain_Gateway extends WC_Settings_API
+class Remove_Plain_Gateway extends WC_Settings_API
 {
     public function run()
     {
@@ -38,7 +38,7 @@ function cart(WC_Cart $cart)
     make_cart()->remove_taxes();
 }
 
-class My_Gateway extends WC_Settings_API
+class Remove_Gateway extends WC_Settings_API
 {
     public function validate_settings_fields($form_fields = [])
     {
@@ -51,7 +51,7 @@ class My_Gateway extends WC_Settings_API
     }
 }
 
-class Plain_Gateway extends WC_Settings_API
+class Remove_Plain_Gateway extends WC_Settings_API
 {
     public function run()
     {

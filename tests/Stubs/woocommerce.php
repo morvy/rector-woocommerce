@@ -48,3 +48,8 @@ class WooCommerce
 }
 
 function WC(): WooCommerce {}
+
+abstract class WC_Abstract_Legacy_Order
+{
+    public function get_item_meta($order_item_id, $key = '', $single = false): void {}
+}

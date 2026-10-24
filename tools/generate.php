@@ -95,9 +95,11 @@ function q(string $value): string
 function lit(mixed $value): string
 {
     return match (true) {
-        is_array($value) && $value === [] => '[]',
-        is_array($value)                  => '[' . implode(', ', array_map(lit(...), $value)) . ']',
-        default                           => var_export($value, true),
+        is_array($value) && $value === []         => '[]',
+        is_array($value) && array_is_list($value) => '[' . implode(', ', array_map(lit(...), $value)) . ']',
+        is_array($value)                          => '[' . implode(', ', array_map(static fn ($k, $v): string => lit($k) . ' => ' . lit($v), array_keys($value), $value)) . ']',
+        $value === null                           => 'null',
+        default                                   => var_export($value, true),
     };
 }
 
@@ -151,6 +153,24 @@ function render(array $entries): array
                     $lines[]                                                                        = q($e['old']) . ' => ' . q($e['new']) . ',';
                     $before[]                                                                       = "{$e['old']}('foo');\nif ({$e['old']}('foo')) {\n    echo 'kept';\n}";
                     $after[]                                                                        = fq($e['new']) . "('foo');\nif ({$e['old']}('foo')) {\n    echo 'kept';\n}";
+
+                    break;
+
+                case 'CallMapping':
+                    $uses['Morvy\RectorWooCommerce\Rules\Call\CallMappingRector']  = true;
+                    $uses['Morvy\RectorWooCommerce\ValueObject\CallMapping']       = true;
+                    $lines[]                                                       = 'new CallMapping(' . lit($e['class']) . ', ' . q($e['name']) . ', ' . lit($e['newClass']) . ', ' . q($e['newName']) . ', ' . lit($e['arguments']) . '),';
+                    $oldArgs                                                       = array_map(static fn (int $n): string => "'a{$n}'", range(0, $e['params'] - 1));
+                    $newArgs                                                       = array_map(static fn ($a): string => is_int($a) ? "'a{$a}'" : lit($a['literal']), $e['arguments']);
+                    $call                                                          = match (true) {
+                        $e['class'] === null             => $e['name'],
+                        ($e['static'] ?? false) === true => fq($e['class']) . '::' . $e['name'],
+                        default                          => "{$var}->{$e['name']}",
+                    };
+                    $setup    = $e['class'] !== null && ($e['static'] ?? false) !== true ? "{$var} = new " . fq($e['class']) . "();\n" : '';
+                    $target   = ($e['newClass'] === null ? fq($e['newName']) : fq($e['newClass']) . '::' . $e['newName']);
+                    $before[] = $setup . "{$var}r = {$call}(" . implode(', ', $oldArgs) . ');';
+                    $after[]  = $setup . "{$var}r = {$target}(" . implode(', ', $newArgs) . ');';
 
                     break;
 
@@ -308,6 +328,7 @@ function render(array $entries): array
             'RenameHook'                  => 'RenameHookRector',
             'RenameMethod'                => 'RenameMethodRector',
             'RenameStaticMethod'          => 'RenameStaticMethodRector',
+            'CallMapping'                 => 'CallMappingRector',
             'FuncCallToStaticCall'        => 'FuncCallToStaticCallRector',
             'StaticCallToFuncCall'        => 'StaticCallToFuncCallRector',
             'MethodCallToFuncCall'        => 'MethodCallToFuncCallRector',

@@ -7,7 +7,7 @@ function cart(WC_Cart $cart)
     $c = WC()->cart->get_cart_url();
 }
 
-class My_Cart extends WC_Cart
+class ToFunc_Cart extends WC_Cart
 {
     public function get_cart_url()
     {
@@ -31,7 +31,7 @@ function cart(WC_Cart $cart)
     $c = \wc_get_cart_url();
 }
 
-class My_Cart extends WC_Cart
+class ToFunc_Cart extends WC_Cart
 {
     public function get_cart_url()
     {

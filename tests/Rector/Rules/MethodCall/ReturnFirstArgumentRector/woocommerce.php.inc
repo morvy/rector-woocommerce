@@ -1,6 +1,6 @@
 <?php
 
-class My_Gateway extends WC_Settings_API
+class Return_Gateway extends WC_Settings_API
 {
     public function format_settings($value)
     {
@@ -13,7 +13,7 @@ class My_Gateway extends WC_Settings_API
     }
 }
 
-class Plain_Gateway extends WC_Settings_API
+class Return_Plain_Gateway extends WC_Settings_API
 {
     public function run($v, array $args)
     {
@@ -27,7 +27,7 @@ class Plain_Gateway extends WC_Settings_API
 -----
 <?php
 
-class My_Gateway extends WC_Settings_API
+class Return_Gateway extends WC_Settings_API
 {
     public function format_settings($value)
     {
@@ -40,7 +40,7 @@ class My_Gateway extends WC_Settings_API
     }
 }
 
-class Plain_Gateway extends WC_Settings_API
+class Return_Plain_Gateway extends WC_Settings_API
 {
     public function run($v, array $args)
     {

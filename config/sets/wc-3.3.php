@@ -15,7 +15,8 @@ return static function (RectorConfig $rectorConfig): void {
     ]);
 
     $rectorConfig->ruleWithConfiguration(RemoveMethodCallRector::class, [
-        'get_delivery_log' => 'WC_Webhook',
+        'get_delivery_log'                    => 'WC_Webhook',
+        'process_product_file_download_paths' => 'WC_Admin_Post_Types',
     ]);
 
     /*
@@ -29,7 +30,6 @@ return static function (RectorConfig $rectorConfig): void {
      * - wc_get_core_supported_themes
      *
      * METHODS
-     * - WC_Admin_Post_Types::process_product_file_download_paths
      * - WC_Admin_Webhooks::get_logs_navigation
      * - WC_Admin_Webhooks::logs_output
      * - WC_Customer_Download_Data_Store::update_download_id

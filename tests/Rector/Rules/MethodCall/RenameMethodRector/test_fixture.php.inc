@@ -6,7 +6,7 @@ function cart(WC_Cart $cart, ?WC_Cart $maybe)
     $maybe?->init();
 }
 
-class My_Cart extends WC_Cart
+class Rename_Cart extends WC_Cart
 {
     public function init()
     {
@@ -29,7 +29,7 @@ function cart(WC_Cart $cart, ?WC_Cart $maybe)
     $maybe?->get_cart_from_session();
 }
 
-class My_Cart extends WC_Cart
+class Rename_Cart extends WC_Cart
 {
     public function init()
     {

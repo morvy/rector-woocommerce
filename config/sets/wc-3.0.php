@@ -1,5 +1,6 @@
 <?php
 
+use Morvy\RectorWooCommerce\Rules\Call\CallMappingRector;
 use Morvy\RectorWooCommerce\Rules\FuncCall\RenameFunctionAsStatementRector;
 use Morvy\RectorWooCommerce\Rules\FuncCall\RenameHookRector;
 use Morvy\RectorWooCommerce\Rules\MethodCall\MethodCallToFuncCallRector;
@@ -7,6 +8,7 @@ use Morvy\RectorWooCommerce\Rules\MethodCall\RemoveMethodCallRector;
 use Morvy\RectorWooCommerce\Rules\MethodCall\RenameMethodRector;
 use Morvy\RectorWooCommerce\Rules\MethodCall\ReturnFirstArgumentRector as MethodReturnFirstArgumentRector;
 use Morvy\RectorWooCommerce\Rules\PropertyFetch\PropertyFetchToMethodCallRector;
+use Morvy\RectorWooCommerce\ValueObject\CallMapping;
 use Morvy\RectorWooCommerce\ValueObject\PropertyFetchToMethodCall;
 use Rector\Config\RectorConfig;
 use Rector\Removing\Rector\FuncCall\RemoveFuncCallRector;
@@ -16,6 +18,14 @@ use Rector\Transform\ValueObject\MethodCallToFuncCall;
 
 return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->import(__DIR__ . '/../config.php');
+
+    $rectorConfig->ruleWithConfiguration(CallMappingRector::class, [
+        new CallMapping('WC_Abstract_Legacy_Order', 'get_item_meta', null, 'get_metadata', [['literal' => 'order_item'], 0, 1, 2]),
+        new CallMapping(null, 'woocommerce_change_term_counts', null, 'wc_change_term_counts', [0, 1]),
+        new CallMapping(null, 'woocommerce_nav_menu_item_classes', null, 'wc_nav_menu_item_classes', [0]),
+        new CallMapping(null, 'woocommerce_nav_menu_items', null, 'wc_nav_menu_items', [0]),
+        new CallMapping(null, 'woocommerce_readfile_chunked', 'WC_Download_Handler', 'readfile_chunked', [0]),
+    ]);
 
     $rectorConfig->ruleWithConfiguration(MethodCallToFuncCallRector::class, [
         new MethodCallToFuncCall('WC_Abstract_Legacy_Product', 'get_child', 'wc_get_product'),
@@ -358,7 +368,6 @@ return static function (RectorConfig $rectorConfig): void {
      * - {handle}_params → woocommerce_get_script_data
      *
      * FUNCTIONS
-     * - woocommerce_change_term_counts
      * - woocommerce_format_hex (pluggable)
      * - woocommerce_format_total
      * - woocommerce_get_formatted_product_name
@@ -368,10 +377,7 @@ return static function (RectorConfig $rectorConfig): void {
      * - woocommerce_hex_lighter (pluggable)
      * - woocommerce_light_or_dark (pluggable)
      * - woocommerce_load_persistent_cart
-     * - woocommerce_nav_menu_item_classes
-     * - woocommerce_nav_menu_items
      * - woocommerce_product_reviews_tab (pluggable)
-     * - woocommerce_readfile_chunked
      * - woocommerce_rgb_from_hex (pluggable)
      *
      * METHODS
@@ -387,7 +393,6 @@ return static function (RectorConfig $rectorConfig): void {
      * - WC_Abstract_Legacy_Order::email_order_items_table
      * - WC_Abstract_Legacy_Order::get_download_url
      * - WC_Abstract_Legacy_Order::get_item_downloads
-     * - WC_Abstract_Legacy_Order::get_item_meta
      * - WC_Abstract_Legacy_Order::get_item_meta_array
      * - WC_Abstract_Legacy_Order::get_order
      * - WC_Abstract_Legacy_Order::has_meta
