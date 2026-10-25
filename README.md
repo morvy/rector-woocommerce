@@ -5,7 +5,7 @@ This package is a [Rector](https://github.com/rectorphp/rector) extension with u
 ## Requirements
 
 - PHP 8.2 or higher
-- Rector 2.0 or higher
+- Rector 2.0 or higher (the PHPStan extension uses the PHPStan 2 that comes with it)
 
 ## Install
 
@@ -146,3 +146,8 @@ The rule data lives in `tools/deprecations.json`. Each entry is one rule, or one
 4. Run `composer phpunit`.
 
 To add a new version, extend `LAST_MINOR` in `tools/generate.php`.
+
+## Reporting problems
+
+A wrong rewrite or a false positive is a bug. Please open an issue with the smallest code snippet that reproduces it and the WooCommerce version you target. For PHPStan findings, also include the error identifier (for example `woocommerce.hpos.post`). Until it is fixed, you can ignore a single finding with that identifier, or a whole group in `ignoreErrors`.
+

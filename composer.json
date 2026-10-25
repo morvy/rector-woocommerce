@@ -12,6 +12,17 @@
         "upgrade",
         "woocommerce"
     ],
+    "authors": [
+        {
+            "name": "morvy",
+            "email": "moped@jepan.sk"
+        }
+    ],
+    "homepage": "https://github.com/morvy/rector-woocommerce",
+    "support": {
+        "issues": "https://github.com/morvy/rector-woocommerce/issues",
+        "source": "https://github.com/morvy/rector-woocommerce"
+    },
     "require": {
         "php": ">=8.2",
         "php-stubs/woocommerce-stubs": "^10.0 || ^11.0",
