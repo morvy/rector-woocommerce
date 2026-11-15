@@ -39,7 +39,8 @@ final class RenameStaticMethodRector extends AbstractRector implements Configura
      */
     public function refactor(Node $node): ?StaticCall
     {
-        if (!$node->class instanceof Name) {
+        // static:: may resolve to a subclass further down that overrides the method; only a final class rules that out.
+        if ($node->class instanceof Name && $this->isName($node->class, 'static') && !$this->isFinal($node->class)) {
             return null;
         }
 
@@ -52,7 +53,14 @@ final class RenameStaticMethodRector extends AbstractRector implements Configura
                 continue;
             }
 
-            if (strcasecmp($config->getClass(), $config->getNewClass()) !== 0) {
+            $moves = strcasecmp($config->getClass(), $config->getNewClass()) !== 0;
+
+            // $object::method() keeps its receiver, so it can only be renamed in place.
+            if (!$node->class instanceof Name && $moves) {
+                return null;
+            }
+
+            if ($moves) {
                 $node->class = new FullyQualified($config->getNewClass());
             }
 
@@ -62,6 +70,19 @@ final class RenameStaticMethodRector extends AbstractRector implements Configura
         }
 
         return null;
+    }
+
+    private function isFinal(Name $name): bool
+    {
+        $classReflections = $this->getType($name)->getObjectClassReflections();
+
+        foreach ($classReflections as $classReflection) {
+            if (!$classReflection->isFinal()) {
+                return false;
+            }
+        }
+
+        return $classReflections !== [];
     }
 
     /**
