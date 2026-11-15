@@ -7,6 +7,7 @@ use PhpParser\Node\Expr\FuncCall;
 use PhpParser\Node\Expr\NullsafePropertyFetch;
 use PhpParser\Node\Expr\PropertyFetch;
 use PhpParser\Node\Expr\Variable;
+use PhpParser\Node\Name;
 use PHPStan\Type\ObjectType;
 use Rector\DeadCode\SideEffect\SideEffectNodeDetector;
 
@@ -37,7 +38,7 @@ trait MatchesDeclaringClass
         return !$sideEffectNodeDetector->detect($expr);
     }
 
-    private function callsDeclaredMethod(Expr $expr, string $class, string $method): bool
+    private function callsDeclaredMethod(Expr|Name $expr, string $class, string $method): bool
     {
         if (!$this->isObjectType($expr, new ObjectType($class))) {
             return false;

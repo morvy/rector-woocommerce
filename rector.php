@@ -17,7 +17,6 @@ return RectorConfig::configure()
     ])
     ->withPreparedSets(
         deadCode: true,
-        codeQuality: true,
-        naming: true
+        codeQuality: true
     )
     ->withPhpVersion(PhpVersion::PHP_82);

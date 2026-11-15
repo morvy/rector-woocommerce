@@ -1,8 +1,8 @@
 <?php
 
+use Morvy\RectorWooCommerce\Rules\StaticCall\RenameStaticMethodRector;
+use Morvy\RectorWooCommerce\ValueObject\RenameStaticMethod;
 use Rector\Config\RectorConfig;
-use Rector\Renaming\Rector\StaticCall\RenameStaticMethodRector;
-use Rector\Renaming\ValueObject\RenameStaticMethod;
 
 return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->import(__DIR__ . '/../config.php');
