@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.1.1
+
+### Fixed
+
+- Static method renames work again with Rector 2.8 and newer. Rector 2.8 deprecated `RenameStaticMethodRector` and its `refactor()` now throws, so the 16 static renames (for example `WC_Cache_Helper::incr_cache_prefix()` → `invalidate_cache_group()` and the PayPal helper moves in 10.5) were not applied. The sets now use the package's own `RenameStaticMethodRector`, which works on every Rector 2.x.
+- Like the method rules, a static call through a subclass that overrides the deprecated method (`self::`/`static::` or the subclass name) is left alone. `static::` is only renamed inside a final class, since a subclass further down could override the method.
+- `$object::method()` is renamed when the method keeps its class; it is left alone when the replacement lives on another class.
+
+### Changed
+
+- Checked against the WooCommerce 11.3.0 release: it adds no deprecations beyond the ones already in the 11.3 set.
+
 ## 0.1.0
 
 First release.

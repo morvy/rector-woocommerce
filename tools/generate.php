@@ -202,11 +202,11 @@ function render(array $entries): array
                     break;
 
                 case 'RenameStaticMethod':
-                    $uses['Rector\Renaming\Rector\StaticCall\RenameStaticMethodRector'] = true;
-                    $uses['Rector\Renaming\ValueObject\RenameStaticMethod']             = true;
-                    $lines[]                                                            = 'new RenameStaticMethod(' . q($e['class']) . ', ' . q($e['old']) . ', ' . q($e['newClass']) . ', ' . q($e['new']) . '),';
-                    $before[]                                                           = "{$var} = " . fq($e['class']) . "::{$e['old']}('foo');";
-                    $after[]                                                            = "{$var} = " . fq($e['newClass']) . "::{$e['new']}('foo');";
+                    $uses['Morvy\RectorWooCommerce\Rules\StaticCall\RenameStaticMethodRector'] = true;
+                    $uses['Morvy\RectorWooCommerce\ValueObject\RenameStaticMethod']            = true;
+                    $lines[]                                                                   = 'new RenameStaticMethod(' . q($e['class']) . ', ' . q($e['old']) . ', ' . q($e['newClass']) . ', ' . q($e['new']) . '),';
+                    $before[]                                                                  = "{$var} = " . fq($e['class']) . "::{$e['old']}('foo');";
+                    $after[]                                                                   = "{$var} = " . fq($e['newClass']) . "::{$e['new']}('foo');";
 
                     break;
 
